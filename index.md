@@ -39,28 +39,12 @@ ziet of hoort, hoeveel het er zijn en wat ze doen. De app zet je woorden om in
 waarnemingen en voegt plaats en tijd toe. Twijfel je over de soort of de
 leeftijd? Ook dat kun je inspreken.
 
-## Zeg het zoals je het ziet
+## Voor wie
 
-<p class="flauw">Van een losse vogel tot meerdere soorten in één zin: zo verwerkt KLAPekster je woorden.<span class="alleen-telefoon"> Veeg opzij voor meer.</span></p>
-
-<div class="voorbeelden">
-{% for v in site.data.voorbeelden offset:1 %}
-  <figure class="voorbeeld">
-    <figcaption>
-      <span class="opschrift">{{ v.opschrift }}</span>
-      {% comment %}
-        Bij de verhaspeling is de zin wat de spraakherkenning ervan maakte,
-        niet wat de vogelaar zei. Wat hij wél zei, staat in
-        tools/website_fiches.dart in de app-repo, en de fiche toont het.
-      {% endcomment %}
-      {% if v.naam == 'verhaspeling' %}<span class="verstaan">De spraakherkenning verstond:</span>{% endif %}
-      <span class="voorbeeldzin">“{{ v.zin }}”</span>
-      {% if v.naam == 'verhaspeling' %}<span class="verstaan">Je zei: “Buidelmees gehoord.”</span>{% endif %}
-    </figcaption>
-    <img src="{{ '/assets/beeld/fiches/' | append: v.naam | append: '.webp' | relative_url }}" alt="Wat KLAPekster maakt van: {{ v.zin }}" width="{{ v.breedte }}" height="{{ v.hoogte }}" loading="lazy">
-  </figure>
-{% endfor %}
-</div>
+Van de mezen aan je voederplaats tot de ganzen boven de telpost: je wilt
+vogels kijken, niet op je scherm turen. Met KLAPekster spreek je je
+waarnemingen in terwijl je de vogels blijft volgen. Thuis, onderweg of midden
+in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
 
 ## Zo werkt het
 
@@ -107,12 +91,29 @@ De app kent bijna duizend vogelsoorten en bijna tweehonderd volks- en
 dialectnamen. Ook veel verkeerd verstane vogelnamen kan KLAPekster alsnog
 herkennen.
 
-## Voor wie
+{% comment %}
+  De voorbeelden komen ná de uitleg over het gebruik, en eerst maar drie; de
+  rest klapt open (Olivier, 9 oktober 2026: elf voorbeelden duwden de uitleg
+  bijna twee schermhoogtes naar beneden). Welke drie: de volgorde in
+  tools/website_fiches.dart in de app-repo. Openklappen zonder script, met
+  details/summary.
+{% endcomment %}
+{% assign aantal = site.data.voorbeelden.size | minus: 1 %}
 
-Van de mezen aan je voederplaats tot de ganzen boven de telpost: je wilt
-vogels kijken, niet op je scherm turen. Met KLAPekster spreek je je
-waarnemingen in terwijl je de vogels blijft volgen. Thuis, onderweg of midden
-in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
+## Zeg het zoals je het ziet
+
+<p class="flauw">Van een losse vogel tot meerdere soorten in één zin: zo verwerkt KLAPekster je woorden.<span class="alleen-telefoon"> Veeg opzij voor meer.</span></p>
+
+<div class="voorbeelden">
+{% for v in site.data.voorbeelden offset:1 limit:3 %}{% include voorbeeld.html v=v %}{% endfor %}
+</div>
+
+<details class="meer-voorbeelden">
+  <summary>Bekijk alle {{ aantal }} voorbeelden</summary>
+  <div class="voorbeelden">
+  {% for v in site.data.voorbeelden offset:4 %}{% include voorbeeld.html v=v %}{% endfor %}
+  </div>
+</details>
 
 ## Goed om te weten
 

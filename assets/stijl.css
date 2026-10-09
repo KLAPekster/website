@@ -244,6 +244,28 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   font-size: 1.1rem;
   line-height: 1.35;
 }
+/* De knop "Bekijk alle voorbeelden": klapt de rest open, zonder script.
+   Open verdwijnt de knop, de voorbeelden staan dan gewoon onder de eerste
+   drie. */
+.meer-voorbeelden > summary {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--petrol);
+  font-weight: 600;
+  border: 2px solid var(--petrol);
+  border-radius: 999px;
+  padding: 11px 22px;
+  min-height: 48px;
+}
+.meer-voorbeelden > summary::-webkit-details-marker { display: none; }
+.meer-voorbeelden > summary:hover { background: var(--petrol-vlak); }
+.meer-voorbeelden > summary:focus-visible {
+  outline: 3px solid var(--petrol);
+  outline-offset: 3px;
+}
+.meer-voorbeelden[open] > summary { display: none; }
+
 /* Bij de verhaspeling: wat de spraakherkenning verstond, en wat je zei. */
 .verstaan { color: var(--grijs); font-size: 0.95rem; }
 .voorbeeld img {

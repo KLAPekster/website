@@ -1,0 +1,18 @@
+{% comment %}
+  Eén voorbeeld: opschrift, de zin en de fiche die de app ervan maakt.
+  Gebruik: {% include voorbeeld.html v=v %}, met v uit _data/voorbeelden.json.
+
+  Bij de verhaspeling is de zin wat de spraakherkenning ervan maakte, niet wat
+  de vogelaar zei. Wat hij wél zei, staat in tools/website_fiches.dart in de
+  app-repo, en de fiche toont het.
+{% endcomment %}
+{% assign v = include.v %}
+<figure class="voorbeeld">
+  <figcaption>
+    <span class="opschrift">{{ v.opschrift }}</span>
+    {% if v.naam == 'verhaspeling' %}<span class="verstaan">De spraakherkenning verstond:</span>{% endif %}
+    <span class="voorbeeldzin">“{{ v.zin }}”</span>
+    {% if v.naam == 'verhaspeling' %}<span class="verstaan">Je zei: “Buidelmees gehoord.”</span>{% endif %}
+  </figcaption>
+  <img src="{{ '/assets/beeld/fiches/' | append: v.naam | append: '.webp' | relative_url }}" alt="Wat KLAPekster maakt van: {{ v.zin }}" width="{{ v.breedte }}" height="{{ v.hoogte }}" loading="lazy">
+</figure>

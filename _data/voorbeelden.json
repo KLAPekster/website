@@ -14,13 +14,6 @@
     "hoogte": 448
   },
   {
-    "naam": "meeuwen",
-    "opschrift": "Elke soort met de juiste leeftijd",
-    "zin": "Drie kokmeeuwen adult, twee zilvermeeuwen juveniel en een stormmeeuw eerste winter.",
-    "breedte": 360,
-    "hoogte": 289
-  },
-  {
     "naam": "waarvan",
     "opschrift": "Eén groep, verschillende richtingen",
     "zin": "Acht grauwe ganzen overvliegend, waarvan vijf noord en drie west.",
@@ -33,6 +26,13 @@
     "zin": "Koppel knobbelzwanen met vijf jongen.",
     "breedte": 360,
     "hoogte": 198
+  },
+  {
+    "naam": "meeuwen",
+    "opschrift": "Elke soort met de juiste leeftijd",
+    "zin": "Drie kokmeeuwen adult, twee zilvermeeuwen juveniel en een stormmeeuw eerste winter.",
+    "breedte": 360,
+    "hoogte": 289
   },
   {
     "naam": "prooi",
