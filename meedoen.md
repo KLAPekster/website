@@ -70,14 +70,14 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
   </select>
 
   <fieldset>
-    <legend>Welke apps gebruik je bij het vogels kijken? <span class="veldnoot">(meerdere mogelijk, optioneel)</span></legend>
+    <legend>Welke apps of websites gebruik je bij het vogels kijken? <span class="veldnoot">(meerdere mogelijk, optioneel)</span></legend>
     <div class="vinkjes">
       <label class="keuze"><input type="checkbox" name="apps" value="Waarnemingen.be"> Waarnemingen.be</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Waarneming.nl"> Waarneming.nl</label>
       <label class="keuze"><input type="checkbox" name="apps" value="ObsMapp"> ObsMapp</label>
       <label class="keuze"><input type="checkbox" name="apps" value="ObsIdentify"> ObsIdentify</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Merlin"> Merlin</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="BirdTrack"> BirdTrack</label>
+      <label class="keuze"><input type="checkbox" name="apps" value="BirdTalk"> BirdTalk</label>
       <label class="keuze"><input type="checkbox" name="apps" value="eBird"> eBird</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Geen"> Geen</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Andere"> Andere</label>
@@ -135,12 +135,40 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
     var email = document.getElementById('email').value.trim();
     var toestel = gekozen('toestel');
     var land = gekozen('land');
-    if (!naam || !email || !toestel || !land) {
-      toonFout('Vul je naam, je e-mailadres, je telefoon en je land in.');
+
+    // Alleen noemen wat écht nog ontbreekt, en naar de eerste daarvan
+    // springen: de rondjes van telefoon en land zie je anders makkelijk over
+    // het hoofd.
+    var ontbreekt = [];
+    var eerste = null;
+    formulier.querySelectorAll('.ontbreekt').forEach(function (el) {
+      el.classList.remove('ontbreekt');
+    });
+    // De vraag zelf kleurt mee: het bericht staat onderaan bij de knop.
+    function mist(tekst, veld, vraag) {
+      ontbreekt.push(tekst);
+      eerste = eerste || veld;
+      vraag.classList.add('ontbreekt');
+    }
+    var naamveld = document.getElementById('naam');
+    var emailveld = document.getElementById('email');
+    var toestelveld = formulier.querySelector('input[name="toestel"]');
+    var landveld = formulier.querySelector('input[name="land"]');
+    if (!naam) mist('je naam', naamveld, formulier.querySelector('label[for="naam"]'));
+    if (!email) mist('je e-mailadres', emailveld, formulier.querySelector('label[for="email"]'));
+    if (!toestel) mist('welke telefoon je hebt', toestelveld, toestelveld.closest('fieldset'));
+    if (!land) mist('in welk land je woont', landveld, landveld.closest('fieldset'));
+    if (ontbreekt.length) {
+      var lijst = ontbreekt.length === 1 ? ontbreekt[0]
+        : ontbreekt.slice(0, -1).join(', ') + ' en ' + ontbreekt[ontbreekt.length - 1];
+      toonFout('Vul nog in: ' + lijst + '.');
+      eerste.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      eerste.focus({ preventScroll: true });
       return;
     }
     if (!document.getElementById('email').checkValidity()) {
       toonFout('Dat e-mailadres lijkt niet te kloppen.');
+      document.getElementById('email').focus();
       return;
     }
 

@@ -293,7 +293,11 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   min-height: 40px;
 }
 .keuze input { width: 20px; height: 20px; accent-color: var(--petrol); margin: 0; }
-.vinkjes { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.keuze input { flex: none; }
+.vinkjes { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+/* Een verplichte vraag die nog leeg is, na een klik op Aanmelden. */
+label.ontbreekt,
+.ontbreekt legend { color: var(--roest); }
 .hint { color: var(--grijs); font-size: 0.9rem; margin: 2px 0 0; }
 .melding { color: var(--oker); }
 .fout { color: var(--roest); font-weight: 600; margin: 12px 0 0; }
