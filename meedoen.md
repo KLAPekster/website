@@ -2,8 +2,6 @@
 title: KLAPekster proberen
 description: Meld je aan om KLAPekster nu al te proberen op je Android-telefoon.
 permalink: /meedoen/
-# Op een breed scherm een bredere kolom, voor het formulier (stijl.css).
-klasse: breed
 ---
 
 # KLAPekster proberen
@@ -30,8 +28,7 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
 ## Aanmelden
 
 <form id="aanmeldformulier" class="formulier" novalidate markdown="0">
-  <!-- Elke vraag in een eigen .veld: op een breed scherm staan ze twee aan
-       twee naast elkaar (stijl.css), op een telefoon onder elkaar. -->
+  <!-- Elke vraag met zijn label en uitleg samen in een .veld. -->
   <div class="veld">
     <label for="naam">Naam <span class="veldnoot">(verplicht)</span></label>
     <input type="text" id="naam" name="naam" required autocomplete="name">
@@ -85,7 +82,7 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
     </select>
   </div>
 
-  <fieldset class="veld-breed">
+  <fieldset>
     <legend>Welke apps of websites gebruik je bij het vogels kijken? <span class="veldnoot">(meerdere mogelijk, optioneel)</span></legend>
     <div class="vinkjes">
       <label class="keuze"><input type="checkbox" name="apps" value="Waarnemingen.be / Waarneming.nl"> Waarnemingen.be / Waarneming.nl</label>
@@ -98,7 +95,7 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
     </div>
   </fieldset>
 
-  <div class="veld veld-breed">
+  <div class="veld">
     <label for="opmerking">Opmerking of vraag <span class="veldnoot">(optioneel)</span></label>
     <textarea id="opmerking" name="opmerking" rows="3"></textarea>
   </div>
