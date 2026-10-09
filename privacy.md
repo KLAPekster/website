@@ -93,13 +93,17 @@ Wil je dat je logboek eerder gewist wordt? Eén mail volstaat.
 
 ## Als je je aanmeldt om KLAPekster te proberen
 
-Het aanmeldformulier vraagt je naam, e-mailadres, land en provincie, en als
-je wil nog wat meer over jezelf en je ervaring. Dat gaat naar hetzelfde
+Het aanmeldformulier vraagt je naam, het e-mailadres van je Google-account,
+welke telefoon je hebt en in welk land je woont, en als je wil nog wat meer
+over je ervaring en de apps die je gebruikt. Dat gaat naar hetzelfde
 rekenblad van de maker bij Google. Het dient om je toe te voegen aan de lijst
-van wie de app mag installeren, en je te laten weten hoe dat gaat.
+van wie de app mag installeren, en je per mail te laten weten hoe dat gaat.
+Die mail komt van {{ site.contact }}.
 
 Je aanmelding wordt gewist zes maanden na het einde van deze eerste fase, of
-eerder als je erom vraagt.
+eerder als je erom vraagt. Heb je een iPhone, dan bewaar ik je naam en
+e-mailadres tot er een versie voor iPhone is, om je dat te laten weten, of
+tot je vraagt om ze te wissen.
 
 ## Nieuwe versies
 

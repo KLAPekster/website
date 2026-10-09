@@ -1,0 +1,29 @@
+{% comment %}
+  De drie stappen om de app op je telefoon te zetten, in de juiste volgorde.
+  Staat op Proberen en op Bedankt, en woordelijk ook in de bevestigingsmail
+  (tools/sheets_apps_script.gs in de app-repo, stuurTesterMail): verander je
+  hier iets, verander het daar mee.
+{% endcomment %}
+<ol class="stappen">
+  <li>
+    <h3>Wacht op mijn bericht</h3>
+    <p>Ik zet je met de hand op de lijst en laat je weten wanneer dat
+    gebeurd is. Zolang je dat bericht niet hebt, werken de links hieronder
+    nog niet.</p>
+  </li>
+  <li>
+    <h3>Open de aanmeldlink op je telefoon</h3>
+    <p><a href="{{ site.aanmeldlink }}">{{ site.aanmeldlink | remove: 'https://' }}</a></p>
+    <p>Zorg dat je ingelogd bent met hetzelfde Google-account als in de Play
+    Store op je telefoon, en tik op “Word tester”. Zo noemt Google dat.</p>
+  </li>
+  <li>
+    <h3>Installeer de app</h3>
+    <p><a href="https://play.google.com/store/apps/details?id={{ site.play_id }}">play.google.com/store/apps/details?id={{ site.play_id }}</a></p>
+  </li>
+</ol>
+
+<p class="flauw">Doe je stap 3 vóór stap 2, dan zegt de Play Store “item niet
+gevonden”, alsof de app niet bestaat. Dat is normaal: doe dan eerst stap 2.
+Lukt het niet? Kijk na of je met het juiste Google-account bent ingelogd, of
+mail naar <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>

@@ -114,9 +114,10 @@ sparen.</p>
 
 ## Voor wie
 
-Voor wie in de tuin naar de voederplaats kijkt en niet telkens een lijst wil
-openen. Voor wie wandelt en de verrekijker niet wil laten zakken om te typen.
-En voor wie op een telpost staat waar het snel gaat: zeg het, en kijk verder.
+Van de mezen aan je voederplaats tot de ganzen boven de telpost: je wilt
+vogels kijken, niet op je scherm turen. Met KLAPekster spreek je je
+waarnemingen in terwijl je de vogels blijft volgen. Thuis, onderweg of midden
+in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
 
 ## Eerlijk
 

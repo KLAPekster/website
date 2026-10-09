@@ -22,8 +22,9 @@ play_id: be.klapekster.app
 contact: klapekster.app@gmail.com
 aanmeldlink: https://play.google.com/apps/testing/be.klapekster.app
 
-# Het Apps Script dat de inschrijvingen ontvangt (stap 4).
-script_url: ""
+# Het Apps Script dat de aanmeldingen ontvangt (tools/sheets_apps_script.gs in
+# de app-repo). Hetzelfde adres als het logboek van de app.
+script_url: https://script.google.com/macros/s/AKfycbxUNp1Q1ydU7EVOfJEJfJlVYX8P8BaRBvDVdCdNVfdNWIMWLldtfKS2AtfzAW4wOd4AxA/exec
 
 plugins:
   - jekyll-seo-tag

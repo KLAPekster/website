@@ -43,6 +43,7 @@
   --op-petrol: #FFFFFF;
   --petrol-vlak: #E2EEEA;
   --oker: #9B570D;
+  --roest: #A04431;
 
   --schreef: "Newsreader", Georgia, serif;
   --schreefloos: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
@@ -250,6 +251,61 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
 }
 
 .slotknop { margin-top: 48px; text-align: center; }
+
+/* Het aanmeldformulier op Proberen. */
+.formulier {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 34em;
+}
+.formulier label:not(.keuze),
+.formulier legend {
+  font-weight: 600;
+  margin-top: 14px;
+  padding: 0;
+}
+.formulier fieldset { border: 0; margin: 0; padding: 0; }
+.veldnoot { font-weight: 400; color: var(--grijs); font-size: 0.9rem; }
+.formulier input[type="text"],
+.formulier input[type="email"],
+.formulier select,
+.formulier textarea {
+  font: inherit;
+  color: var(--inkt);
+  background: var(--kaart);
+  border: 1px solid var(--lijn);
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-height: 44px;
+  width: 100%;
+}
+.formulier input:focus-visible,
+.formulier select:focus-visible,
+.formulier textarea:focus-visible {
+  outline: 3px solid var(--petrol);
+  outline-offset: 1px;
+}
+.keuze {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+}
+.keuze input { width: 20px; height: 20px; accent-color: var(--petrol); margin: 0; }
+.vinkjes { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+.hint { color: var(--grijs); font-size: 0.9rem; margin: 2px 0 0; }
+.melding { color: var(--oker); }
+.fout { color: var(--roest); font-weight: 600; margin: 12px 0 0; }
+.formulier .knop {
+  align-self: flex-start;
+  margin-top: 18px;
+  border: 0;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.formulier .knop:disabled { opacity: 0.6; cursor: default; }
 
 .knop {
   display: inline-block;
