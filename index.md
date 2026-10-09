@@ -55,16 +55,19 @@ in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
     <h3>Spreek je waarneming in</h3>
     <p>Tik op de spreekknop en zeg wat je ziet of hoort. Bijvoorbeeld:
     <span class="zin-kort">“Drie koolmezen overvliegend noord.”</span></p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/stappen/stap-1.webp' | relative_url }}" alt="De klapekster luistert. In zijn wolk staat: drie koolmezen overvliegend noord" width="384" height="780" loading="lazy">
   </li>
   <li>
     <h3>Controleer en bewaar</h3>
     <p>KLAPekster zet je woorden om in een overzichtelijke waarneming. Kijk na
     of alles klopt, pas zo nodig iets aan en bewaar.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/stappen/stap-2.webp' | relative_url }}" alt="De fiche: drie koolmezen, overvliegend noord, met de knoppen Bewaar en Opnieuw" width="384" height="780" loading="lazy">
   </li>
   <li>
     <h3>Stuur je waarnemingen door</h3>
     <p>Na je wandeling stuur je de bewaarde waarnemingen samen naar
     waarnemingen.be of waarneming.nl, via je eigen account.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/stappen/stap-3.webp' | relative_url }}" alt="Het scherm Versturen met zes waarnemingen van die ochtend, klaar om te versturen" width="384" height="780" loading="lazy">
   </li>
 </ol>
 

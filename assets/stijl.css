@@ -174,7 +174,20 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   place-items: center;
 }
 .stappen h3 { margin: 0 0 0.2em; }
-.stappen p { margin: 0; }
+.stappen p { margin: 0 0 16px; }
+/* Het scherm van de app onderaan elke stap, zodat de drie op een breed
+   scherm op één lijn staan. */
+.stappen li {
+  display: flex;
+  flex-direction: column;
+}
+.stappen .stapbeeld {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: auto auto 0;
+}
 .zin-kort {
   font-family: var(--schreef);
   font-style: italic;
