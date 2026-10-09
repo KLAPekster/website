@@ -33,9 +33,9 @@ op je telefoon bewaarde.
 
 Wat je zegt, gaat naar de spraakherkenning van Android: meestal die van
 Google. Afhankelijk van je telefoon gebeurt dat op het toestel zelf of bij
-Google. Daarvoor gelden de voorwaarden van Google. Klapekster bewaart zelf
+Google. Daarvoor gelden de voorwaarden van Google. KLAPekster bewaart zelf
 geen geluidsopnamen. Je spraak wordt verwerkt door de spraakherkenningsdienst
-op je telefoon. Klapekster bewaart alleen de tekst die deze dienst teruggeeft.
+op je telefoon. KLAPekster bewaart alleen de tekst die deze dienst teruggeeft.
 
 Leest de app je waarneming hardop terug, dan doet de voorleesstem van je
 telefoon dat.

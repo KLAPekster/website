@@ -12,9 +12,9 @@ permalink: /
 
 <div class="held">
 <section class="opening">
-  <h1 class="slogan">Zeg wat je ziet.<br>Klapekster schrijft het op.</h1>
+  <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het op.</h1>
   <p class="inleiding">Een gratis Android-app voor vogelaars die liever blijven
-  kijken dan typen. Spreek in wat je ziet of hoort: Klapekster noteert de soort,
+  kijken dan typen. Spreek in wat je ziet of hoort: KLAPekster noteert de soort,
   het aantal en de details. Later stuur je je waarnemingen door naar
   waarnemingen.be of waarneming.nl.</p>
   {% include playknop.html %}
@@ -32,16 +32,16 @@ permalink: /
 </section>
 </div>
 
-## Jij kijkt en luistert. Klapekster noteert.
+## Jij kijkt en luistert. KLAPekster noteert.
 
-Klapekster herkent jouw woorden, geen vogelgeluiden. Vertel welke vogel je
+KLAPekster herkent jouw woorden, geen vogelgeluiden. Vertel welke vogel je
 ziet of hoort, hoeveel het er zijn en wat ze doen. De app zet je woorden om in
 waarnemingen en voegt plaats en tijd toe. Twijfel je over de soort of de
 leeftijd? Ook dat kun je inspreken.
 
 ## Zeg het zoals je het ziet
 
-<p class="flauw">Van een losse vogel tot meerdere soorten in één zin: zo verwerkt Klapekster je woorden.<span class="alleen-telefoon"> Veeg opzij voor meer.</span></p>
+<p class="flauw">Van een losse vogel tot meerdere soorten in één zin: zo verwerkt KLAPekster je woorden.<span class="alleen-telefoon"> Veeg opzij voor meer.</span></p>
 
 <div class="voorbeelden">
 {% for v in site.data.voorbeelden offset:1 %}
@@ -72,7 +72,7 @@ leeftijd? Ook dat kun je inspreken.
   </li>
   <li>
     <h3>Controleer en bewaar</h3>
-    <p>Klapekster zet je woorden om in een overzichtelijke waarneming. Kijk na
+    <p>KLAPekster zet je woorden om in een overzichtelijke waarneming. Kijk na
     of alles klopt, pas zo nodig iets aan en bewaar.</p>
   </li>
   <li>
@@ -84,7 +84,7 @@ leeftijd? Ook dat kun je inspreken.
 
 ## Blijf kijken, ook tijdens het noteren
 
-Je kunt Klapekster bedienen met de volumeknoppen, de knop van een bedraad
+Je kunt KLAPekster bedienen met de volumeknoppen, de knop van een bedraad
 oortje of een losse Flic-knop. Spreek je waarneming in en laat de app die
 hardop teruglezen. Met een knopdruk bewaar je ze of begin je opnieuw.
 
@@ -94,7 +94,7 @@ beperken.
 
 ## Meer dan soort en aantal
 
-Klapekster kan tot acht waarnemingen uit één zin halen, elk met hun eigen
+KLAPekster kan tot acht waarnemingen uit één zin halen, elk met hun eigen
 details. Je kunt onder meer inspreken:
 
 - gedrag, leeftijd, geslacht, kleed, kleurvorm en vliegrichting;
@@ -104,7 +104,7 @@ details. Je kunt onder meer inspreken:
 - een geschat aantal of twijfel over soort en leeftijd.
 
 De app kent bijna duizend vogelsoorten en bijna tweehonderd volks- en
-dialectnamen. Ook veel verkeerd verstane vogelnamen kan Klapekster alsnog
+dialectnamen. Ook veel verkeerd verstane vogelnamen kan KLAPekster alsnog
 herkennen.
 
 ## Voor wie
@@ -129,11 +129,11 @@ in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
 
 ## Gemaakt door een vogelaar
 
-Klapekster is een hobbyproject van Olivier Fuchs, zelf vogelaar. Het idee is
+KLAPekster is een hobbyproject van Olivier Fuchs, zelf vogelaar. Het idee is
 eenvoudig: minder tijd besteden aan invoeren, meer aandacht voor wat er om je
 heen gebeurt.
 
-Klapekster is een onafhankelijk initiatief en is niet verbonden aan
+KLAPekster is een onafhankelijk initiatief en is niet verbonden aan
 Natuurpunt of de organisatie achter waarnemingen.be, waarneming.nl en
 observation.org.
 
