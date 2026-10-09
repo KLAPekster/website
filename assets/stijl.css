@@ -244,6 +244,8 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   font-size: 1.1rem;
   line-height: 1.35;
 }
+/* Bij de verhaspeling: wat de spraakherkenning verstond, en wat je zei. */
+.verstaan { color: var(--grijs); font-size: 0.95rem; }
 .voorbeeld img {
   width: 100%;
   max-width: 360px;
@@ -329,6 +331,41 @@ label.ontbreekt,
   border-radius: 16px;
   padding: 16px 20px;
   margin: 1em 0;
+}
+
+/* Breed scherm, alleen de voorpagina (Olivier, 9 oktober 2026: "op mijn
+   desktop wel wat smal"). Onder de 1200 punten blijft alles zoals hierboven,
+   dus de telefoon merkt hier niets van. De kolom wordt 1160 breed; lopende
+   tekst blijft hoogstens 720, zodat de regels leesbaar blijven, en wat breed
+   mag (de opening, de voorbeelden, de stappen) gebruikt de hele breedte. De
+   andere pagina's (privacy, proberen) blijven één smalle kolom: dat is tekst
+   om te lezen. */
+@media (min-width: 1200px) {
+  .voorpagina .kolom { max-width: calc(1160px + 2 * 16px); }
+  .voorpagina main > p,
+  .voorpagina main > ul { max-width: 720px; }
+
+  /* De opening naast het luisterscherm en de fiche. */
+  .held {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 40px;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .held .opening { padding: 0; }
+  .held .slogan { font-size: 2.2rem; }
+  .held .toonbeeld {
+    grid-template-columns: 300px 340px;
+    gap: 16px 24px;
+    margin: 0;
+  }
+
+  /* Drie voorbeelden en drie stappen naast elkaar. */
+  .voorbeelden { grid-template-columns: repeat(3, 1fr); gap: 40px 32px; }
+  .voorpagina .stappen { grid-template-columns: repeat(3, 1fr); }
+
+  .voorpagina h2 { margin-top: 2.6em; }
 }
 
 /* Voet */

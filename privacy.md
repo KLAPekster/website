@@ -8,10 +8,12 @@ permalink: /privacy/
 
 <p class="flauw">Laatst gewijzigd op 9 oktober 2026</p>
 
-Kort gezegd: je waarnemingen blijven op je telefoon, tot jij ze zelf naar
-waarnemingen.be of waarneming.nl stuurt. Zolang KLAPekster nog niet vrij in
-Google Play staat, gaat er wel een logboek naar de maker, zodat de app beter
-leert verstaan. Hieronder staat precies wat er waarheen gaat.
+Je bewaart je waarnemingen op je telefoon en beslist zelf wanneer je ze naar
+waarnemingen.be of waarneming.nl verstuurt. Tijdens de testfase ontvangt de
+maker ook een logboek met onder meer de herkende tekst, je correcties,
+ingevulde naam, locatie en toestelgegevens. Dat helpt om herkenningsfouten te
+onderzoeken en verbeteren. Hieronder lees je welke gegevens worden verwerkt,
+door wie en hoelang ze worden bewaard.
 
 ## Wat KLAPekster is
 
@@ -31,9 +33,9 @@ op je telefoon bewaarde.
 
 Wat je zegt, gaat naar de spraakherkenning van Android: meestal die van
 Google. Afhankelijk van je telefoon gebeurt dat op het toestel zelf of bij
-Google. Daarvoor gelden de voorwaarden van Google. KLAPekster neemt je stem
-niet op en bewaart geen geluid: alleen de tekst die de spraakherkenning
-teruggeeft.
+Google. Daarvoor gelden de voorwaarden van Google. Klapekster bewaart zelf
+geen geluidsopnamen. Je spraak wordt verwerkt door de spraakherkenningsdienst
+op je telefoon. Klapekster bewaart alleen de tekst die deze dienst teruggeeft.
 
 Leest de app je waarneming hardop terug, dan doet de voorleesstem van je
 telefoon dat.

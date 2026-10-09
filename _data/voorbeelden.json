@@ -7,13 +7,6 @@
     "hoogte": 289
   },
   {
-    "naam": "detail",
-    "opschrift": "Veel detail in één waarneming",
-    "zin": "Twee adulte mannetjes buizerd donkere vorm overvliegend noordoost gezien en gehoord.",
-    "breedte": 360,
-    "hoogte": 278
-  },
-  {
     "naam": "acht",
     "opschrift": "Acht soorten in één adem",
     "zin": "Een merel, twee vinken, een roodborst, drie koolmezen, een pimpelmees, twee kauwen, een gaai en een winterkoning.",
@@ -22,10 +15,52 @@
   },
   {
     "naam": "meeuwen",
-    "opschrift": "Drie soorten meeuwen, elk met hun leeftijd",
+    "opschrift": "Elke soort met de juiste leeftijd",
     "zin": "Drie kokmeeuwen adult, twee zilvermeeuwen juveniel en een stormmeeuw eerste winter.",
     "breedte": 360,
     "hoogte": 289
+  },
+  {
+    "naam": "waarvan",
+    "opschrift": "Eén groep, verschillende richtingen",
+    "zin": "Acht grauwe ganzen overvliegend, waarvan vijf noord en drie west.",
+    "breedte": 360,
+    "hoogte": 198
+  },
+  {
+    "naam": "jongen",
+    "opschrift": "Een koppel met jongen",
+    "zin": "Koppel knobbelzwanen met vijf jongen.",
+    "breedte": 360,
+    "hoogte": 198
+  },
+  {
+    "naam": "prooi",
+    "opschrift": "Ook wat de vogel eet of vangt",
+    "zin": "Torenvalk adult man jagend op veldmuis.",
+    "breedte": 360,
+    "hoogte": 190
+  },
+  {
+    "naam": "twijfel",
+    "opschrift": "Twijfel mag",
+    "zin": "Een sperwer of een havik jagend.",
+    "breedte": 360,
+    "hoogte": 204
+  },
+  {
+    "naam": "verhaspeling",
+    "opschrift": "Ook als de spraakherkenning een vogelnaam verhaspelt",
+    "zin": "Boude meest gehoord.",
+    "breedte": 360,
+    "hoogte": 128
+  },
+  {
+    "naam": "detail",
+    "opschrift": "Ook de details tellen mee",
+    "zin": "Twee adulte mannetjes buizerd donkere vorm overvliegend noordoost gezien en gehoord.",
+    "breedte": 360,
+    "hoogte": 278
   },
   {
     "naam": "kleurvorm",
@@ -40,41 +75,6 @@
     "zin": "Drie noordse kauwen tussen veertig kauwen.",
     "breedte": 360,
     "hoogte": 173
-  },
-  {
-    "naam": "verhaspeling",
-    "opschrift": "De spraakherkenning hoorde \"boude meest\". KLAPekster weet wat je bedoelde",
-    "zin": "Boude meest gehoord.",
-    "breedte": 360,
-    "hoogte": 128
-  },
-  {
-    "naam": "waarvan",
-    "opschrift": "Een groep opsplitsen",
-    "zin": "Acht grauwe ganzen overvliegend, waarvan vijf noord en drie west.",
-    "breedte": 360,
-    "hoogte": 198
-  },
-  {
-    "naam": "prooi",
-    "opschrift": "Met de prooi erbij",
-    "zin": "Torenvalk adult man jagend op veldmuis.",
-    "breedte": 360,
-    "hoogte": 190
-  },
-  {
-    "naam": "jongen",
-    "opschrift": "Een koppel met jongen",
-    "zin": "Koppel knobbelzwanen met vijf jongen.",
-    "breedte": 360,
-    "hoogte": 198
-  },
-  {
-    "naam": "twijfel",
-    "opschrift": "Twijfel mag",
-    "zin": "Een sperwer of een havik jagend.",
-    "breedte": 360,
-    "hoogte": 204
   },
   {
     "naam": "dialect",
