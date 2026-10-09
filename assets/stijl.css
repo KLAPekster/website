@@ -50,9 +50,7 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-/* clip: de vogelband loopt tot de schermrand, en mag op een groot scherm
-   met schuifbalk geen horizontale scroll geven. */
-html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
+html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
@@ -128,20 +126,6 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   max-width: 34em;
 }
 
-/* De vogel op zijn paal, van rand tot rand. */
-.hero {
-  display: block;
-  width: 100vw;
-  margin: 24px calc(50% - 50vw) 0;
-}
-/* Bovenaan loopt de lucht zacht over in de pagina: hun kleuren liggen
-   dichtbij, maar niet op elkaar. */
-.hero img {
-  width: 100%;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%);
-  mask-image: linear-gradient(to bottom, transparent, #000 30%);
-}
-
 /* Zo werkt het: drie genummerde stappen. */
 .stappen {
   list-style: none;
@@ -183,40 +167,35 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   white-space: nowrap;
 }
 
-/* Het grote voorbeeld bovenaan: de zin, en de fiche die de app ervan maakt.
-   Op een telefoon onder elkaar, breed naast elkaar. */
+/* Het grote voorbeeld bovenaan: het luisterscherm met de zin in de wolk van
+   de klapekster, en de fiche die de app ervan maakt. Op een telefoon onder
+   elkaar, breed naast elkaar. */
 .toonbeeld {
   display: grid;
-  gap: 8px 32px;
-  align-items: center;
+  gap: 16px 32px;
+  align-items: start;
   margin: 8px 0 0;
 }
 @media (min-width: 700px) {
-  .toonbeeld { grid-template-columns: 1fr 360px; }
+  .toonbeeld { grid-template-columns: 1fr 1fr; }
 }
+.toonbeeld figure { margin: 0; }
 .toonbeeld .wie {
   color: var(--grijs);
   font-size: 0.95rem;
-  margin: 0.6em 0 0.3em;
+  margin: 0 0 8px;
 }
-/* De tekstwolk, zoals in de app: wat de spraakherkenning hoorde. */
-.wolk {
-  font-family: var(--schreef);
-  font-style: italic;
-  font-size: 1.35rem;
-  line-height: 1.35;
-  background: var(--kaart);
-  border: 1px solid var(--lijn);
-  border-radius: 20px 20px 20px 4px;
-  padding: 14px 18px;
-  margin: 0;
-}
+.scherm,
 .fiche {
   width: 100%;
   max-width: 360px;
-  justify-self: center;
-  filter: drop-shadow(0 6px 18px rgb(41 62 53 / 0.10));
 }
+.scherm {
+  border-radius: 20px;
+  border: 1px solid var(--lijn);
+  box-shadow: 0 6px 18px rgb(41 62 53 / 0.10);
+}
+.fiche { filter: drop-shadow(0 6px 18px rgb(41 62 53 / 0.10)); }
 
 /* De reeks voorbeelden: op een telefoon vegen, breed in twee kolommen. */
 .voorbeelden {

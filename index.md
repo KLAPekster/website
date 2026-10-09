@@ -19,18 +19,15 @@ permalink: /
 </section>
 
 <section class="toonbeeld" aria-label="Voorbeeld">
-  <div class="toonbeeld-zin">
-    <p class="wie">Jij zegt:</p>
-    <p class="wolk">“{{ eerste.zin }}”</p>
-    <p class="wie">KLAPekster maakt er dit van:</p>
-  </div>
-  <img class="fiche" src="{{ '/assets/beeld/fiches/' | append: eerste.naam | append: '.webp' | relative_url }}" alt="Drie waarnemingen: drie kieviten overvliegend west, twee wulpen ter plaatse en een grutto roepend" width="{{ eerste.breedte }}" height="{{ eerste.hoogte }}">
+  <figure>
+    <figcaption class="wie">Jij spreekt, KLAPekster luistert mee…</figcaption>
+    <img class="scherm" src="{{ '/assets/beeld/luisterbeeld.webp' | relative_url }}" alt="De klapekster op zijn paal in de heide luistert. In zijn wolk staat: {{ eerste.zin }}" width="384" height="600">
+  </figure>
+  <figure>
+    <figcaption class="wie">…en maakt er dit van:</figcaption>
+    <img class="fiche" src="{{ '/assets/beeld/fiches/' | append: eerste.naam | append: '.webp' | relative_url }}" alt="Drie waarnemingen: drie kieviten overvliegend west, twee wulpen ter plaatse en een grutto roepend" width="{{ eerste.breedte }}" height="{{ eerste.hoogte }}">
+  </figure>
 </section>
-
-<picture class="hero">
-  <source media="(max-width: 640px)" srcset="{{ '/assets/beeld/hero_dag_smal.webp' | relative_url }}">
-  <img src="{{ '/assets/beeld/hero_dag_breed.webp' | relative_url }}" alt="Een klapekster op een paal in de heide" width="1600" height="430" loading="lazy">
-</picture>
 
 ## KLAPekster herkent geen vogels. Jij wel.
 
@@ -136,9 +133,9 @@ En voor wie op een telpost staat waar het snel gaat: zeg het, en kijk verder.
 
 ## Wie het maakt
 
-KLAPekster is een hobbyproject van Olivier Fuchs, mede-vogelaar. Ook al kan
-je met de app (via je eigen account) je waarnemingen snel opladen, de app is
-op dit moment niet verbonden met Natuurpunt of de organisatie achter
-waarnemingen.be, waarneming.nl of observation.org.
+KLAPekster is een hobbyproject van Olivier Fuchs, mede-vogelaar. Je kunt met
+de app (via je eigen account) je waarnemingen snel opladen. Toch is dit
+initiatief op dit moment niet verbonden met Natuurpunt of de organisatie
+achter waarnemingen.be, waarneming.nl of observation.org.
 
 <div class="slotknop">{% include playknop.html %}</div>

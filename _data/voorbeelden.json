@@ -28,18 +28,25 @@
     "hoogte": 289
   },
   {
+    "naam": "kleurvorm",
+    "opschrift": "Kleurvormen",
+    "zin": "Twee buizerds donkere vorm en drie wespendieven lichte vorm.",
+    "breedte": 360,
+    "hoogte": 191
+  },
+  {
+    "naam": "ondersoort",
+    "opschrift": "Ondersoorten",
+    "zin": "Drie noordse kauwen tussen veertig kauwen.",
+    "breedte": 360,
+    "hoogte": 173
+  },
+  {
     "naam": "verhaspeling",
     "opschrift": "De spraakherkenning hoorde \"boude meest\". KLAPekster weet wat je bedoelde",
     "zin": "Boude meest gehoord.",
     "breedte": 360,
     "hoogte": 128
-  },
-  {
-    "naam": "dialect",
-    "opschrift": "Dialect: hannewuiten is een gaai, een blotser een buizerd",
-    "zin": "Twee hannewuiten roepend en een blotser overvliegend.",
-    "breedte": 360,
-    "hoogte": 211
   },
   {
     "naam": "waarvan",
@@ -68,5 +75,12 @@
     "zin": "Een sperwer of een havik jagend.",
     "breedte": 360,
     "hoogte": 204
+  },
+  {
+    "naam": "dialect",
+    "opschrift": "Dialect: hannewuiten is een gaai, een blotser een buizerd",
+    "zin": "Twee hannewuiten roepend en een blotser overvliegend.",
+    "breedte": 360,
+    "hoogte": 211
   }
 ]
