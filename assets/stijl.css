@@ -290,6 +290,9 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   padding: 0;
 }
 .formulier fieldset { border: 0; margin: 0; padding: 0; }
+/* Eén vraag met zijn label en uitleg; dezelfde tussenruimte als het
+   formulier zelf, zodat een telefoon geen verschil ziet. */
+.veld { display: flex; flex-direction: column; gap: 6px; }
 .veldnoot { font-weight: 400; color: var(--grijs); font-size: 0.9rem; }
 .formulier input[type="text"],
 .formulier input[type="email"],
@@ -388,6 +391,29 @@ label.ontbreekt,
   .voorpagina .stappen { grid-template-columns: repeat(3, 1fr); }
 
   .voorpagina h2 { margin-top: 2.6em; }
+
+  /* Een losse pagina met "klasse: breed" (Proberen): een kolom van 960, met
+     de lopende tekst nog altijd hoogstens 720 breed, en het formulier in twee
+     kolommen. De korte vragen staan twee aan twee naast elkaar; de lijst met
+     apps, de opmerking en de knop gaan over de hele breedte. */
+  .breed .kolom { max-width: calc(960px + 2 * 16px); }
+  .breed main > p,
+  .breed main > ul { max-width: 720px; }
+  .breed .stappen { grid-template-columns: repeat(3, 1fr); }
+  .breed .formulier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    max-width: none;
+  }
+  .breed .formulier > :not(.veld),
+  .breed .formulier > .veld-breed { grid-column: 1 / -1; }
+  .breed .formulier > .knop { justify-self: start; }
+  /* Een keuzelijst onderaan zijn vak, zodat beide lijsten op één hoogte
+     staan, ook als de ene vraag op twee regels staat en de andere op één. */
+  .breed .veld:has(select) { justify-content: flex-end; }
+  /* De vinkjes elk zo breed als hun naam, zodat geen enkele afbreekt. */
+  .breed .vinkjes { display: flex; flex-wrap: wrap; column-gap: 28px; }
 }
 
 /* Voet */

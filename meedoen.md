@@ -2,6 +2,8 @@
 title: KLAPekster proberen
 description: Meld je aan om KLAPekster nu al te proberen op je Android-telefoon.
 permalink: /meedoen/
+# Op een breed scherm een bredere kolom, voor het formulier (stijl.css).
+klasse: breed
 ---
 
 # KLAPekster proberen
@@ -28,48 +30,62 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
 ## Aanmelden
 
 <form id="aanmeldformulier" class="formulier" novalidate markdown="0">
-  <label for="naam">Naam <span class="veldnoot">(verplicht)</span></label>
-  <input type="text" id="naam" name="naam" required autocomplete="name">
+  <!-- Elke vraag in een eigen .veld: op een breed scherm staan ze twee aan
+       twee naast elkaar (stijl.css), op een telefoon onder elkaar. -->
+  <div class="veld">
+    <label for="naam">Naam <span class="veldnoot">(verplicht)</span></label>
+    <input type="text" id="naam" name="naam" required autocomplete="name">
+  </div>
 
-  <label for="email">E-mailadres van je Google-account <span class="veldnoot">(verplicht)</span></label>
-  <input type="email" id="email" name="email" required autocomplete="email" inputmode="email">
-  <p class="hint">Het adres waarmee je op je telefoon in de Play Store zit.
-  Dat hoeft geen Gmail-adres te zijn. Hiermee zet ik je op de lijst, en
-  hierheen gaat ook de bevestiging.</p>
+  <div class="veld">
+    <label for="email">E-mailadres van je Google-account <span class="veldnoot">(verplicht)</span></label>
+    <input type="email" id="email" name="email" required autocomplete="email" inputmode="email">
+    <p class="hint">Het adres waarmee je op je telefoon in de Play Store zit.
+    Dat hoeft geen Gmail-adres te zijn. Hiermee zet ik je op de lijst, en
+    hierheen gaat ook de bevestiging.</p>
+  </div>
 
-  <fieldset>
-    <legend>Welke telefoon heb je? <span class="veldnoot">(verplicht)</span></legend>
-    <label class="keuze"><input type="radio" name="toestel" value="Android" required> Android</label>
-    <label class="keuze"><input type="radio" name="toestel" value="iPhone"> iPhone</label>
-  </fieldset>
-  <p class="hint melding" id="iphonemelding" hidden>KLAPekster werkt voorlopig
-  alleen op Android. Meld je gerust aan: komt er een versie voor iPhone, dan
-  laat ik het je weten.</p>
+  <div class="veld">
+    <fieldset>
+      <legend>Welke telefoon heb je? <span class="veldnoot">(verplicht)</span></legend>
+      <label class="keuze"><input type="radio" name="toestel" value="Android" required> Android</label>
+      <label class="keuze"><input type="radio" name="toestel" value="iPhone"> iPhone</label>
+    </fieldset>
+    <p class="hint melding" id="iphonemelding" hidden>KLAPekster werkt voorlopig
+    alleen op Android. Meld je gerust aan: komt er een versie voor iPhone, dan
+    laat ik het je weten.</p>
+  </div>
 
-  <fieldset>
-    <legend>In welk land woon je? <span class="veldnoot">(verplicht)</span></legend>
-    <label class="keuze"><input type="radio" name="land" value="België" required> België</label>
-    <label class="keuze"><input type="radio" name="land" value="Nederland"> Nederland</label>
-  </fieldset>
+  <div class="veld">
+    <fieldset>
+      <legend>In welk land woon je? <span class="veldnoot">(verplicht)</span></legend>
+      <label class="keuze"><input type="radio" name="land" value="België" required> België</label>
+      <label class="keuze"><input type="radio" name="land" value="Nederland"> Nederland</label>
+    </fieldset>
+  </div>
 
-  <label for="vogelervaring">Hoe zou je je ervaring met vogels omschrijven? <span class="veldnoot">(optioneel)</span></label>
-  <select id="vogelervaring" name="vogelervaring">
-    <option value=""></option>
-    <option>Beginnend</option>
-    <option>Regelmatig bezig met vogels</option>
-    <option>Ervaren vogelaar</option>
-    <option>Zeer ervaren of professioneel actief</option>
-  </select>
+  <div class="veld">
+    <label for="vogelervaring">Hoe zou je je ervaring met vogels omschrijven? <span class="veldnoot">(optioneel)</span></label>
+    <select id="vogelervaring" name="vogelervaring">
+      <option value=""></option>
+      <option>Beginnend</option>
+      <option>Regelmatig bezig met vogels</option>
+      <option>Ervaren vogelaar</option>
+      <option>Zeer ervaren of professioneel actief</option>
+    </select>
+  </div>
 
-  <label for="stemherkenningErvaring">Heb je ooit waarnemingen ingesproken met spraakherkenning? <span class="veldnoot">(optioneel)</span></label>
-  <select id="stemherkenningErvaring" name="stemherkenningErvaring">
-    <option value=""></option>
-    <option>Nog nooit geprobeerd</option>
-    <option>Weleens geprobeerd</option>
-    <option>Gebruik ik regelmatig</option>
-  </select>
+  <div class="veld">
+    <label for="stemherkenningErvaring">Heb je ooit waarnemingen ingesproken met spraakherkenning? <span class="veldnoot">(optioneel)</span></label>
+    <select id="stemherkenningErvaring" name="stemherkenningErvaring">
+      <option value=""></option>
+      <option>Nog nooit geprobeerd</option>
+      <option>Weleens geprobeerd</option>
+      <option>Gebruik ik regelmatig</option>
+    </select>
+  </div>
 
-  <fieldset>
+  <fieldset class="veld-breed">
     <legend>Welke apps of websites gebruik je bij het vogels kijken? <span class="veldnoot">(meerdere mogelijk, optioneel)</span></legend>
     <div class="vinkjes">
       <label class="keuze"><input type="checkbox" name="apps" value="Waarnemingen.be / Waarneming.nl"> Waarnemingen.be / Waarneming.nl</label>
@@ -82,8 +98,10 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
     </div>
   </fieldset>
 
-  <label for="opmerking">Opmerking of vraag <span class="veldnoot">(optioneel)</span></label>
-  <textarea id="opmerking" name="opmerking" rows="3"></textarea>
+  <div class="veld veld-breed">
+    <label for="opmerking">Opmerking of vraag <span class="veldnoot">(optioneel)</span></label>
+    <textarea id="opmerking" name="opmerking" rows="3"></textarea>
+  </div>
 
   <p class="fout" id="foutmelding" role="alert" hidden></p>
   <button type="submit" class="knop" id="verstuurknop">Aanmelden</button>
