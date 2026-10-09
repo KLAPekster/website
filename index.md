@@ -15,7 +15,7 @@ permalink: /
   <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het op.</h1>
   <p class="inleiding">Een gratis Android-app voor vogelaars die liever blijven
   kijken dan typen. Spreek in wat je ziet of hoort: KLAPekster noteert de soort,
-  het aantal en de details. Later stuur je je waarnemingen door naar
+  het aantal en de details. Stuur je waarnemingen daarna door naar
   waarnemingen.be of waarneming.nl.</p>
   {% include playknop.html %}
 </section>
