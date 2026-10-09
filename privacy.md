@@ -107,6 +107,15 @@ eerder als je erom vraagt. Heb je een iPhone, dan bewaar ik je naam en
 e-mailadres tot er een versie voor iPhone is, om je dat te laten weten, of
 tot je vraagt om ze te wissen.
 
+## Als je een bericht stuurt
+
+Via "Contact" in het menu van de app kun je de maker een bericht sturen. Het
+gaat, samen met je naam, de versie van de app en je toestel, naar hetzelfde
+rekenblad van de maker bij Google, en van daar per mail naar
+{{ site.contact }}. Je mailadres vul je alleen in als je een antwoord wilt.
+
+Je bericht wordt na zes maanden gewist, of eerder als je erom vraagt.
+
 ## Nieuwe versies
 
 De app vraagt af en toe aan dat rekenblad welke versies er zijn, om je te
