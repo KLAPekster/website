@@ -13,10 +13,12 @@ permalink: /
 <div class="held">
 <section class="opening">
   <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het op.</h1>
-  <p class="inleiding">Een gratis Android-app voor vogelaars die liever blijven
-  kijken dan typen. Spreek in wat je ziet of hoort: KLAPekster noteert de soort,
-  het aantal en de details. Stuur je waarnemingen daarna door naar
-  waarnemingen.be of waarneming.nl.</p>
+  <p class="kernzin">Meer vogels kijken. Minder tijd aan invoeren.</p>
+  <p class="inleiding">Meerdere soorten gezien, elk met hun eigen aantallen en
+  details? Spreek ze samen in, zonder elke waarneming apart in te voeren.
+  KLAPekster haalt de soorten, aantallen en details uit je woorden. Zo kun je
+  sneller noteren en je aandacht bij de vogels houden.</p>
+  <p class="kenmerken">Gratis voor Android · Export naar waarnemingen.be en waarneming.nl</p>
   {% include playknop.html %}
 </section>
 
