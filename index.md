@@ -67,7 +67,7 @@ Je ogen bij de vogel, de telefoon in je hand of je zak.
   </li>
   <li>
     <h3>Luister</h3>
-    <p>KLAPekster leest hardop voor wat ze verstond. Zo hoor je of het klopt,
+    <p>KLAPekster kan je waarneming hardop teruglezen. Zo hoor je of het klopt,
     zonder te kijken. Niet goed gehoord door de wind? Laat het nog eens
     voorlezen.</p>
   </li>
