@@ -12,9 +12,10 @@ lang: nl_BE
 url: https://klapekster.github.io
 baseurl: /website
 
-# De schakelaar: "test" zolang de testronde de ingang is, "winkel" zodra de
-# app in Google Play staat. Knop, voettekst en de aanhef van Meedoen lezen
-# alleen deze regel.
+# De schakelaar: "test" zolang je je moet aanmelden om de app te proberen,
+# "winkel" zodra ze vrij in Google Play staat. Knop, voettekst en de aanhef
+# van de aanmeldpagina lezen alleen deze regel. (Het woord "test" staat
+# alleen hier; op de site zelf heet het "proberen".)
 fase: test
 
 play_id: be.klapekster.app

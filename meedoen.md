@@ -1,12 +1,12 @@
 ---
-title: Meedoen aan de testronde
+title: KLAPekster proberen
 permalink: /meedoen/
 ---
 
-# Meedoen aan de testronde
+# KLAPekster proberen
 
-## Wat een tester doet
+## Hoe het gaat
 
-## Inschrijven
+## Aanmelden
 
 ## Zo zet je de app op je telefoon

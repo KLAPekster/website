@@ -1,10 +1,12 @@
 {% comment %}
-  De grote knop. Tijdens de test naar Meedoen; in de winkel de officiële
-  Google Play-badge, onveranderd (hun voorwaarden). Die badge komt erbij
-  zodra de app in de winkel staat.
+  De grote knop. Zolang de app nog niet vrij in Google Play staat, naar de
+  aanmeldpagina; daarna de officiële Google Play-badge, onveranderd (hun
+  voorwaarden). Die badge komt erbij zodra de app in de winkel staat.
+  Geen "test" in de knop: dat woord hield mensen tegen (Olivier, 9 oktober
+  2026).
 {% endcomment %}
 {% if site.fase == 'winkel' %}
 <a class="knop" href="https://play.google.com/store/apps/details?id={{ site.play_id }}">Download in Google Play</a>
 {% else %}
-<a class="knop" href="{{ '/meedoen/' | relative_url }}">Meedoen aan de testronde</a>
+<a class="knop" href="{{ '/meedoen/' | relative_url }}">Nu al proberen</a>
 {% endif %}

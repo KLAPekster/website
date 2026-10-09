@@ -183,30 +183,92 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   white-space: nowrap;
 }
 
-/* Wat ze verstaat: pictogram en zin. */
-.verstaat {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0;
+/* Het grote voorbeeld bovenaan: de zin, en de fiche die de app ervan maakt.
+   Op een telefoon onder elkaar, breed naast elkaar. */
+.toonbeeld {
   display: grid;
-  gap: 14px 32px;
+  gap: 8px 32px;
+  align-items: center;
+  margin: 8px 0 0;
 }
-@media (min-width: 640px) {
-  .verstaat { grid-template-columns: 1fr 1fr; }
+@media (min-width: 700px) {
+  .toonbeeld { grid-template-columns: 1fr 360px; }
 }
-.verstaat li {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
+.toonbeeld .wie {
+  color: var(--grijs);
+  font-size: 0.95rem;
+  margin: 0.6em 0 0.3em;
 }
-.verstaat svg {
-  flex: none;
-  width: 36px;
-  height: 36px;
-  color: var(--petrol);
+/* De tekstwolk, zoals in de app: wat de spraakherkenning hoorde. */
+.wolk {
+  font-family: var(--schreef);
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  background: var(--kaart);
+  border: 1px solid var(--lijn);
+  border-radius: 20px 20px 20px 4px;
+  padding: 14px 18px;
+  margin: 0;
+}
+.fiche {
+  width: 100%;
+  max-width: 360px;
+  justify-self: center;
+  filter: drop-shadow(0 6px 18px rgb(41 62 53 / 0.10));
 }
 
-.zinnen .zin { margin: 0.8em 0; }
+/* De reeks voorbeelden: op een telefoon vegen, breed in twee kolommen. */
+.voorbeelden {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 86%;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  /* Tot aan de schermrand vegen, en de eerste toch netjes in de kolom. */
+  margin: 1em -16px;
+  padding: 4px 16px 16px;
+  scroll-padding: 0 16px;
+}
+@media (min-width: 700px) {
+  .voorbeelden {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: auto;
+    overflow: visible;
+    margin: 1em 0;
+    padding: 0;
+    gap: 32px 24px;
+  }
+}
+@media (min-width: 700px) {
+  .alleen-telefoon { display: none; }
+}
+.voorbeeld {
+  scroll-snap-align: start;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.voorbeeld figcaption { display: flex; flex-direction: column; gap: 4px; }
+.opschrift {
+  color: var(--petrol);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.voorbeeldzin {
+  font-family: var(--schreef);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+.voorbeeld img {
+  width: 100%;
+  max-width: 360px;
+  filter: drop-shadow(0 4px 12px rgb(41 62 53 / 0.08));
+}
 
 .slotknop { margin-top: 48px; text-align: center; }
 

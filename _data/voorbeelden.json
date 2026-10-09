@@ -1,0 +1,72 @@
+[
+  {
+    "naam": "opening",
+    "opschrift": "Drie soorten, elk met eigen gedrag",
+    "zin": "Drie kieviten overvliegend west, twee wulpen ter plaatse en een grutto roepend.",
+    "breedte": 360,
+    "hoogte": 289
+  },
+  {
+    "naam": "detail",
+    "opschrift": "Veel detail in één waarneming",
+    "zin": "Twee adulte mannetjes buizerd donkere vorm overvliegend noordoost gezien en gehoord.",
+    "breedte": 360,
+    "hoogte": 278
+  },
+  {
+    "naam": "acht",
+    "opschrift": "Acht soorten in één adem",
+    "zin": "Een merel, twee vinken, een roodborst, drie koolmezen, een pimpelmees, twee kauwen, een gaai en een winterkoning.",
+    "breedte": 360,
+    "hoogte": 448
+  },
+  {
+    "naam": "meeuwen",
+    "opschrift": "Drie soorten meeuwen, elk met hun leeftijd",
+    "zin": "Drie kokmeeuwen adult, twee zilvermeeuwen juveniel en een stormmeeuw eerste winter.",
+    "breedte": 360,
+    "hoogte": 289
+  },
+  {
+    "naam": "verhaspeling",
+    "opschrift": "De spraakherkenning hoorde \"boude meest\". KLAPekster weet wat je bedoelde",
+    "zin": "Boude meest gehoord.",
+    "breedte": 360,
+    "hoogte": 128
+  },
+  {
+    "naam": "dialect",
+    "opschrift": "Dialect: hannewuiten is een gaai, een blotser een buizerd",
+    "zin": "Twee hannewuiten roepend en een blotser overvliegend.",
+    "breedte": 360,
+    "hoogte": 211
+  },
+  {
+    "naam": "waarvan",
+    "opschrift": "Een groep opsplitsen",
+    "zin": "Acht grauwe ganzen overvliegend, waarvan vijf noord en drie west.",
+    "breedte": 360,
+    "hoogte": 198
+  },
+  {
+    "naam": "prooi",
+    "opschrift": "Met de prooi erbij",
+    "zin": "Torenvalk adult man jagend op veldmuis.",
+    "breedte": 360,
+    "hoogte": 190
+  },
+  {
+    "naam": "jongen",
+    "opschrift": "Een koppel met jongen",
+    "zin": "Koppel knobbelzwanen met vijf jongen.",
+    "breedte": 360,
+    "hoogte": 198
+  },
+  {
+    "naam": "twijfel",
+    "opschrift": "Twijfel mag",
+    "zin": "Een sperwer of een havik jagend.",
+    "breedte": 360,
+    "hoogte": 204
+  }
+]

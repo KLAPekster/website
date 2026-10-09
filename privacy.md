@@ -9,16 +9,17 @@ permalink: /privacy/
 <p class="flauw">Laatst gewijzigd op 9 oktober 2026</p>
 
 Kort gezegd: je waarnemingen blijven op je telefoon, tot jij ze zelf naar
-waarnemingen.be of waarneming.nl stuurt. Tijdens de testronde gaat er wel een
-logboek naar de maker, zodat de app beter leert verstaan. Hieronder staat
-precies wat er waarheen gaat.
+waarnemingen.be of waarneming.nl stuurt. Zolang KLAPekster nog niet vrij in
+Google Play staat, gaat er wel een logboek naar de maker, zodat de app beter
+leert verstaan. Hieronder staat precies wat er waarheen gaat.
 
 ## Wat KLAPekster is
 
 KLAPekster is een app waarin je vogelwaarnemingen inspreekt. Ze is een
 hobbyproject van Olivier Fuchs, in België. Hij is ook degene die
-verantwoordelijk is voor je gegevens. KLAPekster is niet verbonden met
-Natuurpunt, waarnemingen.be of waarneming.nl.
+verantwoordelijk is voor je gegevens. KLAPekster is op dit moment niet
+verbonden met Natuurpunt of de organisatie achter waarnemingen.be,
+waarneming.nl of observation.org.
 
 ## Op je telefoon
 
@@ -62,10 +63,11 @@ in hun eigen privacybeleid.
 
 <!-- Deze paragraaf verandert zodra het logboek uit staat tenzij je het
      aanzet (stap 2 van het go-live-plan). -->
-## Het logboek tijdens de testronde
+## Het logboek in deze eerste fase
 
-Tijdens de testronde vraagt de app bij het begin je naam, en stuurt ze een
-logboek naar de maker. Daarin staat, per keer dat je iets inspreekt:
+Zolang KLAPekster nog niet vrij in Google Play staat (en je je dus eerst moet
+aanmelden om ze te proberen), vraagt de app bij het begin je naam, en stuurt
+ze een logboek naar de maker. Daarin staat, per keer dat je iets inspreekt:
 
 - wat de spraakherkenning verstond, en wat de app ervan maakte (soort,
   aantal, gedrag en dergelijke), en wat je daarna zelf verbeterde;
@@ -83,20 +85,20 @@ onderweg. Alleen Olivier kan erin.
 
 **Waarom**: om te zien waar de app verkeerd verstaat, en dat te verbeteren.
 
-**Hoe lang**: zes maanden na het einde van de testronde worden je naam, je
+**Hoe lang**: zes maanden na het einde van deze eerste fase worden je naam, je
 toestel en je plek gewist. Wat de spraakherkenning verstond, blijft daarna
 bewaard zonder die gegevens, om de herkenning te blijven verbeteren.
 
 Wil je dat je logboek eerder gewist wordt? Eén mail volstaat.
 
-## Als je je inschrijft voor de testronde
+## Als je je aanmeldt om KLAPekster te proberen
 
-Het inschrijfformulier vraagt je naam, e-mailadres, land en provincie, en als
+Het aanmeldformulier vraagt je naam, e-mailadres, land en provincie, en als
 je wil nog wat meer over jezelf en je ervaring. Dat gaat naar hetzelfde
-rekenblad van de maker bij Google. Het dient om je toe te voegen aan de
-testronde en je te laten weten hoe je de app installeert.
+rekenblad van de maker bij Google. Het dient om je toe te voegen aan de lijst
+van wie de app mag installeren, en je te laten weten hoe dat gaat.
 
-Je inschrijving wordt gewist zes maanden na het einde van de testronde, of
+Je aanmelding wordt gewist zes maanden na het einde van deze eerste fase, of
 eerder als je erom vraagt.
 
 ## Nieuwe versies
