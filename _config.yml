@@ -1,0 +1,38 @@
+# Instellingen van klapekster.be. Plan: ontwerp/website/PLAN.md in de app-repo.
+
+title: KLAPekster
+description: Zeg wat je ziet. KLAPekster schrijft het op.
+lang: nl_BE
+
+# Waar de site staat. Tot klapekster.be actief is, staat ze op het noodadres
+# van GitHub, in de submap /website. Zodra het domein werkt (stap 5):
+#   url: https://klapekster.be
+#   baseurl: ""
+# en het bestand CNAME met de regel klapekster.be erbij.
+url: https://klapekster.github.io
+baseurl: /website
+
+# De schakelaar: "test" zolang de testronde de ingang is, "winkel" zodra de
+# app in Google Play staat. Knop, voettekst en de aanhef van Meedoen lezen
+# alleen deze regel.
+fase: test
+
+play_id: be.klapekster.app
+contact: klapekster.app@gmail.com
+aanmeldlink: https://play.google.com/apps/testing/be.klapekster.app
+
+# Het Apps Script dat de inschrijvingen ontvangt (stap 4).
+script_url: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: standaard
+
+exclude:
+  - README.md

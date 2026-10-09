@@ -1,0 +1,168 @@
+/* De vormgeving van klapekster.be. Kleuren letterlijk uit de app
+   (lib/ui/thema.dart, Palet.licht en Palet.donker): verandert het palet
+   daar, dan verandert het hier mee. Dit is de enige plek. */
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("lettertypen/SourceSans3-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("lettertypen/SourceSans3-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("lettertypen/Newsreader.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url("lettertypen/Newsreader-Italic.ttf") format("truetype");
+  font-weight: 200 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --scherm: #FAF9F3;
+  --kaart: #FFFEFA;
+  --verhoogd: #F0F3ED;
+  --inkt: #293E35;
+  --grijs: #526159;
+  --flauw: #899790;
+  --lijn: #CCD3C9;
+  --petrol: #175D60;
+  --petrol-vol: #175D60;
+  --op-petrol: #FFFFFF;
+  --petrol-vlak: #E2EEEA;
+  --oker: #9B570D;
+
+  --schreef: "Newsreader", Georgia, serif;
+  --schreefloos: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --scherm: #26304A;
+    --kaart: #2E3852;
+    --verhoogd: #313B55;
+    --inkt: #ECE9DF;
+    --grijs: #B7BECB;
+    --flauw: #7F889C;
+    --lijn: #46506A;
+    --petrol: #95C2C0;
+    --petrol-vol: #3F918D;
+    --op-petrol: #FFFFFF;
+    --petrol-vlak: #2C4553;
+    --oker: #E2A75E;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--scherm);
+  color: var(--inkt);
+  font-family: var(--schreefloos);
+  font-size: 1.125rem;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+/* Eén kolom, telefoon eerst: 16 punten zijrand, hoogstens 720 breed. */
+.kolom {
+  max-width: calc(720px + 2 * 16px);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--petrol); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, .knop:focus-visible {
+  outline: 3px solid var(--petrol);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+h1, h2, h3 {
+  font-family: var(--schreef);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--inkt);
+}
+h1 { font-size: 2.1rem; margin: 0.4em 0 0.5em; }
+h2 { font-size: 1.6rem; margin: 2.2em 0 0.5em; }
+h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
+
+/* Wat een spreker zegt: schuin, in de schreefletter. */
+.zin, blockquote {
+  font-family: var(--schreef);
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 1em 0;
+  padding: 0.6em 0 0.6em 1em;
+  border-left: 3px solid var(--petrol);
+}
+
+.flauw { color: var(--grijs); }
+
+/* Kop */
+.kop { padding-top: 24px; padding-bottom: 8px; }
+.woordmerk { display: inline-block; }
+.woordmerk img { width: 220px; }
+.voorpagina .woordmerk img { width: min(360px, 100%); }
+
+/* De opening van de voorpagina. */
+.opening { padding: 8px 0 16px; }
+.opening .slogan {
+  font-family: var(--schreef);
+  font-size: 1.9rem;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0.3em 0 0.9em;
+  text-wrap: balance;
+}
+
+.knop {
+  display: inline-block;
+  background: var(--petrol-vol);
+  color: var(--op-petrol);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: 999px;
+  min-height: 48px;
+}
+.knop:hover { filter: brightness(1.08); }
+
+.kaart {
+  background: var(--kaart);
+  border: 1px solid var(--lijn);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin: 1em 0;
+}
+
+/* Voet */
+.voet {
+  margin-top: 64px;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--lijn);
+  background: var(--verhoogd);
+  font-size: 0.95rem;
+  color: var(--grijs);
+}
+.voet p { margin: 0.4em 0; }
+.voetlinks { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 12px; }
+.voetlinks a { font-weight: 600; }

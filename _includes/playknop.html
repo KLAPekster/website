@@ -1,0 +1,10 @@
+{% comment %}
+  De grote knop. Tijdens de test naar Meedoen; in de winkel de officiële
+  Google Play-badge, onveranderd (hun voorwaarden). Die badge komt erbij
+  zodra de app in de winkel staat.
+{% endcomment %}
+{% if site.fase == 'winkel' %}
+<a class="knop" href="https://play.google.com/store/apps/details?id={{ site.play_id }}">Download in Google Play</a>
+{% else %}
+<a class="knop" href="{{ '/meedoen/' | relative_url }}">Meedoen aan de testronde</a>
+{% endif %}
