@@ -72,14 +72,12 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
   <fieldset>
     <legend>Welke apps of websites gebruik je bij het vogels kijken? <span class="veldnoot">(meerdere mogelijk, optioneel)</span></legend>
     <div class="vinkjes">
-      <label class="keuze"><input type="checkbox" name="apps" value="Waarnemingen.be"> Waarnemingen.be</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="Waarneming.nl"> Waarneming.nl</label>
+      <label class="keuze"><input type="checkbox" name="apps" value="Waarnemingen.be / Waarneming.nl"> Waarnemingen.be / Waarneming.nl</label>
       <label class="keuze"><input type="checkbox" name="apps" value="ObsMapp"> ObsMapp</label>
       <label class="keuze"><input type="checkbox" name="apps" value="ObsIdentify"> ObsIdentify</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Merlin"> Merlin</label>
       <label class="keuze"><input type="checkbox" name="apps" value="BirdTalk"> BirdTalk</label>
       <label class="keuze"><input type="checkbox" name="apps" value="eBird"> eBird</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="Geen"> Geen</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Andere"> Andere</label>
     </div>
   </fieldset>
@@ -99,7 +97,7 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
   komt er een versie voor iPhone, dan laat ik het je weten.</p>
 </div>
 
-## Zo zet je de app op je telefoon
+## Wat er na je aanmelding gebeurt
 
 {% include installatiestappen.html %}
 
