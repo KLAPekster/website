@@ -1,0 +1,10 @@
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g fill="currentColor">
+    <rect x="19" y="4" width="8" height="16" rx="4"/>
+    <rect x="37" y="4" width="8" height="16" rx="4"/>
+    <path fill-rule="evenodd" d="M23 14h18c4 0 6 2 6 6v32c0 4-2 6-6 6H23c-4 0-6-2-6-6V20c0-4 2-6 6-6Z
+      M24 22h16v2.5H24ZM24 27h16v2.5H24ZM24 32h16v2.5H24Z
+      M38 46a6 6 0 1 0-12 0 6 6 0 1 0 12 0Z"/>
+    <circle cx="32" cy="46" r="2.8"/>
+  </g>
+</svg>

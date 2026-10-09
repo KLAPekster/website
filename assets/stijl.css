@@ -1,6 +1,7 @@
 /* De vormgeving van klapekster.be. Kleuren letterlijk uit de app
-   (lib/ui/thema.dart, Palet.licht en Palet.donker): verandert het palet
-   daar, dan verandert het hier mee. Dit is de enige plek. */
+   (lib/ui/thema.dart, Palet.licht): verandert het palet daar, dan verandert
+   het hier mee. Dit is de enige plek. Alleen licht: de app schakelt mee met
+   dag en nacht, de site niet (Olivier, 9 oktober 2026). */
 
 @font-face {
   font-family: "Source Sans 3";
@@ -47,26 +48,11 @@
   --schreefloos: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --scherm: #26304A;
-    --kaart: #2E3852;
-    --verhoogd: #313B55;
-    --inkt: #ECE9DF;
-    --grijs: #B7BECB;
-    --flauw: #7F889C;
-    --lijn: #46506A;
-    --petrol: #95C2C0;
-    --petrol-vol: #3F918D;
-    --op-petrol: #FFFFFF;
-    --petrol-vlak: #2C4553;
-    --oker: #E2A75E;
-  }
-}
-
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+/* clip: de vogelband loopt tot de schermrand, en mag op een groot scherm
+   met schuifbalk geen horizontale scroll geven. */
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
 
 body {
   margin: 0;
@@ -135,6 +121,94 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   margin: 0.3em 0 0.9em;
   text-wrap: balance;
 }
+
+.opening .inleiding {
+  color: var(--grijs);
+  margin: 0 0 1.4em;
+  max-width: 34em;
+}
+
+/* De vogel op zijn paal, van rand tot rand. */
+.hero {
+  display: block;
+  width: 100vw;
+  margin: 24px calc(50% - 50vw) 0;
+}
+/* Bovenaan loopt de lucht zacht over in de pagina: hun kleuren liggen
+   dichtbij, maar niet op elkaar. */
+.hero img {
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%);
+  mask-image: linear-gradient(to bottom, transparent, #000 30%);
+}
+
+/* Zo werkt het: drie genummerde stappen. */
+.stappen {
+  list-style: none;
+  counter-reset: stap;
+  padding: 0;
+  margin: 1em 0;
+  display: grid;
+  gap: 16px;
+}
+.stappen li {
+  counter-increment: stap;
+  background: var(--kaart);
+  border: 1px solid var(--lijn);
+  border-radius: 16px;
+  padding: 16px 20px 16px 64px;
+  position: relative;
+}
+.stappen li::before {
+  content: counter(stap);
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--petrol-vlak);
+  color: var(--petrol);
+  font-family: var(--schreef);
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: grid;
+  place-items: center;
+}
+.stappen h3 { margin: 0 0 0.2em; }
+.stappen p { margin: 0; }
+.zin-kort {
+  font-family: var(--schreef);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* Wat ze verstaat: pictogram en zin. */
+.verstaat {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0;
+  display: grid;
+  gap: 14px 32px;
+}
+@media (min-width: 640px) {
+  .verstaat { grid-template-columns: 1fr 1fr; }
+}
+.verstaat li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.verstaat svg {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  color: var(--petrol);
+}
+
+.zinnen .zin { margin: 0.8em 0; }
+
+.slotknop { margin-top: 48px; text-align: center; }
 
 .knop {
   display: inline-block;

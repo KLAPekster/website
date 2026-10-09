@@ -1,0 +1,10 @@
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g fill="currentColor">
+    <ellipse cx="27" cy="35" rx="11" ry="14" transform="rotate(-16 27 35)"/>
+    <circle cx="36" cy="22" r="7"/>
+    <path d="M41 19l12 1-11 4zm1 6 10 5-12-1zM19 40 8 52l15-8z"/>
+  </g>
+  <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+    <path d="M51 14l5-3m-3 11h6m-8 7 5 4"/>
+  </g>
+</svg>

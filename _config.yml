@@ -33,6 +33,8 @@ defaults:
       path: ""
     values:
       layout: standaard
+      # Wat WhatsApp en dergelijke tonen als iemand een link doorstuurt.
+      image: /assets/beeld/deelbeeld.jpg
 
 exclude:
   - README.md
