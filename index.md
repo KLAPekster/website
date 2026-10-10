@@ -139,8 +139,4 @@ KLAPekster is een hobbyproject van Olivier Fuchs, zelf vogelaar. Het idee is
 eenvoudig: minder tijd besteden aan invoeren, meer aandacht voor wat er om je
 heen gebeurt.
 
-KLAPekster is een onafhankelijk initiatief en is niet verbonden aan
-Natuurpunt of de organisatie achter waarnemingen.be, waarneming.nl en
-observation.org.
-
 <div class="slotknop">{% include playknop.html %}</div>

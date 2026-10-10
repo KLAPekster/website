@@ -112,9 +112,11 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
   komt er een versie voor iPhone, dan laat ik het je weten.</p>
 </div>
 
-## Wat er na je aanmelding gebeurt
+## Na je aanmelding
 
-{% include installatiestappen.html %}
+Je krijgt meteen een bevestigingsmail. Daarna zet ik je met de hand op de
+testerslijst, en krijg je een tweede mail met alles wat je nodig hebt om
+KLAPekster te installeren.
 
 <script>
   // Het adres van het Apps Script staat in _config.yml (script_url).
