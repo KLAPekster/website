@@ -34,8 +34,8 @@ permalink: /
 
 ## Voor wie
 
-Voor vogelaars die hun waarnemingen willen bijhouden: aan de voederplaats,
-tijdens een wandeling of op de telpost.
+Voor vogelaars die liever spreken dan typen, of hun waarnemingen sneller
+willen ingeven: aan de voederplaats, tijdens een wandeling of op de telpost.
 
 ## Zo werkt het
 
@@ -61,7 +61,7 @@ tijdens een wandeling of op de telpost.
   </li>
 </ol>
 
-## Blijf kijken, ook tijdens het noteren
+## Zonder naar je scherm te kijken
 
 Je kunt KLAPekster bedienen met de volumeknoppen, de knop van een bedraad
 oortje of een losse Flic-knop. Spreek je waarneming in en laat de app die
