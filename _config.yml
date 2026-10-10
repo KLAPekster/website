@@ -4,13 +4,11 @@ title: KLAPekster
 description: Zeg wat je ziet. KLAPekster schrijft het op.
 lang: nl_BE
 
-# Waar de site staat. Tot klapekster.be actief is, staat ze op het noodadres
-# van GitHub, in de submap /website. Zodra het domein werkt (stap 5):
-#   url: https://klapekster.be
-#   baseurl: ""
-# en het bestand CNAME met de regel klapekster.be erbij.
-url: https://klapekster.github.io
-baseurl: /website
+# Waar de site staat: op klapekster.be sinds 10 oktober 2026 (stap 5). Het
+# bestand CNAME zegt GitHub dat het domein bij deze site hoort; het oude
+# adres klapekster.github.io/website stuurt vanzelf door.
+url: https://klapekster.be
+baseurl: ""
 
 # De schakelaar: "test" zolang je je moet aanmelden om de app te proberen,
 # "winkel" zodra ze vrij in Google Play staat. Knop, voettekst en de aanhef
