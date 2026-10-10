@@ -16,7 +16,7 @@ permalink: /
   <p class="kernzin">Meer vogels kijken. Minder tijd aan invoeren.</p>
   <p class="inleiding">Spreek meerdere soorten in één keer in, met hun aantallen
   en details. KLAPekster maakt er afzonderlijke waarnemingen van.</p>
-  <p class="kenmerken">Gratis voor Android · Export naar waarnemingen.be en waarneming.nl</p>
+  <p class="kenmerken">Gratis, voor Android · Export naar waarnemingen.be en waarneming.nl</p>
   {% include playknop.html %}
 </section>
 
@@ -101,7 +101,7 @@ herkennen.
 
 ## Zeg het zoals je het ziet
 
-<p class="flauw alleen-telefoon">Veeg opzij voor meer.</p>
+<p class="flauw alleen-telefoon"><strong>Veeg opzij voor meer.</strong></p>
 
 <div class="voorbeelden">
 {% for v in site.data.voorbeelden offset:1 limit:zichtbaar %}{% include voorbeeld.html v=v %}{% endfor %}
