@@ -102,7 +102,7 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
 
   <!-- Lokvak tegen robots: mensen zien het niet; is het ingevuld, dan wordt
        er niets verstuurd (zoals op Contact). -->
-  <div class="lokvak" aria-hidden="true">
+  <div class="lokvak" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">
     <label for="kenmerk">Laat dit leeg</label>
     <input type="text" id="kenmerk" name="kenmerk" tabindex="-1" autocomplete="off">
   </div>

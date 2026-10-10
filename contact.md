@@ -33,7 +33,7 @@ Een vraag, een idee, of iets dat niet werkt? Laat het gerust weten.
     <textarea id="bericht" name="bericht" rows="6" required></textarea>
   </div>
 
-  <div class="lokvak" aria-hidden="true">
+  <div class="lokvak" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">
     <label for="kenmerk">Laat dit leeg</label>
     <input type="text" id="kenmerk" name="kenmerk" tabindex="-1" autocomplete="off">
   </div>
