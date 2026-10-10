@@ -87,26 +87,30 @@ dialectnamen. Ook veel verkeerd verstane vogelnamen kan KLAPekster alsnog
 herkennen.
 
 {% comment %}
-  De voorbeelden komen ná de uitleg over het gebruik, en eerst maar drie; de
-  rest klapt open (Olivier, 9 oktober 2026: elf voorbeelden duwden de uitleg
-  bijna twee schermhoogtes naar beneden). Welke drie: de volgorde in
-  tools/website_fiches.dart in de app-repo. Openklappen zonder script, met
-  details/summary.
+  De voorbeelden komen ná de uitleg over het gebruik (Olivier, 9 oktober
+  2026: elf voorbeelden duwden de uitleg bijna twee schermhoogtes naar
+  beneden). Eerst zes, op een breed scherm twee rijen van drie; de rest klapt
+  open achter een knop in het midden (Olivier, 10 oktober 2026: met drie en
+  een knop links zag je die knop makkelijk over het hoofd). Welke: de
+  volgorde in tools/website_fiches.dart in de app-repo. Openklappen zonder
+  script, met details/summary.
 {% endcomment %}
-{% assign aantal = site.data.voorbeelden.size | minus: 1 %}
+{% assign zichtbaar = 6 %}
+{% assign verder = zichtbaar | plus: 1 %}
+{% assign rest = site.data.voorbeelden.size | minus: verder %}
 
 ## Zeg het zoals je het ziet
 
 <p class="flauw alleen-telefoon">Veeg opzij voor meer.</p>
 
 <div class="voorbeelden">
-{% for v in site.data.voorbeelden offset:1 limit:3 %}{% include voorbeeld.html v=v %}{% endfor %}
+{% for v in site.data.voorbeelden offset:1 limit:zichtbaar %}{% include voorbeeld.html v=v %}{% endfor %}
 </div>
 
 <details class="meer-voorbeelden">
-  <summary>Bekijk alle {{ aantal }} voorbeelden</summary>
+  <summary>Bekijk nog {{ rest }} voorbeelden</summary>
   <div class="voorbeelden">
-  {% for v in site.data.voorbeelden offset:4 %}{% include voorbeeld.html v=v %}{% endfor %}
+  {% for v in site.data.voorbeelden offset:verder %}{% include voorbeeld.html v=v %}{% endfor %}
   </div>
 </details>
 

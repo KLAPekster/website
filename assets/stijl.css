@@ -270,9 +270,11 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   font-size: 1.1rem;
   line-height: 1.35;
 }
-/* De knop "Bekijk alle voorbeelden": klapt de rest open, zonder script.
-   Open verdwijnt de knop, de voorbeelden staan dan gewoon onder de eerste
-   drie. */
+/* De knop "Bekijk nog … voorbeelden": klapt de rest open, zonder script.
+   In het midden, zodat hij niet wegvalt onder de eerste fiche. Open
+   verdwijnt de knop, de voorbeelden staan dan gewoon onder de eerste zes. */
+.meer-voorbeelden { text-align: center; margin-top: 8px; }
+.meer-voorbeelden[open] { text-align: start; }
 .meer-voorbeelden > summary {
   list-style: none;
   display: inline-block;
