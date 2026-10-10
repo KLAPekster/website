@@ -50,14 +50,14 @@
   },
   {
     "naam": "verhaspeling",
-    "opschrift": "Ook als de spraakherkenning een vogelnaam verhaspelt",
+    "opschrift": "Verkeerd verstaan, toch herkend",
     "zin": "Boude meest gehoord.",
     "breedte": 360,
     "hoogte": 180
   },
   {
     "naam": "detail",
-    "opschrift": "Alle details mag je zeggen",
+    "opschrift": "Ook met veel details",
     "zin": "Twee adulte mannetjes buizerd donkere vorm overvliegend noordoost gezien en gehoord.",
     "breedte": 360,
     "hoogte": 278
@@ -78,7 +78,7 @@
   },
   {
     "naam": "dialect",
-    "opschrift": "Dialectwoorden kent hij ook",
+    "opschrift": "Volks- en dialectnamen",
     "zin": "Twee hannewuiten roepend en een blotser overvliegend.",
     "breedte": 360,
     "hoogte": 211

@@ -14,17 +14,15 @@ permalink: /
 <section class="opening">
   <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het op.</h1>
   <p class="kernzin">Meer vogels kijken. Minder tijd aan invoeren.</p>
-  <p class="inleiding">Meerdere soorten gezien, elk met hun eigen aantallen en
-  details? Spreek ze samen in, zonder elke waarneming apart in te voeren.
-  KLAPekster haalt de soorten, aantallen en details uit je woorden. Zo kun je
-  sneller noteren en je aandacht bij de vogels houden.</p>
+  <p class="inleiding">Spreek meerdere soorten in één keer in, met hun aantallen
+  en details. KLAPekster maakt er afzonderlijke waarnemingen van.</p>
   <p class="kenmerken">Gratis voor Android · Export naar waarnemingen.be en waarneming.nl</p>
   {% include playknop.html %}
 </section>
 
 <section class="toonbeeld" aria-label="Voorbeeld">
   <figure>
-    <figcaption class="wie">Jij spreekt, KLAPekster luistert mee…</figcaption>
+    <figcaption class="wie">Jij spreekt, KLAPekster luistert…</figcaption>
     <img class="scherm" src="{{ '/assets/beeld/luisterbeeld.webp' | relative_url }}" alt="De klapekster op zijn paal in de heide luistert. In zijn wolk staat: {{ eerste.zin }}" width="384" height="600">
   </figure>
   <figure>
@@ -34,19 +32,10 @@ permalink: /
 </section>
 </div>
 
-## Jij kijkt en luistert. KLAPekster noteert.
-
-KLAPekster herkent jouw woorden, geen vogelgeluiden. Vertel welke vogel je
-ziet of hoort, hoeveel het er zijn en wat ze doen. De app zet je woorden om in
-waarnemingen en voegt plaats en tijd toe. Twijfel je over de soort of de
-leeftijd? Ook dat kun je inspreken.
-
 ## Voor wie
 
-Van de mezen aan je voederplaats tot de ganzen boven de telpost: je wilt
-vogels kijken, niet op je scherm turen. Met KLAPekster spreek je je
-waarnemingen in terwijl je de vogels blijft volgen. Thuis, onderweg of midden
-in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
+Voor vogelaars die hun waarnemingen willen bijhouden: aan de voederplaats,
+tijdens een wandeling of op de telpost.
 
 ## Zo werkt het
 
@@ -55,12 +44,13 @@ in de najaarstrek. Zeg wat je ziet of hoort, en kijk verder.
     <h3>Spreek je waarneming in</h3>
     <p>Tik op de spreekknop en zeg wat je ziet of hoort. Bijvoorbeeld:
     <span class="zin-kort">“Drie koolmezen overvliegend noord.”</span></p>
+    <p class="flauw">KLAPekster herkent jouw woorden, geen vogelgeluiden.</p>
     <img class="scherm stapbeeld" src="{{ '/assets/beeld/stappen/stap-1.webp' | relative_url }}" alt="De klapekster luistert. In zijn wolk staat: drie koolmezen overvliegend noord" width="384" height="780" loading="lazy">
   </li>
   <li>
     <h3>Controleer en bewaar</h3>
-    <p>KLAPekster zet je woorden om in een overzichtelijke waarneming. Kijk na
-    of alles klopt, pas zo nodig iets aan en bewaar.</p>
+    <p>Kijk na of alles klopt, pas zo nodig iets aan en bewaar. Plaats en tijd
+    voegt de app automatisch toe.</p>
     <img class="scherm stapbeeld" src="{{ '/assets/beeld/stappen/stap-2.webp' | relative_url }}" alt="De fiche: drie koolmezen, overvliegend noord, met de knoppen Bewaar en Opnieuw" width="384" height="780" loading="lazy">
   </li>
   <li>
@@ -107,7 +97,7 @@ herkennen.
 
 ## Zeg het zoals je het ziet
 
-<p class="flauw">Van een losse vogel tot meerdere soorten in één zin: zo verwerkt KLAPekster je woorden.<span class="alleen-telefoon"> Veeg opzij voor meer.</span></p>
+<p class="flauw alleen-telefoon">Veeg opzij voor meer.</p>
 
 <div class="voorbeelden">
 {% for v in site.data.voorbeelden offset:1 limit:3 %}{% include voorbeeld.html v=v %}{% endfor %}
@@ -130,13 +120,11 @@ herkennen.
   Zolang de app nog niet vrij in Google Play staat, gaat er wel een logboek
   naar de maker, zodat ze beter leert verstaan.{% endif %} Alles staat in het
   [privacybeleid]({{ '/privacy/' | relative_url }}).{% if site.fase == 'test' %}
-- Nog volop in de maak: er komen geregeld nieuwe versies, en wat je
-  laat weten, helpt mee.{% endif %}
+- KLAPekster is nog in ontwikkeling. Met je feedback help je de app
+  verbeteren.{% endif %}
 
 ## Gemaakt door een vogelaar
 
-KLAPekster is een hobbyproject van Olivier Fuchs, zelf vogelaar. Het idee is
-eenvoudig: minder tijd besteden aan invoeren, meer aandacht voor wat er om je
-heen gebeurt.
+KLAPekster is een hobbyproject van Olivier Fuchs, zelf vogelaar.
 
 <div class="slotknop">{% include playknop.html %}</div>
