@@ -1,8 +1,9 @@
 # Instellingen van klapekster.be. Plan: ontwerp/website/PLAN.md in de app-repo.
 
 title: KLAPekster
-# De slagzin achter de naam in de titel van de voorpagina (tabblad, Google).
-tagline: Zeg wat je ziet. KLAPekster schrijft het op.
+# Wat achter de naam staat in de titel van de voorpagina: het tabblad, en de
+# blauwe link in Google. Die weegt het zwaarst om gevonden te worden.
+tagline: Vogelwaarnemingen inspreken
 # De zoektekst: wat Google onder de titel toont, en WhatsApp bij een gedeelde
 # link. Met "vogels" en "app" erin, zodat wie die zoekt de site vindt en niet
 # alleen de vogel (10 oktober 2026).
