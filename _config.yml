@@ -24,6 +24,11 @@ aanmeldlink: https://play.google.com/apps/testing/be.klapekster.app
 # de app-repo). Hetzelfde adres als het logboek van de app.
 script_url: https://script.google.com/macros/s/AKfycbxUNp1Q1ydU7EVOfJEJfJlVYX8P8BaRBvDVdCdNVfdNWIMWLldtfKS2AtfzAW4wOd4AxA/exec
 
+# Bewijs voor Google Search Console dat de site van ons is (10 oktober 2026).
+# Niet weghalen, anders vervalt dat bewijs.
+webmaster_verifications:
+  google: Oqb8KQQCqoU4SZNTwXus6LE5dqimS0HM7n0X7XoirFs
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
