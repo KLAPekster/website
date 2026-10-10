@@ -4,11 +4,11 @@ permalink: /bedankt/
 sitemap: false
 ---
 
-# Je aanmelding is binnen
+# Bedankt voor je aanmelding!
 
-Bedankt! Zo gaat het verder:
+Je ontvangt zo een bevestigingsmail. Niets ontvangen? Kijk even in je spam.
 
-{% include installatiestappen.html %}
+Ik voeg je handmatig toe aan de testerslijst. Daarna krijg je een tweede mail
+met alles wat je nodig hebt om KLAPekster te installeren.
 
-Intussen lees je op de [voorpagina]({{ '/' | relative_url }}) wat KLAPekster
-allemaal verstaat.
+[Ontdek intussen wat KLAPekster verstaat →]({{ '/' | relative_url }})
