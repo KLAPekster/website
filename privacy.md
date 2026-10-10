@@ -114,6 +114,11 @@ gaat, samen met je naam, de versie van de app en je toestel, naar hetzelfde
 rekenblad van de maker bij Google, en van daar per mail naar
 {{ site.contact }}. Je mailadres vul je alleen in als je een antwoord wilt.
 
+Met het formulier op de pagina
+[Contact]({{ '/contact/' | relative_url }}) gaat het net zo, maar dan met
+alleen wat je zelf invult: je naam en mailadres als je die geeft, en je
+bericht.
+
 Je bericht wordt na zes maanden gewist, of eerder als je erom vraagt.
 
 ## Nieuwe versies

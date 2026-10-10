@@ -100,6 +100,13 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
     <textarea id="opmerking" name="opmerking" rows="3"></textarea>
   </div>
 
+  <!-- Lokvak tegen robots: mensen zien het niet; is het ingevuld, dan wordt
+       er niets verstuurd (zoals op Contact). -->
+  <div class="lokvak" aria-hidden="true">
+    <label for="kenmerk">Laat dit leeg</label>
+    <input type="text" id="kenmerk" name="kenmerk" tabindex="-1" autocomplete="off">
+  </div>
+
   <p class="fout" id="foutmelding" role="alert" hidden></p>
   <button type="submit" class="knop" id="verstuurknop">Aanmelden</button>
   <p class="hint">Wat er met je gegevens gebeurt, staat in het
@@ -146,6 +153,11 @@ KLAPekster te installeren.
   formulier.addEventListener('submit', function (ev) {
     ev.preventDefault();
     fout.hidden = true;
+    // Een robot: doen alsof het lukte, en niets versturen.
+    if (document.getElementById('kenmerk').value) {
+      window.location.href = BEDANKT;
+      return;
+    }
     var naam = document.getElementById('naam').value.trim();
     var email = document.getElementById('email').value.trim();
     var toestel = gekozen('toestel');

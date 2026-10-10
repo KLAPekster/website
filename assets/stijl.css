@@ -365,6 +365,15 @@ label.ontbreekt,
   cursor: pointer;
 }
 .formulier .knop:disabled { opacity: 0.6; cursor: default; }
+/* Het lokvak tegen robots: buiten beeld voor mensen (en schermlezers), maar
+   wel in de pagina, zodat een robot die alles invult het ook invult. */
+.lokvak {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
 .knop {
   display: inline-block;
