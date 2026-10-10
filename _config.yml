@@ -1,7 +1,15 @@
 # Instellingen van klapekster.be. Plan: ontwerp/website/PLAN.md in de app-repo.
 
 title: KLAPekster
-description: Zeg wat je ziet. KLAPekster schrijft het op.
+# De slagzin achter de naam in de titel van de voorpagina (tabblad, Google).
+tagline: Zeg wat je ziet. KLAPekster schrijft het op.
+# De zoektekst: wat Google onder de titel toont, en WhatsApp bij een gedeelde
+# link. Met "vogels" en "app" erin, zodat wie die zoekt de site vindt en niet
+# alleen de vogel (10 oktober 2026).
+description: >-
+  Gratis Android-app voor vogelaars: spreek je vogelwaarnemingen in en
+  KLAPekster noteert soort, aantal en gedrag. Export naar waarnemingen.be en
+  waarneming.nl.
 lang: nl_BE
 
 # Waar de site staat: op klapekster.be sinds 10 oktober 2026 (stap 5). Het
