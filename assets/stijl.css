@@ -401,11 +401,15 @@ label.ontbreekt,
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     gap: 40px;
-    align-items: center;
+    /* Bovenaan, niet in het midden: de slagzin begint op de bovenrand van
+       de telefoon en de fiche (Olivier, 10 oktober 2026). De ruimte boven
+       de tekst is die van het bijschrift boven de beelden (32 punten),
+       min de lucht boven de hoofdletters van de slagzin. */
+    align-items: start;
     margin-top: 16px;
   }
-  .held .opening { padding: 0; }
-  .held .slogan { font-size: 2.2rem; }
+  .held .opening { padding: 24px 0 0; }
+  .held .slogan { font-size: 2.2rem; margin-top: 0; }
   .held .toonbeeld {
     grid-template-columns: 300px 340px;
     gap: 16px 24px;
