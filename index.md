@@ -12,7 +12,7 @@ permalink: /
 
 <div class="held">
 <section class="opening">
-  <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het voor je op.</h1>
+  <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het op.</h1>
   <p class="kernzin">Meer vogels kijken. Minder tikwerk.</p>
   <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
   soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
