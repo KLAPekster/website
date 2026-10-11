@@ -33,6 +33,20 @@ permalink: /
 </section>
 </div>
 
+{% comment %}
+  Wat vogelaars zeggen (_data/citaten.yml): meteen onder de opening, zodat
+  je het ziet zonder te scrollen (Olivier, 11 oktober 2026). Eerst stond
+  het onderaan, boven "Gemaakt door een vogelaar".
+{% endcomment %}
+<section class="citaten" aria-label="Wat vogelaars zeggen">
+{% for c in site.data.citaten %}
+  <figure class="citaat">
+    <blockquote>{{ c.tekst }}</blockquote>
+    <figcaption>{{ c.naam }}</figcaption>
+  </figure>
+{% endfor %}
+</section>
+
 ## Voor wie
 
 Voor vogelaars die liever spreken dan typen, of hun waarnemingen sneller
@@ -127,17 +141,6 @@ herkennen.
   [privacybeleid]({{ '/privacy/' | relative_url }}).{% if site.fase == 'test' %}
 - KLAPekster is nog in ontwikkeling. Met je feedback help je de app
   verbeteren.{% endif %}
-
-## Wat vogelaars zeggen
-
-<div class="citaten">
-{% for c in site.data.citaten %}
-  <figure class="citaat">
-    <blockquote>{{ c.tekst }}</blockquote>
-    <figcaption>{{ c.naam }}</figcaption>
-  </figure>
-{% endfor %}
-</div>
 
 ## Gemaakt door een vogelaar
 

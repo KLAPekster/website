@@ -307,12 +307,13 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   filter: drop-shadow(0 4px 12px rgb(41 62 53 / 0.08));
 }
 
-/* Wat vogelaars zeggen: de citaten uit _data/citaten.yml, als kaartjes.
-   Op een telefoon onder elkaar, breder naast elkaar. */
+/* Wat vogelaars zeggen: de citaten uit _data/citaten.yml, als kaartjes,
+   meteen onder de opening. Op een telefoon onder elkaar, breder naast
+   elkaar. */
 .citaten {
   display: grid;
   gap: 16px;
-  margin: 1em 0;
+  margin: 40px 0 0;
 }
 @media (min-width: 700px) {
   .citaten { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
