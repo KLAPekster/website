@@ -117,8 +117,9 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
 .opening { padding: 8px 0 16px; }
 .opening .slogan {
   font-family: var(--schreef);
-  /* Op een telefoon iets kleiner, zodat "KLAPekster schrijft het op." op
-     één regel past. */
+  /* Op een telefoon iets kleiner. "KLAPekster schrijft het voor je op."
+     past daar niet op één regel en breekt in twee gelijke stukken
+     (text-wrap); kleiner zou hem bijna zo klein maken als de kernzin. */
   font-size: clamp(1.5rem, 6.4vw, 1.9rem);
   line-height: 1.2;
   font-weight: 500;

@@ -12,11 +12,12 @@ permalink: /
 
 <div class="held">
 <section class="opening">
-  <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het op.</h1>
-  <p class="kernzin">Meer vogels kijken. Minder tijd aan invoeren.</p>
-  <p class="inleiding">Spreek meerdere soorten in één keer in, met hun aantallen
-  en details. KLAPekster maakt er afzonderlijke waarnemingen van.</p>
-  <p class="kenmerken">Gratis, voor Android · Export naar waarnemingen.be en waarneming.nl</p>
+  <h1 class="slogan">Zeg wat je ziet.<br>KLAPekster schrijft het voor je op.</h1>
+  <p class="kernzin">Meer vogels kijken. Minder tikwerk.</p>
+  <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
+  soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
+  die je kunt opladen naar waarnemingen.be of waarneming.nl.</p>
+  <p class="kenmerken">Gratis – beschikbaar voor Android · Export naar waarnemingen.be en waarneming.nl</p>
   {% include playknop.html %}
 </section>
 
