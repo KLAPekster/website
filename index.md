@@ -128,8 +128,26 @@ herkennen.
 - KLAPekster is nog in ontwikkeling. Met je feedback help je de app
   verbeteren.{% endif %}
 
+## Wat vogelaars zeggen
+
+<div class="citaten">
+{% for c in site.data.citaten %}
+  <figure class="citaat">
+    <blockquote>{{ c.tekst }}</blockquote>
+    <figcaption>{{ c.naam }}</figcaption>
+  </figure>
+{% endfor %}
+</div>
+
 ## Gemaakt door een vogelaar
 
-KLAPekster is een hobbyproject van Olivier Fuchs, zelf vogelaar.
+{% comment %}
+  De foto staat links van de tekst: Olivier kijkt naar rechts, naar de
+  tekst toe, niet naar de rand van het scherm.
+{% endcomment %}
+<div class="maker">
+  <img src="{{ '/assets/beeld/olivier.webp' | relative_url }}" alt="Olivier met zijn verrekijker in een droog grasland" width="400" height="400" loading="lazy">
+  <p>KLAPekster is een hobbyproject van Olivier Fuchs, zelf vogelaar.</p>
+</div>
 
 <div class="slotknop">{% include playknop.html %}</div>

@@ -307,6 +307,56 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   filter: drop-shadow(0 4px 12px rgb(41 62 53 / 0.08));
 }
 
+/* Wat vogelaars zeggen: de citaten uit _data/citaten.yml, als kaartjes.
+   Op een telefoon onder elkaar, breder naast elkaar. */
+.citaten {
+  display: grid;
+  gap: 16px;
+  margin: 1em 0;
+}
+@media (min-width: 700px) {
+  .citaten { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+}
+.citaat {
+  margin: 0;
+  background: var(--kaart);
+  border: 1px solid var(--lijn);
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+.citaat blockquote {
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.citaat blockquote::before { content: "“"; }
+.citaat blockquote::after { content: "”"; }
+.citaat figcaption {
+  color: var(--grijs);
+  font-size: 0.95rem;
+}
+.citaat figcaption::before { content: "– "; }
+
+/* Gemaakt door een vogelaar: een kleine foto links van de tekst. */
+.maker {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.maker img {
+  flex: none;
+  width: 140px;
+  height: 140px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.maker p { margin: 0; max-width: 30em; }
+@media (min-width: 700px) {
+  .maker img { width: 180px; height: 180px; }
+}
+
 .slotknop { margin-top: 48px; text-align: center; }
 
 /* Het aanmeldformulier op Proberen. */
