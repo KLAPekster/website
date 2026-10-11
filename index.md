@@ -17,7 +17,7 @@ permalink: /
   <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
   soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
   die je kunt opladen naar waarnemingen.be of waarneming.nl.</p>
-  <p class="kenmerken">Gratis – beschikbaar voor Android · Export naar waarnemingen.be en waarneming.nl</p>
+  <p class="kenmerken">Gratis – beschikbaar voor Android</p>
   {% include playknop.html %}
 </section>
 
