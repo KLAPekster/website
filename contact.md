@@ -113,7 +113,7 @@ naar <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>
     };
 
     // Bewust géén eigen Content-Type en niet doorgaan naar het antwoord: zie
-    // de uitleg op Proberen (meedoen.md).
+    // de uitleg op Gebruiken (meedoen.md).
     fetch(SCRIPT_URL, { method: 'POST', redirect: 'manual', body: JSON.stringify(payload) })
       .then(function (antwoord) {
         if (antwoord.type === 'opaqueredirect') return { ok: true };

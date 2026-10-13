@@ -68,7 +68,7 @@ in hun eigen privacybeleid.
 ## Het logboek in deze eerste fase
 
 Zolang KLAPekster nog niet vrij in Google Play staat (en je je dus eerst moet
-aanmelden om ze te proberen), vraagt de app bij het begin je naam, en stuurt
+aanmelden om ze te gebruiken), vraagt de app bij het begin je naam, en stuurt
 ze een logboek naar de maker. Daarin staat, per keer dat je iets inspreekt:
 
 - wat de spraakherkenning verstond, en wat de app ervan maakte (soort,
@@ -93,7 +93,7 @@ bewaard zonder die gegevens, om de herkenning te blijven verbeteren.
 
 Wil je dat je logboek eerder gewist wordt? Eén mail volstaat.
 
-## Als je je aanmeldt om KLAPekster te proberen
+## Als je je aanmeldt om KLAPekster te gebruiken
 
 Het aanmeldformulier vraagt je naam, het e-mailadres van je Google-account,
 welke telefoon je hebt en in welk land je woont, en als je wil nog wat meer

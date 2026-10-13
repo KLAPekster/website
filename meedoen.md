@@ -1,17 +1,17 @@
 ---
-title: KLAPekster proberen
-description: Meld je aan om KLAPekster nu al te proberen op je Android-telefoon.
+title: KLAPekster gebruiken
+description: Meld je aan om KLAPekster nu al te gebruiken op je Android-telefoon.
 permalink: /meedoen/
 ---
 
-# KLAPekster proberen
+# KLAPekster gebruiken
 
 {% if site.fase == 'winkel' %}
 KLAPekster staat in Google Play. Wil je nieuwe versies eerder dan iedereen,
 meld je dan hieronder aan.
 {% else %}
 KLAPekster staat nog niet vrij in Google Play, maar je kan haar nu al
-proberen. Meld je hieronder aan, dan zet ik je op de lijst.
+gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
 {% endif %}
 
 ## Hoe het gaat
@@ -91,6 +91,7 @@ proberen. Meld je hieronder aan, dan zet ik je op de lijst.
       <label class="keuze"><input type="checkbox" name="apps" value="Merlin"> Merlin</label>
       <label class="keuze"><input type="checkbox" name="apps" value="BirdTalk"> BirdTalk</label>
       <label class="keuze"><input type="checkbox" name="apps" value="eBird"> eBird</label>
+      <label class="keuze"><input type="checkbox" name="apps" value="Trektellen"> Trektellen</label>
       <label class="keuze"><input type="checkbox" name="apps" value="Andere"> Andere</label>
     </div>
   </fieldset>

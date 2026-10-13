@@ -19,10 +19,11 @@ lang: nl_BE
 url: https://klapekster.be
 baseurl: ""
 
-# De schakelaar: "test" zolang je je moet aanmelden om de app te proberen,
+# De schakelaar: "test" zolang je je moet aanmelden om de app te gebruiken,
 # "winkel" zodra ze vrij in Google Play staat. Knop, voettekst en de aanhef
 # van de aanmeldpagina lezen alleen deze regel. (Het woord "test" staat
-# alleen hier; op de site zelf heet het "proberen".)
+# alleen hier; op de site zelf heet het "gebruiken", sinds 13 oktober 2026,
+# daarvoor "proberen".)
 fase: test
 
 play_id: be.klapekster.app
