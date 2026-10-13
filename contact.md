@@ -112,9 +112,13 @@ naar <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>
       toestel: '',
     };
 
-    // Bewust géén eigen Content-Type: zie de uitleg op Proberen (meedoen.md).
-    fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) })
-      .then(function (antwoord) { return antwoord.json(); })
+    // Bewust géén eigen Content-Type en niet doorgaan naar het antwoord: zie
+    // de uitleg op Proberen (meedoen.md).
+    fetch(SCRIPT_URL, { method: 'POST', redirect: 'manual', body: JSON.stringify(payload) })
+      .then(function (antwoord) {
+        if (antwoord.type === 'opaqueredirect') return { ok: true };
+        return antwoord.json();
+      })
       .then(function (data) {
         if (!data.ok) throw new Error(data.error || 'onbekende fout');
         klaar();

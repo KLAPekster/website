@@ -219,8 +219,18 @@ KLAPekster te installeren.
     // een "simpel" verzoek zonder voorafgaande controle (preflight). Apps
     // Script beantwoordt zo'n controle niet, en met "application/json" zou
     // het versturen stil mislukken.
-    fetch(SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) })
-      .then(function (antwoord) { return antwoord.json(); })
+    //
+    // Niet doorgaan naar het antwoord van Google (redirect 'manual'): het
+    // script antwoordt met een doorverwijzing naar een tweede adres, en
+    // alleen als het zonder fout klaar is; loopt het mis, dan komt meteen
+    // een foutpagina en mislukt de fetch. De doorverwijzing zelf zegt dus al
+    // dat de aanmelding binnen is. Die tweede stap liep bij Olivier vast
+    // terwijl de rij al in het rekenblad stond (13 oktober 2026).
+    fetch(SCRIPT_URL, { method: 'POST', redirect: 'manual', body: JSON.stringify(payload) })
+      .then(function (antwoord) {
+        if (antwoord.type === 'opaqueredirect') return { ok: true };
+        return antwoord.json();
+      })
       .then(function (data) {
         if (!data.ok) throw new Error(data.error || 'onbekende fout');
         if (toestel === 'iPhone') {
