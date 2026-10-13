@@ -16,7 +16,7 @@ permalink: /
   <p class="kernzin">Meer vogels kijken. Minder tikwerk.</p>
   <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
   soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
-  die je kunt opladen naar waarnemingen.be of waarneming.nl.</p>
+  die je kunt versturen naar waarnemingen.be of waarneming.nl.</p>
   <p class="kenmerken">Gratis – beschikbaar voor Android</p>
   {% include playknop.html %}
 </section>
