@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 9 oktober 2026</p>
+<p class="flauw">Laatst gewijzigd op 15 oktober 2026</p>
 
 Je bewaart je waarnemingen op je telefoon en beslist zelf wanneer je ze naar
 waarnemingen.be of waarneming.nl verstuurt. Tijdens de testfase ontvangt de
@@ -82,14 +82,18 @@ ze een logboek naar de maker. Daarin staat, per keer dat je iets inspreekt:
 Verstuur je je waarnemingen naar waarnemingen.be, dan gaat er ook een korte
 melding mee: hoeveel regels je verstuurde. Niet de waarnemingen zelf.
 
-**Waarheen**: naar een rekenblad van de maker bij Google, versleuteld
-onderweg. Alleen Olivier kan erin.
+**Waarheen**: naar een database van KLAPekster bij Google (Firebase),
+versleuteld onderweg. De plek gaat mee afgerond op een kilometer. Alleen
+Olivier kan erin.
 
 **Waarom**: om te zien waar de app verkeerd verstaat, en dat te verbeteren.
 
-**Hoe lang**: zes maanden na het einde van deze eerste fase worden je naam, je
-toestel en je plek gewist. Wat de spraakherkenning verstond, blijft daarna
-bewaard zonder die gegevens, om de herkenning te blijven verbeteren.
+**Hoe lang**: één maand. Daarna wordt het logboek vanzelf gewist, met alles
+wat erin staat. Je stemopname zelf wordt nooit gebruikt of bijgehouden.
+
+**Uitzetten**: in de app, onder Instellingen, Privacy: "Help Klapekster beter
+verstaan". Er gaat dan nog één regel mee dat je het uitzette, en daarna
+niets meer.
 
 Wil je dat je logboek eerder gewist wordt? Eén mail volstaat.
 
