@@ -21,8 +21,8 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
   weten: wat je meldt, helpt mee.
 - Je hebt een Android-telefoon nodig, en je spreekt Nederlands. De app is er
   voor België en Nederland.
-- Zolang de app niet vrij in Google Play staat, stuurt ze een logboek mee,
-  zodat ze beter leert verstaan. Wat daarin staat, lees je in het
+- De app stuurt een logboek mee, zodat ze beter leert verstaan; dat kan je
+  uitzetten. Wat daarin staat, lees je in het
   [privacybeleid]({{ '/privacy/' | relative_url }}).
 
 ## Aanmelden

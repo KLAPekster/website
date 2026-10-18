@@ -134,10 +134,12 @@ herkennen.
 - Alleen in het Nederlands.
 - Alleen voor Android, nog niet voor iPhone.
 - Voor België en Nederland.
-- Gratis, zonder reclame, zonder account.
-- Je waarnemingen blijven op je telefoon, tot jij ze verstuurt.{% if site.fase == 'test' %}
-  Zolang de app nog niet vrij in Google Play staat, gaat er wel een logboek
-  naar de maker, zodat ze beter leert verstaan.{% endif %} Alles staat in het
+- Gratis en zonder reclame.
+- De eerste keer dat je verstuurt, meld je je één keer aan met je
+  Google-account. Vanaf dan staat er een kopie van je waarnemingen veilig bij
+  KLAPekster, zodat je niets kwijt bent, ook niet met een nieuwe telefoon.
+- De app houdt een logboek bij van wat ze verstond, zodat ze beter leert
+  verstaan. Dat kan je uitzetten. Alles staat in het
   [privacybeleid]({{ '/privacy/' | relative_url }}).{% if site.fase == 'test' %}
 - KLAPekster is nog in ontwikkeling. Met je feedback help je de app
   verbeteren.{% endif %}
