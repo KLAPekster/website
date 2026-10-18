@@ -6,14 +6,15 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 15 oktober 2026</p>
+<p class="flauw">Laatst gewijzigd op 18 oktober 2026</p>
 
-Je bewaart je waarnemingen op je telefoon en beslist zelf wanneer je ze naar
-waarnemingen.be of waarneming.nl verstuurt. Tijdens de testfase ontvangt de
-maker ook een logboek met onder meer de herkende tekst, je correcties,
-ingevulde naam, locatie en toestelgegevens. Dat helpt om herkenningsfouten te
-onderzoeken en verbeteren. Hieronder lees je welke gegevens worden verwerkt,
-door wie en hoelang ze worden bewaard.
+Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
+wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
+dat je verstuurt, meld je je één keer aan met je Google-account; vanaf dan
+staat er een kopie van je waarnemingen veilig bij KLAPekster, zodat je niets
+kwijt bent. De app houdt ook een logboek bij van wat ze verstond, om
+herkenningsfouten te vinden en te verbeteren; dat kan je uitzetten. Hieronder
+lees je welke gegevens worden verwerkt, door wie en hoelang ze worden bewaard.
 
 ## Wat KLAPekster is
 
@@ -25,9 +26,29 @@ waarneming.nl of observation.org.
 
 ## Op je telefoon
 
-Je waarnemingen en je instellingen blijven op je telefoon. Je maakt geen
-account aan bij KLAPekster. Verwijder je de app, dan verdwijnt alles wat ze
-op je telefoon bewaarde.
+Je waarnemingen en je instellingen staan op je telefoon. Inspreken en bewaren
+kan zonder account, ook zonder internet.
+
+## Je account
+
+De eerste keer dat je je waarnemingen verstuurt, vraagt de app je om je één
+keer aan te melden met het Google-account van je telefoon. Daarvan krijgt
+KLAPekster je naam en je mailadres. Je wachtwoord niet: dat blijft bij Google.
+
+Na het aanmelden staat er een kopie van je waarnemingen (met de plek, het
+tijdstip en alles wat je erbij zei) en van je instellingen in een database van
+KLAPekster bij Google (Firebase), in Europa, versleuteld onderweg.
+
+**Waarom**: zodat je niets kwijt bent als je de app verwijdert of een nieuwe
+telefoon neemt. Meld je je daar opnieuw aan, dan komt alles terug.
+
+**Hoe lang**: zolang je account bestaat.
+
+**Verwijderen**: in de app, onder Instellingen, Account: "Account en alle
+gegevens verwijderen". Dat wist je account en de kopie van je waarnemingen en
+instellingen. Wat op je telefoon staat, blijft daar tot je de app verwijdert.
+Lukt het niet in de app, lees dan
+[Account verwijderen]({{ '/account-verwijderen/' | relative_url }}).
 
 ## Spraak
 
@@ -43,8 +64,9 @@ telefoon dat.
 ## Locatie
 
 - **Voor je waarneming**: de app gebruikt je precieze plek, zodat de
-  waarneming op de juiste plaats komt. Die plek blijft op je telefoon, tot
-  jij de waarneming verstuurt. Je kan de plek ook zelf op een kaart kiezen.
+  waarneming op de juiste plaats komt. Die plek hoort bij je waarneming: op
+  je telefoon, en na het aanmelden ook in de kopie bij je account. Je kan de
+  plek ook zelf op een kaart kiezen.
 - **Voor het weer op het scherm**: de lucht rond de vogel volgt het echte
   weer. Daarvoor vraagt de app het weer op bij Open-Meteo, met je plek
   afgerond op een tiende graad: een vak van ongeveer tien kilometer. Dat zet
@@ -63,26 +85,26 @@ ziet of bewaart je wachtwoord niet.
 Wat waarnemingen.be en waarneming.nl daarna met je waarnemingen doen, staat
 in hun eigen privacybeleid.
 
-<!-- Deze paragraaf verandert zodra het logboek uit staat tenzij je het
-     aanzet (stap 2 van het go-live-plan). -->
-## Het logboek in deze eerste fase
+## Het logboek
 
-Zolang KLAPekster nog niet vrij in Google Play staat (en je je dus eerst moet
-aanmelden om ze te gebruiken), vraagt de app bij het begin je naam, en stuurt
-ze een logboek naar de maker. Daarin staat, per keer dat je iets inspreekt:
+De app stuurt een logboek naar de maker. Daarin staat, per keer dat je iets
+inspreekt:
 
 - wat de spraakherkenning verstond, en wat de app ervan maakte (soort,
   aantal, gedrag en dergelijke), en wat je daarna zelf verbeterde;
-- de naam die je invulde;
 - het merk en model van je telefoon, de versie van Android en van de app;
 - de plek waar je stond, of die je zelf koos, en het tijdstip;
 - technische gegevens: hoe lang het duurde, welke microfoon, hoe luid het
   geluid was (geen opname).
 
+Tot je je aanmeldt, draagt het logboek alleen een nummer dat de app bij de
+eerste start kreeg, geen naam. Na het aanmelden hoort het bij je naam en je
+mailadres, ook wat je daarvoor al insprak.
+
 Verstuur je je waarnemingen naar waarnemingen.be, dan gaat er ook een korte
 melding mee: hoeveel regels je verstuurde. Niet de waarnemingen zelf.
 
-**Waarheen**: naar een database van KLAPekster bij Google (Firebase),
+**Waarheen**: naar dezelfde database van KLAPekster bij Google (Firebase),
 versleuteld onderweg. De plek gaat mee afgerond op een kilometer. Alleen
 Olivier kan erin.
 
@@ -97,19 +119,28 @@ niets meer.
 
 Wil je dat je logboek eerder gewist wordt? Eén mail volstaat.
 
-## Als je je aanmeldt om KLAPekster te gebruiken
+## Gebruikscijfers
+
+Elke keer dat je de app opent, gaat er één kort regeltje naar dezelfde
+database: het nummer van de app, de versie van de app en van Android, of je
+de app voor België of Nederland gebruikt, hoe lang je ze open had, hoeveel
+waarnemingen je bewaarde en verstuurde, en of het logboek aan staat. Geen
+plek en niets van wat je zei. Dit regeltje gaat ook mee als het logboek uit
+staat.
+
+**Waarom**: om te weten hoeveel mensen de app gebruiken, en met welke versie.
+
+**Hoe lang**: één jaar.
+
+## Als je je aanmeldt via deze website
 
 Het aanmeldformulier vraagt je naam, het e-mailadres van je Google-account,
 welke telefoon je hebt en in welk land je woont, en als je wil nog wat meer
-over je ervaring en de apps die je gebruikt. Dat gaat naar hetzelfde
-rekenblad van de maker bij Google. Het dient om je toe te voegen aan de lijst
-van wie de app mag installeren, en je per mail te laten weten hoe dat gaat.
-Die mail komt van {{ site.contact }}.
+over je ervaring en de apps die je gebruikt. Dat gaat naar een rekenblad van
+de maker bij Google. Het dient om je toegang te geven tot de app, en je per
+mail te laten weten hoe dat gaat. Die mail komt van {{ site.contact }}.
 
-Je aanmelding wordt gewist zes maanden na het einde van deze eerste fase, of
-eerder als je erom vraagt. Heb je een iPhone, dan bewaar ik je naam en
-e-mailadres tot er een versie voor iPhone is, om je dat te laten weten, of
-tot je vraagt om ze te wissen.
+Je aanmelding wordt na een jaar gewist, of eerder als je erom vraagt.
 
 ## Als je een bericht stuurt
 
@@ -148,7 +179,9 @@ niemand gedeeld, behalve met de diensten die hierboven staan.
 ## Je rechten, en contact
 
 Je kan altijd vragen welke gegevens er over jou zijn, ze laten verbeteren of
-laten wissen. Mail naar [{{ site.contact }}](mailto:{{ site.contact }}).
+laten wissen. Je account en alles erin wis je zelf in de app (zie
+[Je account](#je-account)), of je mailt naar
+[{{ site.contact }}](mailto:{{ site.contact }}).
 Ben je niet tevreden over het antwoord, dan kan je terecht bij de
 Gegevensbeschermingsautoriteit (gegevensbeschermingsautoriteit.be).
 
