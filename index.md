@@ -142,17 +142,58 @@ willen ingeven: aan de voederplaats, tijdens een wandeling of op de telpost.
   </li>
 </ol>
 
+{% comment %}
+  Een stukje uit de app bij de tekst (Olivier, 19 oktober 2026, plan in de
+  app-repo: ontwerp/website-schermbeelden/PLAN.md): geen heel scherm, alleen
+  wat de tekst niet al zegt ("enkel de visuele ondersteuning"). Het komt uit
+  de etalage, via tools/build_website_beeld.py. Op een telefoon onder de
+  tekst, in het midden; op een breed scherm (kolom 1160, lopende tekst 720)
+  ernaast, want eronder liet het rechts een grote lege vlakte en maakte het
+  de pagina een scherm langer. De stijl staat hier, net als die van de
+  iPhone-uitnodiging.
+{% endcomment %}
+<style>
+  .uitsnede {
+    display: block;
+    width: 100%;
+    max-width: var(--maat);
+    height: auto;
+    margin: 24px auto 0;
+    border-radius: 20px;
+  }
+  .uitsnede.knoppen { --maat: 320px; }
+  .uitsnede.gedrag { --maat: 300px; border: 1px solid var(--lijn); }
+  @media (min-width: 1200px) {
+    .naast {
+      display: grid;
+      grid-template-columns: minmax(0, 720px) auto;
+      gap: 0 56px;
+      align-items: start;
+    }
+    .naast .uitsnede { margin: 0; }
+    .naast > div > :first-child { margin-top: 0; }
+  }
+</style>
+
 ## Zonder naar je scherm te kijken
+
+<div class="naast" markdown="1">
+<div markdown="1">
 
 Je kunt KLAPekster bedienen met de volumeknoppen, de knop van een bedraad
 oortje of een losse Flic-knop. Spreek je waarneming in en laat de app die
 hardop teruglezen. Met een knopdruk bewaar je ze of begin je opnieuw.
 
-Welke knop wat doet, stel je zelf in. De app moet geopend blijven en het
-scherm moet aanstaan. Het scherm dimt automatisch om het batterijverbruik te
-beperken.
+Welke knop wat doet, stel je zelf in.
+
+</div>
+<div><img class="uitsnede knoppen" src="{{ '/assets/beeld/schermen/knoppen.webp' | relative_url }}" alt="De app leest je waarneming voor: IJsvogel, 1, Man, foeragerend. Met de volumeknop plus bewaar je, met min begin je opnieuw." width="352" height="285" loading="lazy"></div>
+</div>
 
 ## Meer dan soort en aantal
+
+<div class="naast" markdown="1">
+<div markdown="1">
 
 KLAPekster kan tot acht waarnemingen uit één zin halen, elk met hun eigen
 details. Je kunt onder meer inspreken:
@@ -166,6 +207,10 @@ details. Je kunt onder meer inspreken:
 De app kent bijna duizend vogelsoorten en bijna tweehonderd volks- en
 dialectnamen. Ook veel verkeerd verstane vogelnamen kan KLAPekster alsnog
 herkennen.
+
+</div>
+<div><img class="uitsnede gedrag" src="{{ '/assets/beeld/schermen/gedrag.webp' | relative_url }}" alt="Het gedrag aanpassen in de app: overvliegend is gekozen, met een windroos om de richting aan te tikken" width="384" height="452" loading="lazy"></div>
+</div>
 
 {% comment %}
   De voorbeelden komen ná de uitleg over het gebruik (Olivier, 9 oktober

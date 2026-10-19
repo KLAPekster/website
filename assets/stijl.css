@@ -110,8 +110,8 @@ h3 { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
 /* Kop */
 .kop { padding-top: 24px; padding-bottom: 8px; }
 .woordmerk { display: inline-block; }
-.woordmerk img { width: 220px; }
-.voorpagina .woordmerk img { width: min(360px, 100%); }
+.woordmerk img { width: 240px; height: auto; }
+.voorpagina .woordmerk img { width: min(400px, 100%); }
 
 /* De opening van de voorpagina. */
 .opening { padding: 8px 0 16px; }
