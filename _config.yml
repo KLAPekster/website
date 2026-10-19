@@ -63,5 +63,5 @@ exclude:
 # `steun_doel` is het doel (twee jaar Apple-kosten).
 rekening: "BE44 9795 3806 3045"
 begunstigde: "Olivier Fuchs"
-steun_binnen: 0
+steun_binnen: 40
 steun_doel: 200
