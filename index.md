@@ -17,28 +17,72 @@ permalink: /
   <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
   soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
   die je kunt versturen naar waarnemingen.be of waarneming.nl.</p>
-  <p class="kenmerken">Gratis – beschikbaar voor Android.
-  <a href="{{ '/iphone/' | relative_url }}">Nog niet voor iPhone</a></p>
+  <p class="kenmerken">Gratis – beschikbaar voor Android</p>
   {% include playknop.html %}
   {% comment %}
-    Wie de site op een iPhone of iPad bekijkt, krijgt onder de knop meteen
-    te zien dat de app daar nog niet werkt, met de weg naar /iphone/
-    (Olivier, 19 oktober 2026: "superverstopt onderaan"). Een iPad doet zich
-    voor als Mac, maar heeft een aanraakscherm. De stijl staat hier en niet
-    in assets/stijl.css, net als op /steunen/.
+    De uitnodiging voor iPhone-gebruikers, meteen onder de knop (Olivier,
+    19 oktober 2026: eerst "superverstopt onderaan", daarna "Nog niet voor
+    iPhone" te verstopt en niet aanlokkelijk). Iedereen ziet de petrol
+    regel; wie op een iPhone of iPad kijkt, krijgt in de plaats een kaartje
+    met een knop naar de lijst en, zodra er een rekeningnummer is, de weg
+    naar Steunen. Een iPad doet zich voor als Mac, maar heeft een
+    aanraakscherm. De stijl staat hier en niet in assets/stijl.css, net als
+    op /steunen/.
   {% endcomment %}
-  <div class="kaart" id="iphonekaart" style="margin-top: 16px; max-width: 34em; border-left: 4px solid var(--petrol);" hidden>
-    <p style="margin: 0;"><strong>Je hebt een iPhone?</strong> KLAPekster werkt
-    nog niet op iPhone of iPad.
-    <a href="{{ '/iphone/' | relative_url }}">Lees waarom, en laat je
-    verwittigen als het zover is.</a></p>
+  <style>
+    .iphoneregel { margin: 16px 0 0; font-weight: 600; }
+    .iphoneregel a { text-decoration: none; }
+    .iphoneregel a:hover { text-decoration: underline; }
+    #iphonekaart {
+      margin: 20px 0 0;
+      max-width: 34em;
+      border-left: 4px solid var(--petrol);
+    }
+    #iphonekaart h2 { font-size: 1.25rem; margin: 0 0 0.3em; }
+    #iphonekaart p { margin: 0 0 14px; }
+    #iphonekaart .acties {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 20px;
+      margin: 0;
+    }
+    #iphonekaart .tweede {
+      display: inline-block;
+      color: var(--petrol);
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid var(--petrol);
+      border-radius: 999px;
+      padding: 10px 20px;
+      min-height: 44px;
+    }
+    #iphonekaart .tweede:hover { background: var(--petrol-vlak); }
+  </style>
+  <p class="iphoneregel" id="iphoneregel"><a href="{{ '/iphone/' | relative_url }}">Heb
+  je een iPhone? Hoor als eerste wanneer KLAPekster erop komt →</a></p>
+  <div class="kaart" id="iphonekaart" hidden>
+    <h2>KLAPekster op je iPhone?</h2>
+    <p>Zet je op de lijst, dan hoor je het als eerste wanneer KLAPekster op
+    iPhone komt.</p>
+    <p class="acties">
+      <a class="tweede" href="{{ '/iphone/' | relative_url }}">Zet me op de lijst</a>
+    </p>
+    {% if site.rekening and site.rekening != '' %}
+    <p style="margin: 16px 0 0;">Die versie komt er zodra de
+    kosten bij Apple gedekt zijn en er een iPhone is om op te testen.
+    <a href="{{ '/steunen/' | relative_url }}">Wil je daarbij helpen?</a></p>
+    {% endif %}
   </div>
   <script>
     (function () {
       var ua = navigator.userAgent || '';
       var apple = /iPhone|iPad|iPod/.test(ua)
         || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-      if (apple) document.getElementById('iphonekaart').hidden = false;
+      if (apple) {
+        document.getElementById('iphonekaart').hidden = false;
+        document.getElementById('iphoneregel').hidden = true;
+      }
     })();
   </script>
 </section>
