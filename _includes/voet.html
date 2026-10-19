@@ -3,6 +3,7 @@
     <nav class="voetlinks" aria-label="Onderaan">
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
       <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      {% if site.rekening and site.rekening != '' %}<a href="{{ '/steunen/' | relative_url }}">Steunen</a>{% endif %}
       <a href="{{ '/meedoen/' | relative_url }}">{% if site.fase == 'winkel' %}Nieuwe versies eerder{% else %}Gebruiken{% endif %}</a>
     </nav>
     <p>KLAPekster is een hobbyproject, op dit moment niet verbonden met Natuurpunt of de organisatie achter waarnemingen.be, waarneming.nl of observation.org.</p>

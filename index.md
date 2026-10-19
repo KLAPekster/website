@@ -17,8 +17,30 @@ permalink: /
   <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
   soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
   die je kunt versturen naar waarnemingen.be of waarneming.nl.</p>
-  <p class="kenmerken">Gratis – beschikbaar voor Android</p>
+  <p class="kenmerken">Gratis – beschikbaar voor Android.
+  <a href="{{ '/iphone/' | relative_url }}">Nog niet voor iPhone</a></p>
   {% include playknop.html %}
+  {% comment %}
+    Wie de site op een iPhone of iPad bekijkt, krijgt onder de knop meteen
+    te zien dat de app daar nog niet werkt, met de weg naar /iphone/
+    (Olivier, 19 oktober 2026: "superverstopt onderaan"). Een iPad doet zich
+    voor als Mac, maar heeft een aanraakscherm. De stijl staat hier en niet
+    in assets/stijl.css, net als op /steunen/.
+  {% endcomment %}
+  <div class="kaart" id="iphonekaart" style="margin-top: 16px; max-width: 34em; border-left: 4px solid var(--petrol);" hidden>
+    <p style="margin: 0;"><strong>Je hebt een iPhone?</strong> KLAPekster werkt
+    nog niet op iPhone of iPad.
+    <a href="{{ '/iphone/' | relative_url }}">Lees waarom, en laat je
+    verwittigen als het zover is.</a></p>
+  </div>
+  <script>
+    (function () {
+      var ua = navigator.userAgent || '';
+      var apple = /iPhone|iPad|iPod/.test(ua)
+        || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (apple) document.getElementById('iphonekaart').hidden = false;
+    })();
+  </script>
 </section>
 
 <section class="toonbeeld" aria-label="Voorbeeld">

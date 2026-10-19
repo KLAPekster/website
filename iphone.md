@@ -94,10 +94,8 @@ Met een kleine gift help je de kosten van Apple dragen.
 Heb je een iPhone die niet al te oud is, en die je een tijd kan missen? Leen
 hem me dan voor langere tijd uit, om de app op te testen. Laat het weten via
 [Contact]({{ '/contact/' | relative_url }}).
-{% if site.rekening and site.rekening != '' %}Dan gaat het geld alleen naar
-de kosten van Apple, en niet naar een nieuwe iPhone voor mij.{% else %}Dan
-hoeft er geen iPhone gekocht te worden, en blijven alleen de kosten van
-Apple.{% endif %}
+Dan hoeft er geen iPhone gekocht te worden, en blijven alleen de kosten van
+Apple.
 
 <script>
   // Het adres van het Apps Script staat in _config.yml (script_url).
