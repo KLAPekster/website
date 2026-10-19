@@ -132,7 +132,8 @@ herkennen.
 ## Goed om te weten
 
 - Alleen in het Nederlands.
-- Alleen voor Android, nog niet voor iPhone.
+- Alleen voor Android. Heb je een iPhone?
+  [Lees waarom nog niet]({{ '/iphone/' | relative_url }}).
 - Voor België en Nederland.
 - Gratis en zonder reclame.
 - De eerste keer dat je verstuurt, meld je je één keer aan met je

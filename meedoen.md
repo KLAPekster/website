@@ -49,8 +49,10 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
       <label class="keuze"><input type="radio" name="toestel" value="iPhone"> iPhone</label>
     </fieldset>
     <p class="hint melding" id="iphonemelding" hidden>KLAPekster werkt voorlopig
-    alleen op Android. Meld je gerust aan: komt er een versie voor iPhone, dan
-    laat ik het je weten.</p>
+    alleen op Android. Waarom, lees je op
+    <a href="{{ '/iphone/' | relative_url }}">Komt KLAPekster ook op iPhone?</a>
+    Meld je gerust aan: komt er een versie voor iPhone, dan laat ik het je
+    weten.</p>
   </div>
 
   <div class="veld">
@@ -118,6 +120,8 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
   <h3>Bedankt!</h3>
   <p>Je aanmelding is binnen. KLAPekster werkt voorlopig alleen op Android;
   komt er een versie voor iPhone, dan laat ik het je weten.</p>
+  <p>Waarom dat nog niet kan, en hoe je kan helpen, lees je op
+  <a href="{{ '/iphone/' | relative_url }}">Komt KLAPekster ook op iPhone?</a></p>
 </div>
 
 ## Na je aanmelding

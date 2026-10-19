@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 18 oktober 2026</p>
+<p class="flauw">Laatst gewijzigd op 19 oktober 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
@@ -139,6 +139,12 @@ welke telefoon je hebt en in welk land je woont, en als je wil nog wat meer
 over je ervaring en de apps die je gebruikt. Dat gaat naar een rekenblad van
 de maker bij Google. Het dient om je toegang te geven tot de app, en je per
 mail te laten weten hoe dat gaat. Die mail komt van {{ site.contact }}.
+
+Zet je je op de pagina
+[Komt KLAPekster ook op iPhone?]({{ '/iphone/' | relative_url }}) op de lijst,
+dan vraagt het formulier alleen je naam, je e-mailadres, je land en eventueel
+een opmerking. Dat komt in hetzelfde rekenblad, en dient alleen om je te laten
+weten wanneer er een versie voor iPhone is.
 
 Je aanmelding wordt na een jaar gewist, of eerder als je erom vraagt.
 
