@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 19 oktober 2026</p>
+<p class="flauw">Laatst gewijzigd op 20 oktober 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
@@ -40,7 +40,8 @@ tijdstip en alles wat je erbij zei) en van je instellingen in een database van
 KLAPekster bij Google (Firebase), in Europa, versleuteld onderweg.
 
 **Waarom**: zodat je niets kwijt bent als je de app verwijdert of een nieuwe
-telefoon neemt. Meld je je daar opnieuw aan, dan komt alles terug.
+telefoon neemt. Meld je je daar opnieuw aan, dan komt alles terug. Olivier
+bekijkt ze ook, om te zien hoe de app gebruikt wordt en wat er beter kan.
 
 **Hoe lang**: zolang je account bestaat.
 
