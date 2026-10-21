@@ -1,15 +1,19 @@
 ---
-title: KLAPekster gebruiken
-description: Meld je aan om KLAPekster nu al te gebruiken op je Android-telefoon.
+title: Help KLAPekster beter maken
+description: Meld je aan om mee te helpen aan KLAPekster en nieuwe versies eerder dan iedereen te krijgen.
 permalink: /meedoen/
 ---
 
+{% if site.fase == 'winkel' %}
+# Help KLAPekster beter maken
+
+KLAPekster staat in Google Play: daar
+[installeer je haar](https://play.google.com/store/apps/details?id={{ site.play_id }}).
+Wil je nieuwe versies eerder dan iedereen, en meehelpen om de app beter te
+maken? Meld je dan hieronder aan.
+{% else %}
 # KLAPekster gebruiken
 
-{% if site.fase == 'winkel' %}
-KLAPekster staat in Google Play. Wil je nieuwe versies eerder dan iedereen,
-meld je dan hieronder aan.
-{% else %}
 KLAPekster staat nog niet vrij in Google Play, maar je kan haar nu al
 gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
 {% endif %}
@@ -127,7 +131,7 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
 ## Na je aanmelding
 
 Je krijgt meteen een bevestigingsmail. Daarna zet ik je met de hand op de
-testerslijst, en krijg je een tweede mail met alles wat je nodig hebt om
+lijst, en krijg je een tweede mail met alles wat je nodig hebt om
 KLAPekster te installeren.
 
 <script>

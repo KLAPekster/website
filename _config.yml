@@ -24,7 +24,7 @@ baseurl: ""
 # van de aanmeldpagina lezen alleen deze regel. (Het woord "test" staat
 # alleen hier; op de site zelf heet het "gebruiken", sinds 13 oktober 2026,
 # daarvoor "proberen".)
-fase: test
+fase: winkel
 
 play_id: be.klapekster.app
 contact: klapekster.app@gmail.com
