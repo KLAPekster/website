@@ -181,8 +181,7 @@ willen ingeven: aan de voederplaats, tijdens een wandeling of op de telpost.
     border-radius: 20px;
   }
   .uitsnede.knoppen { --maat: 320px; }
-  .uitsnede.gedrag { --maat: 300px; border: 1px solid var(--lijn); }
-  @media (min-width: 1200px) {
+  .uitsnede.gedrag { --maat: 300px; border: 1px solid var(--lijn); }  @media (min-width: 1200px) {
     .naast {
       display: grid;
       grid-template-columns: minmax(0, 720px) auto;
@@ -230,6 +229,35 @@ herkennen.
 </div>
 <div><img class="uitsnede gedrag" src="{{ '/assets/beeld/schermen/gedrag.webp' | relative_url }}" alt="Het gedrag aanpassen in de app: overvliegend is gekozen, met een windroos om de richting aan te tikken" width="384" height="452" loading="lazy"></div>
 </div>
+
+## Zeldzame vogels in je buurt
+
+In Zeldzaam rondom jou zie je welke zeldzame vogels er de laatste week in je
+buurt gemeld zijn op waarnemingen.be en waarneming.nl, en hoe je er komt.
+
+<ol class="stappen">
+  <li>
+    <h3>Wat zit er in de buurt?</h3>
+    <p>Zeldzame vogels op de kaart en in een lijst. Je ziet wanneer hij laatst
+    gespot is, hoe groot de trefkans is, in welke gebieden hij zit en hoe ver
+    weg die zijn.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-1.webp' | relative_url }}" alt="Zeldzaam rondom jou: een kaart rond Antwerpen met de meldingen, en daaronder een zeearend, gisteren gezien in het Stappersven, 21 kilometer verder, met redelijke kans en nog drie andere plekken" width="384" height="780" loading="lazy">
+  </li>
+  <li>
+    <h3>Hoe kom je er?</h3>
+    <p>Verschillende manieren om er te geraken, met informatie over parkings,
+    wandelroutes, toegankelijkheid, veerboten en omwegen. Zet het direct door
+    naar een auto- of wandelroute in je favoriete app.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-2.webp' | relative_url }}" alt="Een klapekster bij het Noordelijk Eiland: met de auto aan de kant van de vogel naar de parking aan de Zeesluis, of aan de overkant naar het Tolhuis met het voetveer Schelle-Wintam, en dat het eiland zelf niet toegankelijk is" width="384" height="780" loading="lazy">
+  </li>
+  <li>
+    <h3>Wanneer ga je best?</h3>
+    <p>Hoeveel vogelaars hem de laatste dagen zagen, op welk uur hij het vaakst
+    gemeld wordt, informatie over getijden, openingsuren, faciliteiten en
+    andere relevante informatie over het gebied.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-3.webp' | relative_url }}" alt="Een graszanger in het Zwin: de waarnemers per dag, het getij met hoog- en laagwater, en de openingsuren van het Zwin Natuur Park" width="384" height="780" loading="lazy">
+  </li>
+</ol>
 
 {% comment %}
   De voorbeelden komen ná de uitleg over het gebruik (Olivier, 9 oktober
