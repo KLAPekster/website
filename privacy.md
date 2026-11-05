@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 30 oktober 2026</p>
+<p class="flauw">Laatst gewijzigd op 5 november 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
@@ -128,13 +128,16 @@ database: het nummer van de app, de versie van de app en van Android, of je
 de app voor België of Nederland gebruikt, hoe lang je ze open had, hoeveel
 waarnemingen je bewaarde en verstuurde, hoe vaak en hoe lang je "Zeldzaam
 rondom jou" bekeek en hoe vaak je daar de weg naar een vogel opvroeg, en of
-het logboek aan staat. Geen plek, niet welke vogels je bekeek, en niets van
-wat je zei. Dit regeltje gaat ook mee als het logboek uit staat.
+het logboek aan staat. Staat het logboek aan, dan gaat ook de laatste plek
+mee die de app al kende, afgerond op een kilometer, net als in het logboek.
+Die plek wordt na een maand gewist. Staat het logboek uit, dan gaat er geen
+plek mee. Nooit welke vogels je bekeek, en niets van wat je zei. Dit regeltje
+gaat ook mee als het logboek uit staat.
 
 **Waarom**: om te weten hoeveel mensen de app gebruiken, met welke versie, en
 welke delen van de app ze gebruiken.
 
-**Hoe lang**: één jaar.
+**Hoe lang**: één jaar; de plek één maand.
 
 ## Als je je aanmeldt via deze website
 
