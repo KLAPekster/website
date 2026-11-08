@@ -17,7 +17,9 @@ verwijderen.
 
 ## Wat er gewist wordt
 
-- je account: je naam en je mailadres van Google;
+- je account: je naam en je mailadres van Google of Apple; op een iPhone
+  trekt de app daarbij ook de toestemming bij Apple in, zodat KLAPekster
+  niet meer bij "Inloggen met Apple" in je iPhone-instellingen staat;
 - de kopie van je waarnemingen en je instellingen bij KLAPekster.
 
 Wat op je telefoon staat, blijft daar tot je de app verwijdert. Wat je al
@@ -32,5 +34,5 @@ Meer daarover in het [privacybeleid]({{ '/privacy/' | relative_url }}).
 
 Heb je de app niet meer, of lukt het niet? Mail naar
 [{{ site.contact }}](mailto:{{ site.contact }}) vanaf het mailadres van je
-Google-account, met de vraag om je account te verwijderen. Binnen een maand
+Google- of Apple-account, met de vraag om je account te verwijderen. Binnen een maand
 is alles gewist, en je krijgt een bevestiging.

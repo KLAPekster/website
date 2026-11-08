@@ -6,11 +6,12 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 5 november 2026</p>
+<p class="flauw">Laatst gewijzigd op 8 november 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
-dat je verstuurt, meld je je één keer aan met je Google-account; vanaf dan
+dat je verstuurt, meld je je één keer aan met je Google-account of, op een
+iPhone, met je Apple-account; vanaf dan
 staat er een kopie van je waarnemingen veilig bij KLAPekster, zodat je niets
 kwijt bent. De app houdt ook een logboek bij van wat ze verstond, om
 herkenningsfouten te vinden en te verbeteren; dat kan je uitzetten. Hieronder
@@ -32,8 +33,11 @@ kan zonder account, ook zonder internet.
 ## Je account
 
 De eerste keer dat je je waarnemingen verstuurt, vraagt de app je om je één
-keer aan te melden met het Google-account van je telefoon. Daarvan krijgt
-KLAPekster je naam en je mailadres. Je wachtwoord niet: dat blijft bij Google.
+keer aan te melden met het Google-account van je telefoon, of op een iPhone
+met je Apple-account. Daarvan krijgt KLAPekster je naam en je mailadres. Je
+wachtwoord niet: dat blijft bij Google of Apple. Kies je bij Apple "Verberg
+mijn e-mailadres", dan krijgt KLAPekster een doorstuuradres van Apple in
+plaats van je echte adres.
 
 Na het aanmelden staat er een kopie van je waarnemingen (met de plek, het
 tijdstip en alles wat je erbij zei) en van je instellingen in een database van
@@ -59,6 +63,11 @@ Google. Afhankelijk van je telefoon gebeurt dat op het toestel zelf of bij
 Google. Daarvoor gelden de voorwaarden van Google. KLAPekster bewaart zelf
 geen geluidsopnamen. Je spraak wordt verwerkt door de spraakherkenningsdienst
 op je telefoon. KLAPekster bewaart alleen de tekst die deze dienst teruggeeft.
+
+Op een iPhone gaat wat je zegt naar de spraakherkenning van Apple. Voor het
+Nederlands gebeurt dat bij Apple, niet op het toestel zelf; daarvoor gelden
+de voorwaarden van Apple. Ook hier bewaart KLAPekster alleen de tekst die
+terugkomt.
 
 Leest de app je waarneming hardop terug, dan doet de voorleesstem van je
 telefoon dat.
@@ -174,10 +183,10 @@ Je bericht wordt na zes maanden gewist, of eerder als je erom vraagt.
 De app vraagt af en toe aan dat rekenblad welke versies er zijn, om je te
 kunnen tonen wat er nieuw is. Daarbij gaat geen informatie over jou mee; zoals
 bij elk verzoek op het internet ziet Google wel je IP-adres. Updates zelf komen
-via Google Play.
+via Google Play of, op een iPhone, via de App Store.
 
-Google Play geeft de maker ook cijfers over het vastlopen van de app, zonder
-naam, als je dat in Android toestaat.
+Google Play en de App Store geven de maker ook cijfers over het vastlopen van
+de app, zonder naam, als je dat in Android of iOS toestaat.
 
 ## Deze website
 
