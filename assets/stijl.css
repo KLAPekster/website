@@ -437,6 +437,24 @@ label.ontbreekt,
 }
 .knop:hover { filter: brightness(1.08); }
 
+/* Google Play en de App Store naast elkaar (_includes/playknop.html): de
+   winkel van je eigen telefoon vol, de andere omlijnd. Op een smalle
+   telefoon onder elkaar. */
+.winkelknoppen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.slotknop .winkelknoppen { justify-content: center; }
+.knop.knop-tweede {
+  background: transparent;
+  color: var(--petrol);
+  border: 2px solid var(--petrol);
+  padding: 12px 22px;
+}
+.knop.knop-tweede:hover { background: var(--petrol-vlak); filter: none; }
+
 .kaart {
   background: var(--kaart);
   border: 1px solid var(--lijn);

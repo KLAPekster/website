@@ -17,93 +17,14 @@ permalink: /
   <p class="inleiding">Spreek in wat je ziet, met aantallen en details. Meerdere
   soorten tegelijk? Ook goed. KLAPekster maakt er afzonderlijke waarnemingen van
   die je kunt versturen naar waarnemingen.be of waarneming.nl.</p>
-  <p class="kenmerken">Gratis – voor Android, iPhone volgt later</p>
+  <p class="kenmerken">Gratis – voor Android en iPhone</p>
   {% comment %}
-    De uitnodiging voor iPhone-gebruikers, als tweede knop naast de
-    Play-knop, met een belletje (Olivier, 19 oktober 2026: eerst
-    "superverstopt onderaan", daarna "Nog niet voor iPhone" te verstopt en
-    niet aanlokkelijk; 22 oktober 2026: een gewone link onder de knop viel
-    nog te weinig op). Een belletje en niet het appeltje: Apple staat zijn
-    logo niet toe op zo'n plek. Iedereen ziet de tweede knop; wie op een
-    iPhone of iPad kijkt, krijgt in de plaats een kaartje
-    met een knop naar de lijst en, zodra er een rekeningnummer is, de weg
-    naar Steunen. Een iPad doet zich voor als Mac, maar heeft een
-    aanraakscherm. De stijl staat hier en niet in assets/stijl.css, net als
-    op /steunen/.
+    Sinds november 2026 staat KLAPekster ook in de App Store. De knoppen
+    voor beide winkels komen uit _includes/playknop.html: wie op een iPhone
+    kijkt, krijgt de App Store vooraan. Tot dan stond hier een knop "iPhone?
+    Zet me op de lijst" met een kaartje voor iPhone-bezoekers.
   {% endcomment %}
-  <style>
-    .knoppen { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
-    #iphoneknop {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--petrol);
-      font-weight: 600;
-      text-decoration: none;
-      border: 2px solid var(--petrol);
-      border-radius: 999px;
-      padding: 10px 20px 10px 16px;
-      min-height: 48px;
-    }
-    #iphoneknop:hover { background: var(--petrol-vlak); }
-    #iphoneknop svg { flex: none; }
-    .iphoneregel { color: var(--grijs); font-size: 0.95rem; margin: 10px 0 0; }
-    #iphonekaart {
-      margin: 20px 0 0;
-      max-width: 34em;
-      border-left: 4px solid var(--petrol);
-    }
-    #iphonekaart h2 { font-size: 1.25rem; margin: 0 0 0.3em; }
-    #iphonekaart p { margin: 0 0 14px; }
-    #iphonekaart .acties {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px 20px;
-      margin: 0;
-    }
-    #iphonekaart .tweede {
-      display: inline-block;
-      color: var(--petrol);
-      font-weight: 600;
-      text-decoration: none;
-      border: 2px solid var(--petrol);
-      border-radius: 999px;
-      padding: 10px 20px;
-      min-height: 44px;
-    }
-    #iphonekaart .tweede:hover { background: var(--petrol-vlak); }
-  </style>
-  <div class="knoppen">
-    {% include playknop.html %}
-    <a id="iphoneknop" href="{{ '/iphone/' | relative_url }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>iPhone? Zet me op de lijst</a>
-  </div>
-  <p class="iphoneregel" id="iphoneregel">Hoor als eerste wanneer KLAPekster op iPhone komt.</p>
-  <div class="kaart" id="iphonekaart" hidden>
-    <h2>KLAPekster op je iPhone?</h2>
-    <p>Zet je op de lijst, dan hoor je het als eerste wanneer KLAPekster op
-    iPhone komt.</p>
-    <p class="acties">
-      <a class="tweede" href="{{ '/iphone/' | relative_url }}">Zet me op de lijst</a>
-    </p>
-    {% if site.rekening and site.rekening != '' %}
-    <p style="margin: 16px 0 0;">Die versie komt er zodra de
-    kosten bij Apple gedekt zijn en er een iPhone is om op te testen.
-    <a href="{{ '/steunen/' | relative_url }}">Wil je daarbij helpen?</a></p>
-    {% endif %}
-  </div>
-  <script>
-    (function () {
-      var ua = navigator.userAgent || '';
-      var apple = /iPhone|iPad|iPod/.test(ua)
-        || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
-      if (apple) {
-        document.getElementById('iphonekaart').hidden = false;
-        document.getElementById('iphoneknop').hidden = true;
-        document.getElementById('iphoneregel').hidden = true;
-      }
-    })();
-  </script>
+  {% include playknop.html %}
 </section>
 
 <section class="toonbeeld" aria-label="Voorbeeld">
@@ -168,8 +89,8 @@ willen ingeven: aan de voederplaats, tijdens een wandeling of op de telpost.
   de etalage, via tools/build_website_beeld.py. Op een telefoon onder de
   tekst, in het midden; op een breed scherm (kolom 1160, lopende tekst 720)
   ernaast, want eronder liet het rechts een grote lege vlakte en maakte het
-  de pagina een scherm langer. De stijl staat hier, net als die van de
-  iPhone-uitnodiging.
+  de pagina een scherm langer. De stijl staat hier, niet in
+  assets/stijl.css.
 {% endcomment %}
 <style>
   .uitsnede {
@@ -290,8 +211,7 @@ buurt gemeld zijn op waarnemingen.be en waarneming.nl, en hoe je er komt.
 ## Goed om te weten
 
 - Alleen in het Nederlands.
-- Voorlopig alleen voor Android. Heb je een iPhone?
-  **[Zet je op de lijst en hoor als eerste wanneer KLAPekster erop komt →]({{ '/iphone/' | relative_url }})**
+- Voor Android en iPhone.
 - Voor België en Nederland.
 - Gratis en zonder reclame.
 - De eerste keer dat je verstuurt, meld je je één keer aan met je

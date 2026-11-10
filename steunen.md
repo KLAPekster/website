@@ -1,6 +1,6 @@
 ---
 title: KLAPekster steunen
-description: Help de kosten dragen om KLAPekster ook op iPhone te brengen. Wat het kost, hoeveel er al binnen is, en hoe je met een overschrijving steunt.
+description: Help de kosten dragen om KLAPekster op iPhone te houden. Wat het kost, hoeveel er al binnen is, en hoe je met een overschrijving steunt.
 permalink: /steunen/
 ---
 
@@ -101,8 +101,8 @@ permalink: /steunen/
 
 # KLAPekster steunen
 
-KLAPekster werkt nu alleen op Android. Om er ook een versie voor iPhone van te
-maken, zijn er kosten, vooral bij Apple. Met een kleine gift help je die
+KLAPekster staat nu ook in de App Store, voor iPhone. Daar zijn kosten aan,
+vooral bij Apple, en die komen elk jaar terug. Met een kleine gift help je die
 dragen.
 
 - De app blijft gratis en zonder reclame, ook voor wie niet steunt.
@@ -111,9 +111,7 @@ dragen.
 
 ## Het doel: {{ steun_doel }} euro
 
-Dat is wat Apple twee jaar lang vraagt, afgerond. Ik begin aan de versie voor
-iPhone zodra twee dingen geregeld zijn: dat bedrag is binnen, en er is een
-iPhone om op te testen, geleend of tweedehands gekocht.
+Dat is wat Apple twee jaar lang vraagt, afgerond.
 
 <div class="kaart" markdown="0">
   <div class="steunbalk" role="progressbar" aria-label="Al binnen" aria-valuemin="0" aria-valuemax="{{ steun_doel }}" aria-valuenow="{{ steun_binnen }}">
@@ -129,7 +127,8 @@ bij.
 
 - **Apple: 99 euro per jaar.** Zoveel vraagt Apple om een app in de App Store
   te zetten.
-- **Een iPhone om op te testen.** Dat kost niets als iemand er een uitleent
+- **Een iPhone om op te testen.** Nu test ik op een geleende iPhone. Moet die
+  terug, dan is er een andere nodig: dat kost niets als iemand er een uitleent
   ([zie hieronder](#een-iphone-uitlenen)). Anders koop ik een tweedehands
   toestel; wat dat kost, zet ik dan hier.
 - **Bouwen zonder Mac.** Ik heb geen Mac. De versie voor iPhone laat ik online
@@ -249,7 +248,3 @@ Met een gewone overschrijving. Het bedrag kies je zelf.
 Heb je een iPhone die niet al te oud is, en die je een tijd kan missen? Leen
 hem me dan voor langere tijd uit, om de app op te testen. Laat het weten via
 [Contact]({{ '/contact/' | relative_url }}).
-
-<p class="flauw">Wil je eerst weten waarom KLAPekster nog niet op iPhone
-werkt? Dat lees je op <a href="{{ '/iphone/' | relative_url }}">Komt
-KLAPekster ook op iPhone?</a></p>

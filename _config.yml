@@ -8,9 +8,9 @@ tagline: Vogelwaarnemingen inspreken
 # link. Met "vogels" en "app" erin, zodat wie die zoekt de site vindt en niet
 # alleen de vogel (10 oktober 2026).
 description: >-
-  Gratis Android-app voor vogelaars: spreek je vogelwaarnemingen in en
-  KLAPekster noteert soort, aantal en gedrag. Export naar waarnemingen.be en
-  waarneming.nl.
+  Gratis app voor vogelaars, op Android en iPhone: spreek je
+  vogelwaarnemingen in en KLAPekster noteert soort, aantal en gedrag. Export
+  naar waarnemingen.be en waarneming.nl.
 lang: nl_BE
 
 # Waar de site staat: op klapekster.be sinds 10 oktober 2026 (stap 5). Het
@@ -27,6 +27,10 @@ baseurl: ""
 fase: winkel
 
 play_id: be.klapekster.app
+# De iPhone-versie, in de App Store sinds november 2026 (alleen België en
+# Nederland). Het adres met /be/ werkt ook in Nederland: Apple stuurt dan
+# vanzelf naar de Nederlandse winkel.
+appstore_url: https://apps.apple.com/be/app/klapekster/id6831201074
 contact: klapekster.app@gmail.com
 aanmeldlink: https://play.google.com/apps/testing/be.klapekster.app
 

@@ -1,16 +1,35 @@
 {% comment %}
-  De grote knop. Zolang de app nog niet vrij in Google Play staat, naar de
-  aanmeldpagina; daarna de officiële Google Play-badge, onveranderd (hun
-  voorwaarden). Die badge komt erbij zodra de app in de winkel staat.
-  Geen "test" in de knop: dat woord hield mensen tegen (Olivier, 9 oktober
-  2026). Ook geen "Nu gebruiken": je meldt je eerst aan en wordt met de hand
-  op de lijst gezet, dus "nu" belooft te veel. "Gebruiken" en niet meer
-  "proberen": de app is volledig bruikbaar en de go-live is dichtbij
-  (Olivier, 13 oktober 2026). Sinds 21 oktober 2026 staat de app vrij in
-  Google Play; tot de officiële badge er is, een gewone knop.
+  De grote knop. Zolang de app nog niet vrij in Google Play stond, naar de
+  aanmeldpagina. Geen "test" in de knop: dat woord hield mensen tegen
+  (Olivier, 9 oktober 2026). Sinds 21 oktober 2026 staat de app vrij in
+  Google Play, sinds november 2026 ook in de App Store.
+
+  Twee knoppen, een volle en een omlijnde: wie op een iPhone of iPad kijkt,
+  krijgt de App Store vooraan en vol, iedereen anders Google Play. Gewone
+  knoppen met tekst, niet de officiële badges en geen appeltje of
+  Play-logo: die vragen elk hun eigen voorwaarden. Een iPad doet zich voor
+  als Mac, maar heeft een aanraakscherm. Werkt het script niet, dan staat
+  Google Play vooraan, en de App Store ernaast.
 {% endcomment %}
 {% if site.fase == 'winkel' %}
-<a class="knop" href="https://play.google.com/store/apps/details?id={{ site.play_id }}">Installeer KLAPekster</a>
+<span class="winkelknoppen">
+  <a class="knop" data-winkel="play" href="https://play.google.com/store/apps/details?id={{ site.play_id }}">Installeer via Google Play</a>
+  <a class="knop knop-tweede" data-winkel="apple" href="{{ site.appstore_url }}">Installeer via de App Store</a>
+</span>
+<script>
+  (function (script) {
+    var ua = navigator.userAgent || '';
+    var apple = /iPhone|iPad|iPod/.test(ua)
+      || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    if (!apple) return;
+    var knoppen = script.previousElementSibling;
+    var play = knoppen.querySelector('[data-winkel="play"]');
+    var appstore = knoppen.querySelector('[data-winkel="apple"]');
+    play.classList.add('knop-tweede');
+    appstore.classList.remove('knop-tweede');
+    knoppen.insertBefore(appstore, play);
+  })(document.currentScript);
+</script>
 {% else %}
 <a class="knop" href="{{ '/meedoen/' | relative_url }}">Gebruik KLAPekster</a>
 {% endif %}

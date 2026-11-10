@@ -7,8 +7,9 @@ permalink: /meedoen/
 {% if site.fase == 'winkel' %}
 # Help KLAPekster beter maken
 
-KLAPekster staat in Google Play: daar
-[installeer je haar](https://play.google.com/store/apps/details?id={{ site.play_id }}).
+KLAPekster staat in
+[Google Play](https://play.google.com/store/apps/details?id={{ site.play_id }})
+en in de [App Store]({{ site.appstore_url }}): daar installeer je haar.
 Wil je nieuwe versies eerder dan iedereen, en meehelpen om de app beter te
 maken? Meld je dan hieronder aan.
 {% else %}
@@ -23,8 +24,8 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
 - Je gebruikt de app gewoon, thuis of in het veld, voor je echte waarnemingen.
 - Werkt iets niet zoals je verwacht, of kent ze een naam niet? Laat het gerust
   weten: wat je meldt, helpt mee.
-- Je hebt een Android-telefoon nodig, en je spreekt Nederlands. De app is er
-  voor België en Nederland.
+- Je hebt een Android-telefoon of een iPhone nodig, en je spreekt
+  Nederlands. De app is er voor België en Nederland.
 - De app stuurt een logboek mee, zodat ze beter leert verstaan; dat kan je
   uitzetten. Wat daarin staat, lees je in het
   [privacybeleid]({{ '/privacy/' | relative_url }}).
@@ -39,11 +40,11 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
   </div>
 
   <div class="veld">
-    <label for="email">E-mailadres van je Google-account <span class="veldnoot">(verplicht)</span></label>
+    <label for="email">E-mailadres <span class="veldnoot">(verplicht)</span></label>
     <input type="email" id="email" name="email" required autocomplete="email" inputmode="email">
-    <p class="hint">Het adres waarmee je op je telefoon in de Play Store zit.
-    Dat hoeft geen Gmail-adres te zijn. Hiermee zet ik je op de lijst, en
-    hierheen gaat ook de bevestiging.</p>
+    <p class="hint">Op Android: het adres van je Google-account, waarmee je op
+    je telefoon in de Play Store zit. Dat hoeft geen Gmail-adres te zijn.
+    Hiermee zet ik je op de lijst, en hierheen gaat ook de bevestiging.</p>
   </div>
 
   <div class="veld">
@@ -52,11 +53,9 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
       <label class="keuze"><input type="radio" name="toestel" value="Android" required> Android</label>
       <label class="keuze"><input type="radio" name="toestel" value="iPhone"> iPhone</label>
     </fieldset>
-    <p class="hint melding" id="iphonemelding" hidden>KLAPekster werkt voorlopig
-    alleen op Android. Waarom, lees je op
-    <a href="{{ '/iphone/' | relative_url }}">Komt KLAPekster ook op iPhone?</a>
-    Meld je gerust aan: komt er een versie voor iPhone, dan laat ik het je
-    weten.</p>
+    <p class="hint" id="iphonemelding" hidden>Op een iPhone installeer je
+    KLAPekster gewoon uit de <a href="{{ site.appstore_url }}">App Store</a>.
+    Wil je ook meehelpen, meld je dan hieronder aan.</p>
   </div>
 
   <div class="veld">
@@ -122,10 +121,10 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
 
 <div id="iphonebedankt" class="kaart" hidden>
   <h3>Bedankt!</h3>
-  <p>Je aanmelding is binnen. KLAPekster werkt voorlopig alleen op Android;
-  komt er een versie voor iPhone, dan laat ik het je weten.</p>
-  <p>Waarom dat nog niet kan, en hoe je kan helpen, lees je op
-  <a href="{{ '/iphone/' | relative_url }}">Komt KLAPekster ook op iPhone?</a></p>
+  <p>Je aanmelding is binnen. Je krijgt zo meteen een bevestigingsmail;
+  niets ontvangen? Kijk even in je spam.</p>
+  <p>Intussen kan je KLAPekster al installeren.</p>
+  <p><a class="knop" href="{{ site.appstore_url }}">Installeer via de App Store</a></p>
 </div>
 
 ## Na je aanmelding

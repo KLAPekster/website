@@ -156,11 +156,10 @@ over je ervaring en de apps die je gebruikt. Dat gaat naar een rekenblad van
 de maker bij Google. Het dient om je toegang te geven tot de app, en je per
 mail te laten weten hoe dat gaat. Die mail komt van {{ site.contact }}.
 
-Zet je je op de pagina
-[Komt KLAPekster ook op iPhone?]({{ '/iphone/' | relative_url }}) op de lijst,
-dan vraagt het formulier alleen je naam, je e-mailadres, je land en eventueel
-een opmerking. Dat komt in hetzelfde rekenblad, en dient alleen om je te laten
-weten wanneer er een versie voor iPhone is.
+Zette je je, vóór KLAPekster in de App Store stond, op de lijst voor de
+iPhone-versie, dan vroeg het formulier alleen je naam, je e-mailadres, je land
+en eventueel een opmerking. Dat staat in hetzelfde rekenblad, en diende alleen
+om je te laten weten wanneer er een versie voor iPhone is.
 
 Je aanmelding wordt na een jaar gewist, of eerder als je erom vraagt.
 
