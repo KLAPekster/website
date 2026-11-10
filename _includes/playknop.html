@@ -4,17 +4,20 @@
   (Olivier, 9 oktober 2026). Sinds 21 oktober 2026 staat de app vrij in
   Google Play, sinds november 2026 ook in de App Store.
 
-  Twee knoppen, een volle en een omlijnde: wie op een iPhone of iPad kijkt,
-  krijgt de App Store vooraan en vol, iedereen anders Google Play. Gewone
-  knoppen met tekst, niet de officiële badges en geen appeltje of
-  Play-logo: die vragen elk hun eigen voorwaarden. Een iPad doet zich voor
-  als Mac, maar heeft een aanraakscherm. Werkt het script niet, dan staat
-  Google Play vooraan, en de App Store ernaast.
+  De officiële knoppen van Google en Apple, in het Nederlands (Olivier, 10
+  november 2026, na een schets naast gewone petrolknoppen). Hun voorwaarden:
+  het beeld niet veranderen, beide even hoog, lege ruimte rond de knop. Het
+  logo van Apple of Google los tonen mag niet. De stijl staat in
+  assets/stijl.css (.winkelknoppen).
+
+  Wie op een iPhone of iPad kijkt, krijgt de App Store vooraan, iedereen
+  anders Google Play. Een iPad doet zich voor als Mac, maar heeft een
+  aanraakscherm. Werkt het script niet, dan staat Google Play vooraan.
 {% endcomment %}
 {% if site.fase == 'winkel' %}
 <span class="winkelknoppen">
-  <a class="knop" data-winkel="play" href="https://play.google.com/store/apps/details?id={{ site.play_id }}">Installeer via Google Play</a>
-  <a class="knop knop-tweede" data-winkel="apple" href="{{ site.appstore_url }}">Installeer via de App Store</a>
+  <a class="winkel-play" href="https://play.google.com/store/apps/details?id={{ site.play_id }}"><img src="{{ '/assets/beeld/winkels/google-play-nl.png' | relative_url }}" alt="Ontdek het op Google Play" width="646" height="250"></a>
+  {% include appstoreknop.html %}
 </span>
 <script>
   (function (script) {
@@ -23,11 +26,8 @@
       || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
     if (!apple) return;
     var knoppen = script.previousElementSibling;
-    var play = knoppen.querySelector('[data-winkel="play"]');
-    var appstore = knoppen.querySelector('[data-winkel="apple"]');
-    play.classList.add('knop-tweede');
-    appstore.classList.remove('knop-tweede');
-    knoppen.insertBefore(appstore, play);
+    knoppen.insertBefore(knoppen.querySelector('.winkel-apple'),
+      knoppen.querySelector('.winkel-play'));
   })(document.currentScript);
 </script>
 {% else %}

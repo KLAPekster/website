@@ -437,23 +437,22 @@ label.ontbreekt,
 }
 .knop:hover { filter: brightness(1.08); }
 
-/* Google Play en de App Store naast elkaar (_includes/playknop.html): de
-   winkel van je eigen telefoon vol, de andere omlijnd. Op een smalle
-   telefoon onder elkaar. */
+/* De officiële knoppen van Google Play en de App Store
+   (_includes/playknop.html), naast elkaar, ook op een smalle telefoon.
+   Beide 48 punten hoog, zoals hun voorwaarden vragen. Het beeld van Google
+   heeft boven en onder al wat lege ruimte (29 van de 250 beeldpunten):
+   daarom is het hoger, met een negatieve marge, zodat de zwarte knoppen
+   zelf even hoog zijn. */
 .winkelknoppen {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 12px;
+  gap: 12px 14px;
 }
 .slotknop .winkelknoppen { justify-content: center; }
-.knop.knop-tweede {
-  background: transparent;
-  color: var(--petrol);
-  border: 2px solid var(--petrol);
-  padding: 12px 22px;
-}
-.knop.knop-tweede:hover { background: var(--petrol-vlak); filter: none; }
+.winkel-play, .winkel-apple { display: inline-block; line-height: 0; }
+.winkel-apple img { height: 48px; width: auto; }
+.winkel-play img { height: 62.5px; width: auto; margin: -7.25px 0; }
 
 .kaart {
   background: var(--kaart);

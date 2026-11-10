@@ -16,7 +16,7 @@ permalink: /iphone/
 KLAPekster staat in de App Store. Gratis en zonder reclame, voor België en
 Nederland.
 
-<p><a class="knop" href="{{ site.appstore_url }}">Installeer via de App Store</a></p>
+<p>{% include appstoreknop.html %}</p>
 
 De app werkt op een iPhone net als op Android. De eerste keer dat je
 verstuurt, meld je je één keer aan met je Apple-account.

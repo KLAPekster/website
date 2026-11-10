@@ -124,7 +124,7 @@ gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
   <p>Je aanmelding is binnen. Je krijgt zo meteen een bevestigingsmail;
   niets ontvangen? Kijk even in je spam.</p>
   <p>Intussen kan je KLAPekster al installeren.</p>
-  <p><a class="knop" href="{{ site.appstore_url }}">Installeer via de App Store</a></p>
+  <p>{% include appstoreknop.html %}</p>
 </div>
 
 ## Na je aanmelding
