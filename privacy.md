@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 8 november 2026</p>
+<p class="flauw">Laatst gewijzigd op 11 november 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
@@ -87,14 +87,37 @@ telefoon dat.
 
 ## Versturen naar waarnemingen.be of waarneming.nl
 
-Je verstuurt je waarnemingen zelf, met je eigen account. De app opent
-daarvoor de importpagina van waarnemingen.be of waarneming.nl. Je logt in
+Je verstuurt je waarnemingen zelf, met je eigen account. Meestal opent de
+app daarvoor de importpagina van waarnemingen.be of waarneming.nl. Je logt in
 op hún pagina, en je drukt zelf op Import. De app geeft die pagina alleen het
 bestand met je waarnemingen. Ze leest niet mee wat er op de pagina staat, en
 ziet of bewaart je wachtwoord niet.
 
+**Rechtstreeks versturen.** Je kan je ook in de app aanmelden bij
+waarnemingen.be of waarneming.nl, als je dat zelf wil. Dan verstuurt de
+app je waarnemingen zelf, zonder importpagina.
+
+Meld je je zo aan, dan gaat je wachtwoord één keer, versleuteld,
+rechtstreeks naar waarnemingen.be of waarneming.nl, en nergens anders
+heen. KLAPekster bewaart je wachtwoord niet en krijgt het nooit te zien.
+De app bewaart alleen de sleutel die waarnemingen.be teruggeeft, in de
+beveiligde opslag van je telefoon, niet in de database van KLAPekster. Met
+"Afmelden" wis je die sleutel meteen.
+
 Wat waarnemingen.be en waarneming.nl daarna met je waarnemingen doen, staat
 in hun eigen privacybeleid.
+
+## Foto's
+
+Verstuur je rechtstreeks, dan kan je een foto bij een waarneming zetten,
+uit je foto's of met de camera, als je daar zelf voor kiest. De app maakt
+er een kopie van op je telefoon: kleiner, en zonder de plaats en de andere
+gegevens die je toestel in een foto bewaart. Die kopie gaat met de
+waarneming naar waarnemingen.be of waarneming.nl, en wordt daarna van je
+telefoon gewist. Je foto zelf blijft in je galerij.
+
+Je foto's komen nooit in de database van KLAPekster. Wel bewaart de kopie
+van je waarneming bij je account de link naar de foto op waarnemingen.be.
 
 ## Het logboek
 
@@ -113,7 +136,10 @@ eerste start kreeg, geen naam. Na het aanmelden hoort het bij je naam en je
 mailadres, ook wat je daarvoor al insprak.
 
 Verstuur je je waarnemingen naar waarnemingen.be, dan gaat er ook een korte
-melding mee: hoeveel regels je verstuurde. Niet de waarnemingen zelf.
+melding mee: hoeveel regels je verstuurde, en bij rechtstreeks
+versturen hoeveel er aankwamen, hoeveel foto's erbij waren en, als het
+misliep, een korte technische reden. Niet de waarnemingen zelf, niet je
+foto's, en nooit je wachtwoord of je sleutel.
 
 **Waarheen**: naar dezelfde database van KLAPekster bij Google (Firebase),
 versleuteld onderweg. De plek gaat mee afgerond op een kilometer. Alleen
