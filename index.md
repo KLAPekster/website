@@ -129,6 +129,17 @@ Welke knop wat doet, stel je zelf in.
 <div><img class="uitsnede knoppen" src="{{ '/assets/beeld/schermen/knoppen.webp' | relative_url }}" alt="De app leest je waarneming voor: IJsvogel, 1, Man, foeragerend. Met de volumeknop plus bewaar je, met min begin je opnieuw." width="352" height="285" loading="lazy"></div>
 </div>
 
+## Een hele reeks na elkaar
+
+Bij een watervogeltelling, op de telpost of om een notitieboekje over te
+zetten: met Reeks inspreken blijft de microfoon open en zeg je je vogels
+gewoon na elkaar. Elke vogel komt op een eigen regel. Iets vergeten? Zeg het
+er meteen achteraan. Verkeerd? Zeg "fout". Wil je niet kijken, dan leest de
+app elke vogel kort terug.
+
+Tel je vanop één plek, dan zet je die plek één keer vast. Elke waarneming
+daarna krijgt ze vanzelf.
+
 ## Meer dan soort en aantal
 
 <div class="naast" markdown="1">
@@ -141,11 +152,14 @@ details. Je kunt onder meer inspreken:
 - verschillende aantallen binnen een groep;
 - een koppel of een ouder met jongen;
 - wat een vogel eet of waarop hij jaagt;
-- een geschat aantal of twijfel over soort en leeftijd.
+- een geschat aantal of twijfel over soort en leeftijd;
+- een hybride, zoals "kruising grauwe gans brandgans";
+- de kilometer- of hectometerpaal waar je hem zag.
 
-De app kent bijna duizend vogelsoorten en bijna tweehonderd volks- en
+De app kent meer dan duizend vogelsoorten en bijna tweehonderd volks- en
 dialectnamen. Ook veel verkeerd verstane vogelnamen kan KLAPekster alsnog
-herkennen.
+herkennen. Bij elke waarneming kun je een opmerking inspreken en tot drie
+foto's toevoegen.
 
 </div>
 <div><img class="uitsnede gedrag" src="{{ '/assets/beeld/schermen/gedrag.webp' | relative_url }}" alt="Het gedrag aanpassen in de app: overvliegend is gekozen, met een windroos om de richting aan te tikken" width="384" height="452" loading="lazy"></div>
@@ -161,7 +175,9 @@ buurt gemeld zijn op waarnemingen.be en waarneming.nl, en hoe je er komt.
     <h3>Wat zit er in de buurt?</h3>
     <p>Zeldzame vogels op de kaart en in een lijst. Je ziet wanneer hij laatst
     gespot is, hoe groot de trefkans is, in welke gebieden hij zit en hoe ver
-    weg die zijn.</p>
+    weg die zijn. Tik op een vogel voor zijn eigen pagina: de foto's en
+    geluidsopnames die waarnemers daar maakten, waar hij het vaakst zit en
+    sinds wanneer.</p>
     <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-1.webp' | relative_url }}" alt="Zeldzaam rondom jou: een kaart rond Antwerpen met de meldingen, en daaronder een zeearend, gisteren gezien in het Stappersven, 21 kilometer verder, met redelijke kans en nog drie andere plekken" width="384" height="780" loading="lazy">
   </li>
   <li>
