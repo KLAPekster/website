@@ -102,7 +102,8 @@ willen ingeven: aan de voederplaats, tijdens een wandeling of op de telpost.
     border-radius: 20px;
   }
   .uitsnede.knoppen { --maat: 320px; }
-  .uitsnede.gedrag { --maat: 300px; border: 1px solid var(--lijn); }  @media (min-width: 1200px) {
+  .uitsnede.gedrag { --maat: 300px; border: 1px solid var(--lijn); }
+  .uitsnede.reeks { --maat: 300px; border: 1px solid var(--lijn); }  @media (min-width: 1200px) {
     .naast {
       display: grid;
       grid-template-columns: minmax(0, 720px) auto;
@@ -119,9 +120,11 @@ willen ingeven: aan de voederplaats, tijdens een wandeling of op de telpost.
 <div class="naast" markdown="1">
 <div markdown="1">
 
-Je kunt KLAPekster bedienen met de volumeknoppen, de knop van een bedraad
-oortje of een losse Flic-knop. Spreek je waarneming in en laat de app die
-hardop teruglezen. Met een knopdruk bewaar je ze of begin je opnieuw.
+Je kunt KLAPekster bedienen met een knop. Op Android met de volumeknoppen,
+de knop van een bedraad oortje of een losse Flic-knop. Op een iPhone met de
+knop van je oortje, ook een draadloos, of met de actieknop of een tik op de
+achterkant. Spreek je waarneming in en laat de app die hardop teruglezen. Met
+een knopdruk bewaar je ze of begin je opnieuw.
 
 Welke knop wat doet, stel je zelf in.
 
@@ -131,6 +134,9 @@ Welke knop wat doet, stel je zelf in.
 
 ## Een hele reeks na elkaar
 
+<div class="naast" markdown="1">
+<div markdown="1">
+
 Bij een watervogeltelling, op de telpost of om een notitieboekje over te
 zetten: met Reeks inspreken blijft de microfoon open en zeg je je vogels
 gewoon na elkaar. Elke vogel komt op een eigen regel. Iets vergeten? Zeg het
@@ -139,6 +145,10 @@ app elke vogel kort terug.
 
 Tel je vanop één plek, dan zet je die plek één keer vast. Elke waarneming
 daarna krijgt ze vanzelf.
+
+</div>
+<div><img class="uitsnede reeks" src="{{ '/assets/beeld/schermen/reeks.webp' | relative_url }}" alt="Reeks inspreken bij een watervogeltelling: 40 kolganzen, 12 wintertalingen, 3 kuifeenden en 2 tafeleenden, een regel die de app niet verstond, en een blauwe reiger, elk op een eigen regel" width="384" height="456" loading="lazy"></div>
+</div>
 
 ## Meer dan soort en aantal
 
