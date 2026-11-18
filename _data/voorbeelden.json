@@ -84,6 +84,20 @@
     "hoogte": 226
   },
   {
+    "naam": "hybride",
+    "opschrift": "Hybriden, met beide ouders",
+    "zin": "Hybride grauwe gans kolgans.",
+    "breedte": 360,
+    "hoogte": 300
+  },
+  {
+    "naam": "kilometerpaal",
+    "opschrift": "Dood gevonden, bij een kilometerpaal",
+    "zin": "Een dode buizerd bij kilometerpaal elf.",
+    "breedte": 360,
+    "hoogte": 363
+  },
+  {
     "naam": "dialect",
     "opschrift": "Volks- en dialectnamen",
     "zin": "Twee hannewuiten roepend en een blotser overvliegend.",

@@ -143,8 +143,10 @@ gewoon na elkaar. Elke vogel komt op een eigen regel. Iets vergeten? Zeg het
 er meteen achteraan. Verkeerd? Zeg "fout". Wil je niet kijken, dan leest de
 app elke vogel kort terug.
 
-Tel je vanop één plek, dan zet je die plek één keer vast. Elke waarneming
-daarna krijgt ze vanzelf.
+Spreek je achteraf in, bijvoorbeeld uit een notitieboekje, dan zet je
+bovenaan één keer de dag, het uur en de plek vast, en zo nodig ook een
+gedrag, zoals overvliegend. Elke vogel die je daarna inspreekt, krijgt ze
+vanzelf.
 
 </div>
 <div><img class="uitsnede reeks" src="{{ '/assets/beeld/schermen/reeks.webp' | relative_url }}" alt="Reeks inspreken bij een watervogeltelling: 40 kolganzen, 12 wintertalingen, 3 kuifeenden en 2 tafeleenden, een regel die de app niet verstond, en een blauwe reiger, elk op een eigen regel" width="384" height="456" loading="lazy"></div>
@@ -180,22 +182,36 @@ foto's toevoegen.
 In Zeldzaam rondom jou zie je welke zeldzame vogels er de laatste week in je
 buurt gemeld zijn op waarnemingen.be en waarneming.nl, en hoe je er komt.
 
-<ol class="stappen">
+<style>
+  /* Vier stappen bij Zeldzaam rondom jou: op een breed scherm naast
+     elkaar, niet drie en één eronder (18 november 2026). */
+  @media (min-width: 1200px) {
+    .voorpagina .stappen.vier { grid-template-columns: repeat(4, 1fr); }
+  }
+</style>
+
+<ol class="stappen vier">
   <li>
     <h3>Wat zit er in de buurt?</h3>
     <p>Zeldzame vogels op de kaart en in een lijst. Je ziet wanneer hij laatst
     gespot is, hoe groot de trefkans is, in welke gebieden hij zit en hoe ver
-    weg die zijn. Tik op een vogel voor zijn eigen pagina: de foto's en
-    geluidsopnames die waarnemers daar maakten, waar hij het vaakst zit en
-    sinds wanneer.</p>
-    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-1.webp' | relative_url }}" alt="Zeldzaam rondom jou: een kaart rond Antwerpen met de meldingen, en daaronder een zeearend, gisteren gezien in het Stappersven, 21 kilometer verder, met redelijke kans en nog drie andere plekken" width="384" height="780" loading="lazy">
+    weg die zijn. Tik op een vogel voor zijn eigen pagina: de laatste
+    berichten, de foto's en de geluidsopnames.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-pagina.webp' | relative_url }}" alt="De pagina van een witkopgors in Zeebrugge, 89 kilometer verder: misschien nog, 146 waarnemers, vier dagen op rij, de laatste berichten, een keuze van duidelijke foto's en een knop om een opname te beluisteren" width="384" height="768" loading="lazy">
+  </li>
+  <li>
+    <h3>Waar zit hij precies?</h3>
+    <p>Op de grote kaart zie je waar hij het vaakst gemeld werd, met de
+    kijkplekken en parkings erbij. Ter plaatse zie je ook
+    jezelf, en in welke richting je kijkt.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-kaart.webp' | relative_url }}" alt="De grote kaart bij Doel op satellietbeeld: een vlek van geel tot rood waar de vogel het vaakst gemeld werd, een kijkwand en parkings, en jij op de Oostlangeweg met een oranje bundel in je kijkrichting" width="384" height="768" loading="lazy">
   </li>
   <li>
     <h3>Hoe kom je er?</h3>
     <p>Verschillende manieren om er te geraken, met informatie over parkings,
     wandelroutes, toegankelijkheid, veerboten en omwegen. Zet het direct door
     naar een auto- of wandelroute in je favoriete app.</p>
-    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-2.webp' | relative_url }}" alt="Een klapekster bij het Noordelijk Eiland: met de auto aan de kant van de vogel naar de parking aan de Zeesluis, of aan de overkant naar het Tolhuis met het voetveer Schelle-Wintam, en dat het eiland zelf niet toegankelijk is" width="384" height="780" loading="lazy">
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-weg.webp' | relative_url }}" alt="Een vogel aan de Schelde bij Hoboken: met de auto tot bij de vogel, met de auto naar een parking op 150 meter, of te voet of met de fiets, ook met het veer Kruibeke-Hoboken" width="384" height="768" loading="lazy">
   </li>
   <li>
     <h3>Wanneer ga je best?</h3>
