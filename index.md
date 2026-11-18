@@ -183,20 +183,28 @@ In Zeldzaam rondom jou zie je welke zeldzame vogels er de laatste week in je
 buurt gemeld zijn op waarnemingen.be en waarneming.nl, en hoe je er komt.
 
 <style>
-  /* Vier stappen bij Zeldzaam rondom jou: op een breed scherm naast
-     elkaar, niet drie en één eronder (18 november 2026). */
+  /* Vijf stappen bij Zeldzaam rondom jou: op een breed scherm drie bovenaan
+     en twee in het midden eronder, elk even breed als de stappen van "Zo
+     werkt het" (Olivier, 18 november 2026). */
   @media (min-width: 1200px) {
-    .voorpagina .stappen.vier { grid-template-columns: repeat(4, 1fr); }
+    .voorpagina .stappen.vijf { grid-template-columns: repeat(6, 1fr); }
+    .voorpagina .stappen.vijf li { grid-column: span 2; }
+    .voorpagina .stappen.vijf li:nth-child(4) { grid-column: 2 / span 2; }
   }
 </style>
 
-<ol class="stappen vier">
+<ol class="stappen vijf">
   <li>
     <h3>Wat zit er in de buurt?</h3>
     <p>Zeldzame vogels op de kaart en in een lijst. Je ziet wanneer hij laatst
     gespot is, hoe groot de trefkans is, in welke gebieden hij zit en hoe ver
-    weg die zijn. Tik op een vogel voor zijn eigen pagina: de laatste
-    berichten, de foto's en de geluidsopnames.</p>
+    weg die zijn.</p>
+    <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-lijst.webp' | relative_url }}" alt="Zeldzaam rondom jou als lijst, de dichtstbije eerst: een rotszwaluw in Kruibeke op 40 kilometer, een ruigpootbuizerd op de Plaat van Baarland en een grijze wouw in de Doelpolder, elk met de trefkans en wanneer hij laatst gezien is" width="384" height="768" loading="lazy">
+  </li>
+  <li>
+    <h3>Zijn eigen pagina</h3>
+    <p>Tik op een vogel voor zijn eigen pagina: de laatste berichten, de
+    foto's en de geluidsopnames.</p>
     <img class="scherm stapbeeld" src="{{ '/assets/beeld/schermen/zeldzaam-pagina.webp' | relative_url }}" alt="De pagina van een witkopgors in Zeebrugge, 89 kilometer verder: misschien nog, 146 waarnemers, vier dagen op rij, de laatste berichten, een keuze van duidelijke foto's en een knop om een opname te beluisteren" width="384" height="768" loading="lazy">
   </li>
   <li>
