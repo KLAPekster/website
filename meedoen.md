@@ -1,258 +1,32 @@
 ---
 title: Help KLAPekster beter maken
-description: Meld je aan om mee te helpen aan KLAPekster en nieuwe versies eerder dan iedereen te krijgen.
+description: KLAPekster staat in Google Play en de App Store. Zo help je mee om de app beter te maken.
 permalink: /meedoen/
 ---
 
-{% if site.fase == 'winkel' %}
+{% comment %}
+  Tot 18 november 2026 stond hier een aanmeldformulier om tester te worden
+  (zie de geschiedenis van dit bestand in git). Olivier haalde het weg: de
+  app staat voor iedereen in de winkels, en nieuwe testers zijn niet meer
+  nodig. Meehelpen doe je nu gewoon door de app te gebruiken en te laten
+  weten wat er misloopt.
+{% endcomment %}
+
 # Help KLAPekster beter maken
 
 KLAPekster staat in
 [Google Play](https://play.google.com/store/apps/details?id={{ site.play_id }})
-en in de [App Store]({{ site.appstore_url }}): daar installeer je haar.
-Wil je nieuwe versies eerder dan iedereen, en meehelpen om de app beter te
-maken? Meld je dan hieronder aan.
-{% else %}
-# KLAPekster gebruiken
+en in de [App Store]({{ site.appstore_url }}). Daar installeer je haar,
+gratis en zonder reclame.
 
-KLAPekster staat nog niet vrij in Google Play, maar je kan haar nu al
-gebruiken. Meld je hieronder aan, dan zet ik je op de lijst.
-{% endif %}
+{% include playknop.html %}
 
-## Hoe het gaat
+## Zo help je mee
 
-- Je gebruikt de app gewoon, thuis of in het veld, voor je echte waarnemingen.
-- Werkt iets niet zoals je verwacht, of kent ze een naam niet? Laat het gerust
-  weten: wat je meldt, helpt mee.
-- Je hebt een Android-telefoon of een iPhone nodig, en je spreekt
-  Nederlands. De app is er voor België en Nederland.
+- Gebruik de app gewoon, thuis of in het veld, voor je echte waarnemingen.
+- Werkt iets niet zoals je verwacht, of kent ze een naam niet? Laat het
+  weten via [Contact]({{ '/contact/' | relative_url }}): wat je meldt, helpt
+  mee.
 - De app stuurt een logboek mee, zodat ze beter leert verstaan; dat kan je
   uitzetten. Wat daarin staat, lees je in het
   [privacybeleid]({{ '/privacy/' | relative_url }}).
-
-## Aanmelden
-
-<form id="aanmeldformulier" class="formulier" novalidate markdown="0">
-  <!-- Elke vraag met zijn label en uitleg samen in een .veld. -->
-  <div class="veld">
-    <label for="naam">Naam <span class="veldnoot">(verplicht)</span></label>
-    <input type="text" id="naam" name="naam" required autocomplete="name">
-  </div>
-
-  <div class="veld">
-    <label for="email">E-mailadres <span class="veldnoot">(verplicht)</span></label>
-    <input type="email" id="email" name="email" required autocomplete="email" inputmode="email">
-    <p class="hint">Op Android: het adres van je Google-account, waarmee je op
-    je telefoon in de Play Store zit. Dat hoeft geen Gmail-adres te zijn.
-    Hiermee zet ik je op de lijst, en hierheen gaat ook de bevestiging.</p>
-  </div>
-
-  <div class="veld">
-    <fieldset>
-      <legend>Welke telefoon heb je? <span class="veldnoot">(verplicht)</span></legend>
-      <label class="keuze"><input type="radio" name="toestel" value="Android" required> Android</label>
-      <label class="keuze"><input type="radio" name="toestel" value="iPhone"> iPhone</label>
-    </fieldset>
-    <p class="hint" id="iphonemelding" hidden>Op een iPhone installeer je
-    KLAPekster gewoon uit de <a href="{{ site.appstore_url }}">App Store</a>.
-    Wil je ook meehelpen, meld je dan hieronder aan.</p>
-  </div>
-
-  <div class="veld">
-    <fieldset>
-      <legend>In welk land woon je? <span class="veldnoot">(verplicht)</span></legend>
-      <label class="keuze"><input type="radio" name="land" value="België" required> België</label>
-      <label class="keuze"><input type="radio" name="land" value="Nederland"> Nederland</label>
-    </fieldset>
-  </div>
-
-  <div class="veld">
-    <label for="vogelervaring">Hoe zou je je ervaring met vogels omschrijven? <span class="veldnoot">(optioneel)</span></label>
-    <select id="vogelervaring" name="vogelervaring">
-      <option value=""></option>
-      <option>Beginnend</option>
-      <option>Regelmatig bezig met vogels</option>
-      <option>Ervaren vogelaar</option>
-      <option>Zeer ervaren of professioneel actief</option>
-    </select>
-  </div>
-
-  <div class="veld">
-    <label for="stemherkenningErvaring">Heb je ooit waarnemingen ingesproken met spraakherkenning? <span class="veldnoot">(optioneel)</span></label>
-    <select id="stemherkenningErvaring" name="stemherkenningErvaring">
-      <option value=""></option>
-      <option>Nog nooit geprobeerd</option>
-      <option>Weleens geprobeerd</option>
-      <option>Gebruik ik regelmatig</option>
-    </select>
-  </div>
-
-  <fieldset>
-    <legend>Welke apps of websites gebruik je bij het vogels kijken? <span class="veldnoot">(meerdere mogelijk, optioneel)</span></legend>
-    <div class="vinkjes">
-      <label class="keuze"><input type="checkbox" name="apps" value="Waarnemingen.be / Waarneming.nl"> Waarnemingen.be / Waarneming.nl</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="ObsMapp"> ObsMapp</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="ObsIdentify"> ObsIdentify</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="Merlin"> Merlin</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="BirdTalk"> BirdTalk</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="eBird"> eBird</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="Trektellen"> Trektellen</label>
-      <label class="keuze"><input type="checkbox" name="apps" value="Andere"> Andere</label>
-    </div>
-  </fieldset>
-
-  <div class="veld">
-    <label for="opmerking">Opmerking of vraag <span class="veldnoot">(optioneel)</span></label>
-    <textarea id="opmerking" name="opmerking" rows="3"></textarea>
-  </div>
-
-  <!-- Lokvak tegen robots: mensen zien het niet; is het ingevuld, dan wordt
-       er niets verstuurd (zoals op Contact). -->
-  <div class="lokvak" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">
-    <label for="kenmerk">Laat dit leeg</label>
-    <input type="text" id="kenmerk" name="kenmerk" tabindex="-1" autocomplete="off">
-  </div>
-
-  <p class="fout" id="foutmelding" role="alert" hidden></p>
-  <button type="submit" class="knop" id="verstuurknop">Aanmelden</button>
-  <p class="hint">Wat er met je gegevens gebeurt, staat in het
-  <a href="{{ '/privacy/' | relative_url }}">privacybeleid</a>.</p>
-</form>
-
-<div id="iphonebedankt" class="kaart" hidden>
-  <h3>Bedankt!</h3>
-  <p>Je aanmelding is binnen. Je krijgt zo meteen een bevestigingsmail;
-  niets ontvangen? Kijk even in je spam.</p>
-  <p>Intussen kan je KLAPekster al installeren.</p>
-  <p>{% include appstoreknop.html %}</p>
-</div>
-
-## Na je aanmelding
-
-Je krijgt meteen een bevestigingsmail. Daarna zet ik je met de hand op de
-lijst, en krijg je een tweede mail met alles wat je nodig hebt om
-KLAPekster te installeren.
-
-<script>
-  // Het adres van het Apps Script staat in _config.yml (script_url).
-  var SCRIPT_URL = '{{ site.script_url }}';
-  var BEDANKT = '{{ "/bedankt/" | relative_url }}';
-
-  var formulier = document.getElementById('aanmeldformulier');
-  var knop = document.getElementById('verstuurknop');
-  var fout = document.getElementById('foutmelding');
-
-  function gekozen(naam) {
-    var el = formulier.querySelector('input[name="' + naam + '"]:checked');
-    return el ? el.value : '';
-  }
-
-  formulier.querySelectorAll('input[name="toestel"]').forEach(function (el) {
-    el.addEventListener('change', function () {
-      document.getElementById('iphonemelding').hidden = gekozen('toestel') !== 'iPhone';
-    });
-  });
-
-  function toonFout(tekst) {
-    fout.textContent = tekst;
-    fout.hidden = false;
-  }
-
-  formulier.addEventListener('submit', function (ev) {
-    ev.preventDefault();
-    fout.hidden = true;
-    // Een robot: doen alsof het lukte, en niets versturen.
-    if (document.getElementById('kenmerk').value) {
-      window.location.href = BEDANKT;
-      return;
-    }
-    var naam = document.getElementById('naam').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var toestel = gekozen('toestel');
-    var land = gekozen('land');
-
-    // Alleen noemen wat écht nog ontbreekt, en naar de eerste daarvan
-    // springen: de rondjes van telefoon en land zie je anders makkelijk over
-    // het hoofd.
-    var ontbreekt = [];
-    var eerste = null;
-    formulier.querySelectorAll('.ontbreekt').forEach(function (el) {
-      el.classList.remove('ontbreekt');
-    });
-    // De vraag zelf kleurt mee: het bericht staat onderaan bij de knop.
-    function mist(tekst, veld, vraag) {
-      ontbreekt.push(tekst);
-      eerste = eerste || veld;
-      vraag.classList.add('ontbreekt');
-    }
-    var naamveld = document.getElementById('naam');
-    var emailveld = document.getElementById('email');
-    var toestelveld = formulier.querySelector('input[name="toestel"]');
-    var landveld = formulier.querySelector('input[name="land"]');
-    if (!naam) mist('je naam', naamveld, formulier.querySelector('label[for="naam"]'));
-    if (!email) mist('je e-mailadres', emailveld, formulier.querySelector('label[for="email"]'));
-    if (!toestel) mist('welke telefoon je hebt', toestelveld, toestelveld.closest('fieldset'));
-    if (!land) mist('in welk land je woont', landveld, landveld.closest('fieldset'));
-    if (ontbreekt.length) {
-      var lijst = ontbreekt.length === 1 ? ontbreekt[0]
-        : ontbreekt.slice(0, -1).join(', ') + ' en ' + ontbreekt[ontbreekt.length - 1];
-      toonFout('Vul nog in: ' + lijst + '.');
-      eerste.scrollIntoView({ block: 'center', behavior: 'smooth' });
-      eerste.focus({ preventScroll: true });
-      return;
-    }
-    if (!document.getElementById('email').checkValidity()) {
-      toonFout('Dat e-mailadres lijkt niet te kloppen.');
-      document.getElementById('email').focus();
-      return;
-    }
-
-    knop.disabled = true;
-    knop.textContent = 'Bezig met versturen…';
-    var payload = {
-      type: 'aanmelding',
-      naam: naam,
-      email: email,
-      toestel: toestel,
-      land: land,
-      vogelervaring: document.getElementById('vogelervaring').value,
-      stemherkenningErvaring: document.getElementById('stemherkenningErvaring').value,
-      appsGebruikt: Array.prototype.map.call(
-        formulier.querySelectorAll('input[name="apps"]:checked'),
-        function (el) { return el.value; }).join(', '),
-      opmerking: document.getElementById('opmerking').value.trim(),
-    };
-
-    // Bewust géén eigen Content-Type: de browser zet dan zelf "text/plain",
-    // een "simpel" verzoek zonder voorafgaande controle (preflight). Apps
-    // Script beantwoordt zo'n controle niet, en met "application/json" zou
-    // het versturen stil mislukken.
-    //
-    // Niet doorgaan naar het antwoord van Google (redirect 'manual'): het
-    // script antwoordt met een doorverwijzing naar een tweede adres, en
-    // alleen als het zonder fout klaar is; loopt het mis, dan komt meteen
-    // een foutpagina en mislukt de fetch. De doorverwijzing zelf zegt dus al
-    // dat de aanmelding binnen is. Die tweede stap liep bij Olivier vast
-    // terwijl de rij al in het rekenblad stond (13 oktober 2026).
-    fetch(SCRIPT_URL, { method: 'POST', redirect: 'manual', body: JSON.stringify(payload) })
-      .then(function (antwoord) {
-        if (antwoord.type === 'opaqueredirect') return { ok: true };
-        return antwoord.json();
-      })
-      .then(function (data) {
-        if (!data.ok) throw new Error(data.error || 'onbekende fout');
-        if (toestel === 'iPhone') {
-          formulier.hidden = true;
-          document.getElementById('iphonebedankt').hidden = false;
-        } else {
-          window.location.href = BEDANKT;
-        }
-      })
-      .catch(function () {
-        toonFout('Het versturen lukte niet. Probeer het zo meteen opnieuw, '
-          + 'of mail naar {{ site.contact }}.');
-        knop.disabled = false;
-        knop.textContent = 'Aanmelden';
-      });
-  });
-</script>

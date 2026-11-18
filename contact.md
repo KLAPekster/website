@@ -112,8 +112,12 @@ naar <a href="mailto:{{ site.contact }}">{{ site.contact }}</a>.</p>
       toestel: '',
     };
 
-    // Bewust géén eigen Content-Type en niet doorgaan naar het antwoord: zie
-    // de uitleg op Gebruiken (meedoen.md).
+    // Bewust géén eigen Content-Type: de browser zet dan zelf "text/plain",
+    // een verzoek zonder voorafgaande controle, die Apps Script niet
+    // beantwoordt. En niet doorgaan naar het antwoord (redirect 'manual'):
+    // het script verwijst alleen door als het zonder fout klaar is, dus de
+    // doorverwijzing zegt al dat het bericht binnen is; de tweede stap liep
+    // eens vast terwijl alles al in het rekenblad stond (13 oktober 2026).
     fetch(SCRIPT_URL, { method: 'POST', redirect: 'manual', body: JSON.stringify(payload) })
       .then(function (antwoord) {
         if (antwoord.type === 'opaqueredirect') return { ok: true };
