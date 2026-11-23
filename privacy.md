@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 11 november 2026</p>
+<p class="flauw">Laatst gewijzigd op 23 november 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
@@ -106,6 +106,14 @@ beveiligde opslag van je telefoon, niet in de database van KLAPekster. Met
 
 Wat waarnemingen.be en waarneming.nl daarna met je waarnemingen doen, staat
 in hun eigen privacybeleid.
+
+## Je eigen waarnemingen bekijken
+
+Ben je in de app aangemeld bij waarnemingen.be of waarneming.nl, dan kan
+de app op jouw vraag je eigen waarnemingen daar ophalen, om ze samen met
+die uit KLAPekster te tonen bij Waarnemingen. Die lijst blijft alleen op
+je telefoon. Ze komt niet in de database of het logboek van KLAPekster.
+Meld je je af, of met een ander account aan, dan wist de app ze.
 
 ## Foto's
 
