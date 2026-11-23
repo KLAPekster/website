@@ -231,6 +231,62 @@ buurt gemeld zijn op waarnemingen.be en waarneming.nl, en hoe je er komt.
 </ol>
 
 {% comment %}
+  Waarnemingen en Jij uit versie 1.6.6 (Olivier, 23 november 2026, plan in
+  de app-repo: ontwerp/website-schermbeelden/PLAN.md, ronde 4). Geen
+  kaartjes met uitleg: alleen schermen met een naam eronder, "de
+  screenshots spreken voor zich". Op een telefoon twee per rij, breed vier.
+  Je gebieden en Een waarneming zijn schermafbeeldingen van Oliviers
+  telefoon; de rest komt uit de app met de echte tekeningen en verzonnen
+  gegevens. De stijl staat hier, niet in assets/stijl.css.
+{% endcomment %}
+<style>
+  .galerij {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+    margin: 1em 0;
+  }
+  .galerij figure { margin: 0; }
+  .galerij img { display: block; width: 100%; height: auto; max-width: none; }
+  .galerij figcaption {
+    margin-top: 8px;
+    font-family: var(--schreef);
+    font-weight: 600;
+    text-align: center;
+  }
+  .galerij figcaption span {
+    display: block;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--grijs);
+  }
+  @media (min-width: 700px) {
+    .galerij { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+  }
+</style>
+
+## Al je waarnemingen op een rij
+
+Ook die van waarnemingen.be.
+
+<div class="galerij">
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/waarnemingen-gebieden.webp' | relative_url }}" alt="Je gebieden: 8751 waarnemingen, 276 soorten en 353 gebieden, met bovenaan het gebied waar je nu bent" width="384" height="742" loading="lazy"><figcaption>Je gebieden</figcaption></figure>
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/waarnemingen-gebied.webp' | relative_url }}" alt="Een gebied: je bijzonderste waarneming er, de maanden waarin je er kwam en de soorten die je er zag" width="384" height="742" loading="lazy"><figcaption>Een gebied</figcaption></figure>
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/waarnemingen-soort.webp' | relative_url }}" alt="Een soort, de merel: wanneer en waar je hem eerst en laatst zag, per maand, en al je waarnemingen" width="384" height="742" loading="lazy"><figcaption>Een soort</figcaption></figure>
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/waarnemingen-waarneming.webp' | relative_url }}" alt="Een waarneming: drie strandleeuweriken in het Zwin, met een kaartje en een foto" width="384" height="742" loading="lazy"><figcaption>Een waarneming</figcaption></figure>
+</div>
+
+## Wat je zag, en wat je nog mist
+
+<div class="galerij">
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/lijst-overzicht.webp' | relative_url }}" alt="Je overzicht: 243 soorten in je lijst, de grauwe franjepoot als laatste nieuwe, en je jaarlijst naast die van vorig jaar" width="384" height="742" loading="lazy"><figcaption>Je lijst</figcaption></figure>
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/lijst-veldgids.webp' | relative_url }}" alt="Je veldgids: je soorten per familie, met hun tekening en wanneer je ze eerst en laatst zag" width="384" height="742" loading="lazy"><figcaption>Je veldgids</figcaption></figure>
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/lijst-schaamsoorten.webp' | relative_url }}" alt="Schaamsoorten in vier trappen, van gewoon tot zeldzaam, elk met een balkje van hoeveel je er al zag" width="384" height="742" loading="lazy"><figcaption>Schaamsoorten<span>gewone vogels die je nog nooit zag</span></figcaption></figure>
+  <figure><img class="scherm" src="{{ '/assets/beeld/schermen/lijst-nog-niet-dit-jaar.webp' | relative_url }}" alt="Nog niet dit jaar: kramsvogel, middelste bonte specht, tapuit, hop en boomvalk, met wanneer je ze vorige jaren meestal zag" width="384" height="742" loading="lazy"><figcaption>Nog niet dit jaar</figcaption></figure>
+</div>
+
+{% comment %}
   De voorbeelden komen ná de uitleg over het gebruik (Olivier, 9 oktober
   2026: elf voorbeelden duwden de uitleg bijna twee schermhoogtes naar
   beneden). Eerst zes, op een breed scherm twee rijen van drie; de rest klapt
