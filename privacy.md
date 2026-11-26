@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacybeleid
 
-<p class="flauw">Laatst gewijzigd op 23 november 2026</p>
+<p class="flauw">Laatst gewijzigd op 26 november 2026</p>
 
 Je spreekt je waarnemingen in, bewaart ze op je telefoon en beslist zelf
 wanneer je ze naar waarnemingen.be of waarneming.nl verstuurt. De eerste keer
@@ -114,6 +114,23 @@ de app op jouw vraag je eigen waarnemingen daar ophalen, om ze samen met
 die uit KLAPekster te tonen bij Waarnemingen. Die lijst blijft alleen op
 je telefoon. Ze komt niet in de database of het logboek van KLAPekster.
 Meld je je af, of met een ander account aan, dan wist de app ze.
+
+## Meldingen van anderen opvragen
+
+Op enkele plaatsen toont de app wat anderen onlangs meldden op
+waarnemingen.be of waarneming.nl. Ze vraagt dat daar zelf op, zonder je
+naam en zonder aanmelding. Zoals bij elke vraag op het internet ziet
+waarnemingen.be daarbij je IP-adres.
+
+- **"Waar is ze nu gezien?"** bij een vogel in Mijn vogels: de app vraagt
+  waar die soort de laatste dagen gemeld is in België, Nederland of
+  allebei. Alleen de soort, het land en de dag gaan mee, niet je plek.
+  Welke meldingen het dichtst bij zijn, rekent je telefoon zelf uit. Een
+  plaats die je zelf kiest, blijft ook op je telefoon.
+- **"Nu in de buurt"** bij "Nog niet in Nederland" (of België) in Mijn
+  vogels: sta je in dat land en open je die lijst, dan vraagt de app
+  welke vogels er de laatste dagen binnen tien kilometer gemeld zijn.
+  Daarbij gaat je plek mee, afgerond op ongeveer een kilometer.
 
 ## Foto's
 
